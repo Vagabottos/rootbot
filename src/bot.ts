@@ -4,11 +4,11 @@ import { Inject } from 'typescript-ioc';
 
 import { ICommandResult } from './interfaces';
 
-import { Logger } from './helpers/logger';
-import { CommandParser } from './helpers/command-parser';
-import { PresenceService } from './helpers/presence';
-import { EnvService } from './helpers/env';
-import { DatabaseService } from './helpers/database';
+import { Logger } from './services/logger';
+import { CommandParser } from './services/command-parser';
+import { PresenceService } from './services/presence';
+import { EnvService } from './services/env';
+import { DatabaseService } from './services/database';
 
 export class Bot {
   @Inject private logger: Logger;
