@@ -1,10 +1,10 @@
 
 import { AutoWired, Singleton } from 'typescript-ioc';
-import { BaseHelper } from '../base/BaseHelper';
+import { BaseService } from '../base/BaseService';
 
 @Singleton
 @AutoWired
-export class EnvHelper extends BaseHelper {
+export class EnvService extends BaseService {
 
   public get discordToken(): string {
     return process.env.DISCORD_TOKEN;

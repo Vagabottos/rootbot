@@ -1,9 +1,9 @@
 
 import * as Discord from 'discord.js';
 
-import { IHelper } from '../interfaces';
+import { IService } from '../interfaces';
 
-export class BaseHelper implements IHelper {
+export class BaseService implements IService {
 
   protected client: Discord.Client;
 

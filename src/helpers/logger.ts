@@ -2,12 +2,12 @@
 // tslint:disable:no-console
 
 import { AutoWired, Singleton } from 'typescript-ioc';
-import { BaseHelper } from '../base/BaseHelper';
+import { BaseService } from '../base/BaseService';
 import { ICommandResult } from '../interfaces';
 
 @Singleton
 @AutoWired
-export class Logger extends BaseHelper {
+export class Logger extends BaseService {
   log(...args) {
     console.log(new Date(), ...args);
   }

@@ -1,3 +1,3 @@
 
 export * from './ICommand';
-export * from './IHelper';
+export * from './IService';

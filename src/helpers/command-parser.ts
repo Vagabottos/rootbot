@@ -3,13 +3,13 @@ import * as Discord from 'discord.js';
 import { AutoWired, Singleton } from 'typescript-ioc';
 
 import { ICommandResult, ICommand } from '../interfaces';
-import { BaseHelper } from '../base/BaseHelper';
+import { BaseService } from '../base/BaseService';
 
 import * as Commands from '../commands';
 
 @Singleton
 @AutoWired
-export class CommandParser extends BaseHelper {
+export class CommandParser extends BaseService {
 
   private executableCommands: { [key: string]: ICommand } = {};
 
