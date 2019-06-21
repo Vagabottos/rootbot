@@ -5,7 +5,7 @@ A sample bot framework for Discord using DI & typeorm.
 
 ## Environment Variables
 
-Put these values in a `[.env](https://www.npmjs.com/package/dotenv)` file.
+Put these values in a [`.env`](https://www.npmjs.com/package/dotenv) file.
 
 ### Required
 
