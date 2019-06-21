@@ -1,0 +1,30 @@
+{
+  "defaultSeverity": "error",
+  "linterOptions": {
+      "exclude": [
+          "src/migration/**",
+          "src/test/**"
+      ]
+  },
+  "extends": [
+      "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+      "trailing-comma": false,
+      "member-access": false,
+      "variable-name": {
+          "options": [
+              "ban-keywords"
+          ]
+      },
+      "object-literal-sort-keys": false,
+      "ordered-imports": false,
+      "forin": false,
+      "max-line-length": [true, 150],
+      "prefer-const": false,
+      "no-empty": false,
+      "quotemark": [true, "single"]
+  },
+  "rulesDirectory": []
+}

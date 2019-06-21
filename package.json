@@ -1,0 +1,38 @@
+{
+  "name": "discordbotexample",
+  "version": "1.0.0",
+  "description": "A sample bot framework for discord using DI & typeorm.",
+  "main": "index.js",
+  "engines": {
+    "node": "10.11.0"
+  },
+  "scripts": {
+    "start": "ts-node src/index",
+    "test:lint": "tslint --project .",
+    "test:unit": "ava-ts src/test/**.test.ts",
+    "test": "npm run test:lint && npm run test:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seiyria/DiscordBotExample.git"
+  },
+  "author": "Kyle Kemp <kyle@seiyria.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seiyria/DiscordBotExample/issues"
+  },
+  "homepage": "https://github.com/seiyria/DiscordBotExample#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.0.0",
+    "typeorm": "^0.2.18",
+    "typescript-ioc": "^1.2.5"
+  },
+  "devDependencies": {
+    "ava": "^2.1.0",
+    "ava-ts": "^0.25.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
+  }
+}

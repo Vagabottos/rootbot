@@ -1,0 +1,15 @@
+.env
+.nvmrc
+*.sh
+*.idea
+*.iml
+cfg/
+node_modules/
+data/*
+search.ts
+TestCommandHandler.ts
+test.ts
+temp/*
+*.traineddata
+.nvmrc
+*.sh
