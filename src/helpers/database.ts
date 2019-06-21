@@ -1,9 +1,9 @@
 
 import { AutoWired, Singleton } from 'typescript-ioc';
-import { BaseHelper } from '../base/BaseHelper';
+import { BaseService } from '../base/BaseService';
 
 @Singleton
 @AutoWired
-export class DatabaseHelper extends BaseHelper {
+export class DatabaseService extends BaseService {
 
 }

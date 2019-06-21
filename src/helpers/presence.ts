@@ -1,18 +1,18 @@
 
 import { AutoWired, Singleton, Inject } from 'typescript-ioc';
-import { BaseHelper } from '../base/BaseHelper';
-import { EnvHelper } from './env';
+import { BaseService } from '../base/BaseService';
+import { EnvService } from './env';
 
 @Singleton
 @AutoWired
-export class PresenceHelper extends BaseHelper {
+export class PresenceService extends BaseService {
 
-  @Inject private envHelper: EnvHelper;
+  @Inject private envService: EnvService;
 
   public async init(client) {
     super.init(client);
 
-    if (this.envHelper.ignorePresence) { return; }
+    if (this.envService.ignorePresence) { return; }
     client.user.setPresence({ game: { name: 'Magia Record ;help' } });
   }
 }

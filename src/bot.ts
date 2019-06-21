@@ -6,20 +6,20 @@ import { ICommandResult } from './interfaces';
 
 import { Logger } from './helpers/logger';
 import { CommandParser } from './helpers/command-parser';
-import { PresenceHelper } from './helpers/presence';
-import { EnvHelper } from './helpers/env';
-import { DatabaseHelper } from './helpers/database';
+import { PresenceService } from './helpers/presence';
+import { EnvService } from './helpers/env';
+import { DatabaseService } from './helpers/database';
 
 export class Bot {
   @Inject private logger: Logger;
-  @Inject private envHelper: EnvHelper;
-  @Inject private databaseHelper: DatabaseHelper;
-  @Inject private presenceHelper: PresenceHelper;
+  @Inject private envService: EnvService;
+  @Inject private databaseService: DatabaseService;
+  @Inject private presenceService: PresenceService;
   @Inject private commandParser: CommandParser;
 
   public async init() {
-    const DISCORD_TOKEN = this.envHelper.discordToken;
-    const COMMAND_PREFIX = this.envHelper.commandPrefix;
+    const DISCORD_TOKEN = this.envService.discordToken;
+    const COMMAND_PREFIX = this.envService.commandPrefix;
     if (!DISCORD_TOKEN) { throw new Error('No Discord token specified!'); }
 
     const client = new Discord.Client();
@@ -28,9 +28,9 @@ export class Bot {
     client.on('ready', () => {
       this.logger.log('Initialized bot!');
 
-      this.envHelper.init(client);
-      this.databaseHelper.init(client);
-      this.presenceHelper.init(client);
+      this.envService.init(client);
+      this.databaseService.init(client);
+      this.presenceService.init(client);
       this.commandParser.init(client);
     });
 
