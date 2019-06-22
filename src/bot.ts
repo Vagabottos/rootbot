@@ -2,7 +2,7 @@
 import * as Discord from 'discord.js';
 import { Inject } from 'typescript-ioc';
 
-import { ICommandResult } from './interfaces';
+import { ICommandResult, IService } from './interfaces';
 
 import { Logger } from './services/logger';
 import { CommandParser } from './services/command-parser';
@@ -11,14 +11,20 @@ import { EnvService } from './services/env';
 import { DatabaseService } from './services/database';
 import { WikiService } from './services/wiki';
 import { EmojiService } from './services/emoji';
+import { BaseService } from './base/BaseService';
 
 export class Bot {
+  // these services have to be registered first
   @Inject private logger: Logger;
   @Inject private envService: EnvService;
-  @Inject private emojiService: EmojiService;
   @Inject private databaseService: DatabaseService;
+
+  // these services can come in any particular order
+  @Inject private emojiService: EmojiService;
   @Inject private presenceService: PresenceService;
   @Inject private wikiService: WikiService;
+
+  // this service should come last
   @Inject private commandParser: CommandParser;
 
   public async init() {
@@ -32,10 +38,13 @@ export class Bot {
     client.on('ready', () => {
       this.logger.log('Initialized bot!');
 
-      [
-        this.envService, this.databaseService, this.presenceService,
-        this.emojiService, this.wikiService, this.commandParser
-      ].forEach((service) => service.init(client));
+      // auto-register all services
+      for (const key in this) {
+        const service: IService = (this[key] as unknown) as IService;
+        if (!(service instanceof BaseService)) { continue; }
+
+        service.init(client);
+      }
     });
 
     client.on('message', async (msg) => {
