@@ -1,7 +1,7 @@
 
-# Discord Bot Example
+# Magireco Bot
 
-A sample bot framework for Discord using DI & typeorm.
+A bot made for the Magireco discord.
 
 ## Environment Variables
 

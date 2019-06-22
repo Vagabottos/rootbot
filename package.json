@@ -7,7 +7,7 @@
     "node": "10.11.0"
   },
   "scripts": {
-    "start": "ts-node src/index",
+    "start": "nodemon --exec \"ts-node \"-- \"src/index.ts\"",
     "test:lint": "tslint --project .",
     "test:unit": "ava-ts src/test/**.test.ts",
     "test": "npm run test:lint && npm run test:unit"
@@ -23,14 +23,18 @@
   },
   "homepage": "https://github.com/seiyria/DiscordBotExample#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "discord.js": "^11.5.1",
     "dotenv": "^8.0.0",
+    "fuzzyset.js": "0.0.8",
     "typeorm": "^0.2.18",
-    "typescript-ioc": "^1.2.5"
+    "typescript-ioc": "^1.2.5",
+    "x-ray": "^2.3.3"
   },
   "devDependencies": {
     "ava": "^2.1.0",
     "ava-ts": "^0.25.2",
+    "nodemon": "^1.19.1",
     "ts-node": "^8.3.0",
     "tslint": "^5.18.0",
     "typescript": "^3.5.2"

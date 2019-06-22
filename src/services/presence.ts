@@ -12,7 +12,22 @@ export class PresenceService extends BaseService {
   public async init(client) {
     super.init(client);
 
+    this.resetPresence();
+  }
+
+  public resetPresence() {
+    this.setPresence('Magia Record ;help', false);
+  }
+
+  public setPresence(str: string, allowReset = true): void {
     if (this.envService.ignorePresence) { return; }
-    client.user.setPresence({ game: { name: 'Magia Record ;help' } });
+
+    this.client.user.setPresence({ game: { name: str } });
+
+    if (allowReset) {
+      setTimeout(() => {
+        this.resetPresence();
+      }, 15000);
+    }
   }
 }
