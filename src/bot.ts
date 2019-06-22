@@ -9,12 +9,16 @@ import { CommandParser } from './services/command-parser';
 import { PresenceService } from './services/presence';
 import { EnvService } from './services/env';
 import { DatabaseService } from './services/database';
+import { WikiService } from './services/wiki';
+import { EmojiService } from './services/emoji';
 
 export class Bot {
   @Inject private logger: Logger;
   @Inject private envService: EnvService;
+  @Inject private emojiService: EmojiService;
   @Inject private databaseService: DatabaseService;
   @Inject private presenceService: PresenceService;
+  @Inject private wikiService: WikiService;
   @Inject private commandParser: CommandParser;
 
   public async init() {
@@ -28,10 +32,10 @@ export class Bot {
     client.on('ready', () => {
       this.logger.log('Initialized bot!');
 
-      this.envService.init(client);
-      this.databaseService.init(client);
-      this.presenceService.init(client);
-      this.commandParser.init(client);
+      [
+        this.envService, this.databaseService, this.presenceService,
+        this.emojiService, this.wikiService, this.commandParser
+      ].forEach((service) => service.init(client));
     });
 
     client.on('message', async (msg) => {

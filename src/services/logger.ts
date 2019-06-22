@@ -20,7 +20,7 @@ export class Logger extends BaseService {
   }
 
   logCommandResult(result: ICommandResult) {
-    if (!result.result && !result.resultString) { return; }
+    if (!result || (result && !result.result && !result.resultString)) { return; }
     this.log(result);
   }
 

@@ -15,6 +15,7 @@ export interface ICommandArgs {
 
 // commands are created once, and then run multiple times as needed.
 export interface ICommand {
+  help: string;
   aliases: string[];
 
   // run when the aliases are matched, and if the function is added to the command
