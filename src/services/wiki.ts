@@ -4,7 +4,7 @@ import * as xray from 'x-ray';
 import * as FuzzySet from 'fuzzyset.js';
 
 import { BaseService } from '../base/BaseService';
-import { IGirlData } from '../interfaces';
+import { IGirlData, IMemoria } from '../interfaces';
 import { Logger } from './logger';
 
 const x = xray({
@@ -13,7 +13,8 @@ const x = xray({
   }
 });
 
-const LIST_PAGE = 'https://magireco.fandom.com/wiki/MagicalOverview';
+const GIRL_LIST_PAGE = 'https://magireco.fandom.com/wiki/MagicalOverview';
+const MEMORIA_LIST_PAGE = 'https://magireco.fandom.com/wiki/MemoriaOverview';
 
 @Singleton
 @AutoWired
@@ -25,10 +26,18 @@ export class WikiService extends BaseService {
   private girlAliases: { [key: string]: string } = {};
   private girlSet = new FuzzySet();
 
+  private memoriaSprites: { [key: string]: string } = {};
+  private memoriaAliases: { [key: string]: string } = {};
+  private memoriaSet = new FuzzySet();
+
   async init(client) {
     super.init(client);
 
-    await this.parseBaseWikiPage();
+    await this.parsePages();
+
+    setInterval(() => {
+      this.parsePages();
+    }, 60 * 60 * 1000);
   }
 
   public searchGirls(name: string): string {
@@ -36,6 +45,13 @@ export class WikiService extends BaseService {
     if (!found) { return null; }
 
     return this.girlAliases[found[0][1]];
+  }
+
+  public searchMemoria(name: string): string {
+    const found = this.memoriaSet.get(name);
+    if (!found) { return null; }
+
+    return this.memoriaAliases[found[0][1]];
   }
 
   public async parseSpecificGirlPage(name: string): Promise<IGirlData> {
@@ -182,11 +198,47 @@ export class WikiService extends BaseService {
     return girl;
   }
 
-  private async parseBaseWikiPage() {
+  public async parseSpecificMemoriaPage(name: string): Promise<IMemoria> {
+    const wikiLink = `https://magireco.fandom.com/wiki/${encodeURIComponent(name)}`;
+
+    const baseDataPage = x(wikiLink, '#mw-content-text', {
+      attImage: 'div .wikitable caption img@src',
+      att: 'div .wikitable caption img@alt',
+      effect: 'div .wikitable tr:last-child',
+      usableBy: '.wikiatable tr:nth-child(3) td | strip',
+      hp: '.wikiatable tr:nth-child(6) td',
+      atk: '.wikiatable tr:nth-child(7) td',
+      def: '.wikiatable tr:nth-child(8) td'
+    });
+
+    const data: any = await baseDataPage;
+
+    const memoria: IMemoria = {
+      name,
+      image: this.memoriaSprites[name],
+      wikiLink,
+      attImage: data.attImage,
+      effects: data.effect.split('&').map((e) => e.trim()),
+      usableBy: data.usableBy,
+      att: data.att.split(' ')[1],
+      hp: +data.hp.split('➜')[1],
+      atk: +data.atk.split('➜')[1],
+      def: +data.def.split('➜')[1]
+    };
+
+    return memoria;
+  }
+
+  private async parsePages() {
+    await this.parseBaseGirlListWikiPage();
+    await this.parseBaseMemoriaListWikiPage();
+  }
+
+  private async parseBaseGirlListWikiPage() {
     this.girlSet = new FuzzySet();
 
     let data = null;
-    data = await x(LIST_PAGE, 'h3+p+.article-table td div.floatnone', [{
+    data = await x(GIRL_LIST_PAGE, 'h3+p+.article-table td div.floatnone', [{
       name: 'a@title',
       image: 'a img@data-src'
     }]);
@@ -202,9 +254,33 @@ export class WikiService extends BaseService {
       });
     });
 
-    this.parseSpecificGirlPage('Iroha-chan');
-
     this.logger.log(`Loaded ${data.length} magical girls from wiki...`);
+
+    return data;
+  }
+
+  private async parseBaseMemoriaListWikiPage() {
+    this.memoriaSet = new FuzzySet();
+
+    let data = null;
+    data = await x(MEMORIA_LIST_PAGE, '.wikia-table td div.floatnone', [{
+      name: 'a@title',
+      image: 'a img@data-src'
+    }]);
+
+    data.forEach(({ name, image }) => {
+
+      this.memoriaSprites[name] = image;
+
+      const aliases = [name];
+      aliases.forEach((alias) => {
+        this.memoriaAliases[alias] = name;
+        this.memoriaSet.add(alias);
+      });
+    });
+
+    this.parseSpecificMemoriaPage('Lightning Blitz');
+    this.logger.log(`Loaded ${data.length} memoria from wiki...`);
 
     return data;
   }
