@@ -16,7 +16,7 @@ export class PresenceService extends BaseService {
   }
 
   public resetPresence() {
-    this.setPresence('Root !help', false);
+    this.setPresence('Root -help', false);
   }
 
   public setPresence(str: string, allowReset = true): void {

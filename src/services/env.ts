@@ -11,7 +11,7 @@ export class EnvService extends BaseService {
   }
 
   public get commandPrefix(): string {
-    return process.env.COMMAND_PREFIX || '!';
+    return process.env.COMMAND_PREFIX || '-';
   }
 
 }
