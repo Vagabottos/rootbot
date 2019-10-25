@@ -1,0 +1,780 @@
+
+# BIRD OWNED CARDS
+- name: "Builder"
+  owner: eyrie
+  image: bird-builder
+  text: "Ignore your Didain for Trade when you craft."
+  subtext: "Recruit & Move"
+
+- name: "Charismatic"
+  owner: eyrie
+  image: bird-charismatic
+  text: "You place two warriors, not one, each time you recruit."
+  subtext: "Recruit & Battle"
+
+- name: "Commander"
+  owner: eyrie
+  image: bird-commander
+  text: "As attacker in battle, you deal an extra hit."
+  subtext: "Move & Battle"
+
+- name: "Despot"
+  owner: eyrie
+  image: bird-despot
+  text: "Score a point if you remove at least one building or token in battle."
+  subtext: "Move & Build"
+
+# MOLE OWNED CARDS
+- name: "Banker"
+  owner: duchy
+  image: mole-banker
+  text: "Spend any number of cards of the same suit to score equal VP."
+
+- name: "Baron of Dirt"
+  owner: duchy
+  image: mole-baronofdirt
+  text: "Score +1 VP per market on the map."
+
+- name: "Brigadier"
+  owner: duchy
+  image: mole-brigadier
+  text: "Take up to two moves OR initiate up to two battles."
+
+- name: "Captain"
+  owner: duchy
+  image: mole-captain
+  text: "Initiate a battle."
+
+- name: "Duchess of Mud"
+  owner: duchy
+  image: mole-duchessofmud
+  text: "Score +2 VP if all tunnels are on the map."
+
+- name: "Earl of Stone"
+  owner: duchy
+  image: mole-earlofstone
+  text: "Score +1 VP per citadel on the map."
+
+- name: "Foremole"
+  owner: duchy
+  image: mole-foremole
+  text: "Spend a card to place a building in any clearing you rule."
+
+- name: "Marshal"
+  owner: duchy
+  image: mole-marshal
+  text: "Take a move."
+
+- name: "Mayor"
+  owner: duchy
+  image: mole-mayor
+  text: "Take the action of any swayed noble of squire."
+
+# VAGABOND OWNED CARDS
+- name: Arbiter
+  owner: vagabond
+  image: vagabond-arbiter
+  text: "Protector: Before rolling in battle, the defender may enlist the Arbiter if he is in the battle's clearing. The Arbiter scores one point and adds undamaged swords to the defender's maximum rolled hits."
+  subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_sword <emoji>:item_sword"
+
+- name: Ranger
+  owner: vagabond
+  image: vagabond-ranger
+  text: "Hideout: Repair three items. Then, immediately end daylight."
+  subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_crossbow <emoji>:item_sword"
+
+- name: Scoundrel
+  owner: vagabond
+  image: vagabond-scoundrel
+  text: "Scorched Earth: Place this torch in your clearing. Remove all enemy pieces there. Pieces can no longer be placed in or moved into this clearing."
+  subtext: "Starting Items: <emoji>:item_boot <emoji>:item_boot <emoji>:item_torch <emoji>:item_crossbow"
+
+- name: Thief
+  owner: vagabond
+  image: vagabond-thief
+  text: "Steal: Take a random card from a player in your clearing"
+  subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_tea <emoji>:item_sword"
+
+- name: Tinker
+  owner: vagabond
+  image: vagabond-tinker
+  text: "Day Labor: Take a card from the discard pile matching your clearing."
+  subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_sack <emoji>:item_hammer"
+
+- name: Vagrant
+  owner: vagabond
+  image: vagabond-vagrant
+  text: "Instigate: Initiate a battle in your clearing. You choose both attacker and defender, and you remove pieces for both."
+  subtext: "Starting Items: <emoji>:item_coin <emoji>:item_torch <emoji>:item_boot"
+
+# VAGABOND QUEST CARDS
+- name: "Errand in a rabbit clearing"
+  owner: vagabond
+  image: quest-errandbunny
+  quest:
+    cost:
+      - tea
+      - boot
+    type: bunny
+
+- name: "Errand in a fox clearing"
+  owner: vagabond
+  image: quest-errandfox
+  quest:
+    cost:
+      - tea
+      - boot
+    type: fox
+
+- name: "Escort in a mouse clearing"
+  owner: vagabond
+  image: quest-escort
+  quest:
+    cost:
+      - boot
+      - boot
+    type: mouse
+
+- name: "Expel Bandits in a rabbit clearing"
+  owner: vagabond
+  image: quest-expelbanditsbunny
+  quest:
+    cost:
+      - sword
+      - sword
+    type: bunny
+
+- name: "Expel Bandits in a mouse clearing"
+  owner: vagabond
+  image: quest-expelbanditsmouse
+  quest:
+    cost:
+      - sword
+      - sword
+    type: mouse
+
+- name: "Fend off a Bear in a rabbit clearing"
+  owner: vagabond
+  image: quest-fendoffabearbunny
+  quest:
+    cost:
+      - torch
+      - crossbow
+    type: bunny
+
+- name: "Fend off a Bear in a mouse clearing"
+  owner: vagabond
+  image: quest-fendoffabearmouse
+  quest:
+    cost:
+      - torch
+      - crossbow
+    type: mouse
+
+- name: "Fundraising in a fox clearing"
+  owner: vagabond
+  image: quest-fundraising
+  quest:
+    cost:
+      - tea
+      - coin
+    type: fox
+
+- name: "Give a Speech in a rabbit clearing"
+  owner: vagabond
+  image: quest-giveaspeechbunny
+  quest:
+    cost:
+      - torch
+      - tea
+    type: bunny
+
+- name: "Give a Speech in a fox clearing"
+  owner: vagabond
+  image: quest-giveaspeechfox
+  quest:
+    cost:
+      - torch
+      - tea
+    type: fox
+
+- name: "Guard Duty in a rabbit clearing"
+  owner: vagabond
+  image: quest-guarddutybunny
+  quest:
+    cost:
+      - torch
+      - sword
+    type: bunny
+
+- name: "Guard Duty in a mouse clearing"
+  owner: vagabond
+  image: quest-guarddutymouse
+  quest:
+    cost:
+      - torch
+      - sword
+    type: mouse
+
+- name: "Logistics Help in a fox clearing"
+  owner: vagabond
+  image: quest-logisticshelpfox
+  quest:
+    cost:
+      - boot
+      - sack
+    type: fox
+
+- name: "Logistics Help in a mouse clearing"
+  owner: vagabond
+  image: quest-logisticshelpmouse
+  quest:
+    cost:
+      - boot
+      - sack
+    type: mouse
+
+- name: "Repair a Shed in a fox clearing"
+  owner: vagabond
+  image: quest-repairashed
+  quest:
+    cost:
+      - torch
+      - hammer
+    type: fox
+
+# deck cards
+- name: "Ambush (Bird)"
+  type: bird
+  image: card-ambushbird
+  text: "At start of battle, defender may play to deal two immediate hits, then discard. Cancel if attacker plays matching ambush."
+
+- name: "Ambush (Bunny)"
+  type: bunny
+  image: card-ambushbunny
+  text: "At start of battle, defender may play to deal two immediate hits, then discard. Cancel if attacker plays matching ambush."
+
+- name: "Ambush (Fox)"
+  type: fox
+  image: card-ambushfox
+  text: "At start of battle, defender may play to deal two immediate hits, then discard. Cancel if attacker plays matching ambush."
+
+- name: "Ambush (Mouse)"
+  type: mouse
+  image: card-ambushmouse
+  text: "At start of battle, defender may play to deal two immediate hits, then discard. Cancel if attacker plays matching ambush."
+
+- name: "Anvil"
+  type: fox
+  image: card-anvil
+  craft:
+    cost:
+      - fox
+    item: anvil
+    vp: 2
+
+- name: "Armorers"
+  type: bird
+  image: card-armorers
+  craft:
+    cost:
+      - fox
+  text: "In battle, may discard this to ignore all rolled hits taken."
+
+- name: "Arms Trader"
+  type: bird
+  image: card-armstraders
+  craft:
+    cost:
+      - fox
+      - fox
+    item: anvil
+    vp: 2
+
+- name: "A Visit To Friends"
+  type: bunny
+  image: card-avisittofriends
+  craft:
+    cost:
+      - bunny
+    item: boot
+    vp: 1
+
+- name: "Bake Sale"
+  type: bunny
+  image: card-bakesale
+  craft:
+    cost:
+      - bunny
+      - bunny
+    item: coin
+    vp: 3
+
+- name: "Better Burrow Bank"
+  type: bunny
+  image: card-betterburrowbank
+  craft:
+    cost:
+      - bunny
+      - bunny
+  text: "At start of Birdsong, you and another player draw a card."
+
+- name: "Birdy Bindle"
+  type: bird
+  image: card-birdybindle
+  craft:
+    cost:
+      - mouse
+    item: sack
+    vp: 1
+
+- name: "Boat Builders"
+  type: bird
+  image: card-boatbuilders
+  craft:
+    cost:
+      - bird
+      - bird
+  text: "You treat rivers as paths."
+
+- name: "Brutal Tactics"
+  type: bird
+  image: card-brutaltactics
+  craft:
+    cost:
+      - fox
+      - fox
+  text: "In battle as attacker, may deal an extra hit, but defender scores one point."
+
+- name: "Charm Offensive"
+  type: bunny
+  image: card-charmoffensive
+  craft:
+    cost:
+      - bunny
+  text: "At start of Evening, may draw a card and choose another palyer to score one point."
+
+- name: "Cobbler"
+  type: bunny
+  image: card-cobbler
+  craft:
+    cost:
+      - bunny
+      - bunny
+  text: "At start of Evening, may take a move."
+
+- name: "Codebreakers"
+  type: mouse
+  image: card-codebreakers
+  craft:
+    cost:
+      - mouse
+  text: "Once in Daylight, may look at another player's hand."
+
+- name: "Coffin Makers"
+  type: bunny
+  image: card-coffinmakers
+  craft:
+    cost:
+      - bunny
+      - bunny
+  text: "Whenever any warriors would return to a supply, place them on this card instead. At the start of Birdsong, you score one point per five warriors here, then return all warriors here to their supplies."
+
+- name: "Command Warren"
+  type: bunny
+  image: card-commandwarren
+  craft:
+    cost:
+      - bunny
+      - bunny
+  text: "At start of Daylight, may initiate a battle."
+  
+- name: "Corvid Planners"
+  type: bird
+  image: card-corvidplanners
+  craft:
+    cost:
+      - bird
+      - bird
+  text: "While moving, you ignore rule."
+
+- name: "Crossbow (Bird)"
+  type: bird
+  image: card-crossbowbird
+  craft:
+    cost:
+      - fox
+    item: crossbow
+    vp: 1
+
+- name: "Crossbow (Mouse)"
+  type: bird
+  image: card-crossbowmouse
+  craft:
+    cost:
+      - fox
+    item: crossbow
+    vp: 1
+
+- name: "Dominance (Bird)"
+  type: bird
+  image: card-dominancebird
+  text: You win the game if you rule two opposite corners at the start of your Birdsong.
+  subtext: If you have at least 10 points, play during Daylight and remove your score marker.
+
+- name: "Dominance (Bunny)"
+  type: bunny
+  image: card-dominancebunny
+  text: You win the game if you rule two opposite corners at the start of your Birdsong.
+  subtext: If you have at least 10 points, play during Daylight and remove your score marker.
+
+- name: "Dominance (Fox)"
+  type: fox
+  image: card-dominancefox
+  text: You win the game if you rule two opposite corners at the start of your Birdsong.
+  subtext: If you have at least 10 points, play during Daylight and remove your score marker.
+
+- name: "Dominance (Mouse)"
+  type: mouse
+  image: card-dominancemouse
+  text: You win the game if you rule two opposite corners at the start of your Birdsong.
+  subtext: If you have at least 10 points, play during Daylight and remove your score marker.
+  
+- name: "Eyrie Emigre"
+  type: bird
+  image: card-eyrieemigre
+  craft:
+    cost:
+      - fox
+      - fox
+  text: "At the end of Birdsong, take a move, then initiate a battle in the clearing you moved into. If you did not take both actions, discard this card."
+  
+- name: "False Orders"
+  type: fox
+  image: card-falseorders
+  craft:
+    cost:
+      - fox
+  text: "In Birdsong, may discard this card to move half of an enemy's warriors (rounded up) from any clearing, as if you were that player, ignoring rule."
+  
+- name: "Favor of the Foxes"
+  type: fox
+  image: card-favorofthefoxes
+  craft:
+    cost:
+      - fox
+      - fox
+      - fox
+  text: "Remove all enemy pieces in fox clearings, then discard."
+
+- name: "Favor of the Mice"
+  type: mouse
+  image: card-favorofthemouse
+  craft:
+    cost:
+      - mouse
+      - mouse
+      - mouse
+  text: "Remove all enemy pieces in mouse clearings, then discard."
+
+- name: "Favor of the Rabbits"
+  type: bunny
+  image: card-favoroftherabbits
+  craft:
+    cost:
+      - bunny
+      - bunny
+      - bunny
+  text: "Remove all enemy pieces in bunny clearings, then discard."
+
+- name: "Foxfolk Steel"
+  type: fox
+  image: card-foxfolksteel
+  craft:
+    cost:
+      - fox
+      - fox
+    item: sword
+    vp: 2
+  
+- name: "Fox Partisans"
+  type: fox
+  image: card-foxpartisans
+  craft:
+    cost:
+      - fox
+  text: "In battle in fox clearings, may deal one extra hit, then discard all your cards except foxes."
+  
+- name: "Gently Used Knapsack"
+  type: fox
+  image: card-gentlyusedknapsack
+  craft:
+    cost:
+      - mouse
+    item: sack
+    vp: 1
+  
+- name: "Informants"
+  type: fox
+  image: card-informants
+  craft:
+    cost:
+      - fox
+      - fox
+  text: "In Evening, if you would draw cards, you may instead take one ambush card from the discard pile."
+  
+- name: "Investments"
+  type: mouse
+  image: card-investments
+  craft:
+    cost:
+      - bunny
+      - bunny
+    item: coin
+    vp: 3
+  
+- name: "League of Adventrous Mice"
+  type: mouse
+  image: card-leagueofadventrousmice
+  craft:
+    cost:
+      - mouse
+  text: "Once in Daylight, may exhaust an item in your Crafted ITems box to take a move or initiate battle."
+  
+- name: "Master Engravers"
+  type: mouse
+  image: card-masterengravers
+  craft:
+    cost:
+      - mouse
+      - mouse
+  text: "Whenever you craft an item, score one extra point."
+  
+- name: "Mouse-in-a-sack"
+  type: mouse
+  image: card-mouseinsasack
+  craft:
+    cost:
+      - mouse
+    item: sack
+    vp: 1
+  
+- name: "Mouse Partisans"
+  type: mouse
+  image: card-mousepartisans
+  craft:
+    cost:
+      - mouse
+  text: "In battle in mouse clearings, may deal one extra hit, then discard all your cards except mice."
+  
+- name: "Murine Broker"
+  type: mouse
+  image: card-murinebroker
+  craft:
+    cost:
+      - mouse
+      - mouse
+  text: "Whenever another player crafts an item, draw a card."
+  
+- name: "Propaganda Bureau"
+  type: fox
+  image: card-propagandabureau
+  craft:
+    cost:
+      - bird
+      - bird
+      - bird
+  text: "Once in Daylight, may spend a card to remove an enemy warrior from a matching clearing and place a warrior there."
+  
+- name: "Protection Racket"
+  type: fox
+  image: card-protectionracket
+  craft:
+    cost:
+      - bunny
+      - bunny
+    item: coin
+    vp: 3
+  
+- name: "Rabbit Partisans"
+  type: bunny
+  image: card-rabbitpartisans
+  craft:
+    cost:
+      - bunny
+  text: "In battle in rabbit clearings, may deal one extra hit, then discard all your cards except rabbits."
+  
+- name: "Root Tea (Bunny)"
+  type: bunny
+  image: card-rootteabunny
+  craft:
+    cost:
+      - mouse
+    item: tea
+    vp: 2
+  
+- name: "Root Tea (Fox)"
+  type: fox
+  image: card-rootteafox
+  craft:
+    cost:
+      - mouse
+    item: tea
+    vp: 2
+  
+- name: "Root Tea (Mouse)"
+  type: mouse
+  image: card-rootteamouse
+  craft:
+    cost:
+      - mouse
+    item: tea
+    vp: 2
+  
+- name: "Royal Claim"
+  type: bird
+  image: card-royalclaim
+  craft:
+    cost:
+      - bird
+      - bird
+      - bird
+      - bird
+  text: "In Birdsong, may discard this to score one point per clearing you rule."
+  
+- name: "Saboteurs"
+  type: bird
+  image: card-saboteurs
+  craft:
+    cost:
+      - bird
+  text: "At the start of Birdsong, may discard this card to discard an enemys crafted card."
+  
+- name: "Sappers"
+  type: bird
+  image: card-sappers
+  craft:
+    cost:
+      - mouse
+  text: "In battle as defender, may discard this to deal an extra hit."
+  
+- name: "Scouting Party"
+  type: mouse
+  image: card-scoutingparty
+  craft:
+    cost:
+      - mouse
+      - mouse
+  text: "As attacker in battle, you are not affected by ambush cards."
+
+- name: "Smuggler's Trail"
+  type: bunny
+  image: card-smugglerstrail
+  craft:
+    cost:
+      - mouse
+    item: sack
+    vp: 1
+
+- name: "Soup Kitchens"
+  type: bird
+  image: card-soupkitchens
+  craft:
+    cost:
+      - bunny
+      - fox
+      - mouse
+  text: "Your tokens now count towards rule, and each of your tokens counts twice."
+
+- name: "Spy (Bird)"
+  type: bird
+  image: card-spybird
+  text: "In Daylight, reveal an order. If the spy reveals a bird card, discard the spy. If the spy is not discarded, you may swap any two order cards."
+
+- name: "Spy (Bunny)"
+  type: bunny
+  image: card-spybunny
+  text: "In Daylight, reveal an order. If the spy reveals a bunny card, discard the spy. If the spy is not discarded, you may swap any two order cards."
+
+- name: "Spy (Fox)"
+  type: fox
+  image: card-spyfox
+  text: "In Daylight, reveal an order. If the spy reveals a fox card, discard the spy. If the spy is not discarded, you may swap any two order cards."
+
+- name: "Spy (Mouse)"
+  type: mouse
+  image: card-spymouse
+  text: "In Daylight, reveal an order. If the spy reveals a mouse card, discard the spy. If the spy is not discarded, you may swap any two order cards."
+
+- name: "Stand and Deliver!"
+  type: fox
+  image: card-standanddeliver
+  craft:
+    cost:
+      - mouse
+      - mouse
+      - mouse
+  text: "In Birdsong, may take a random card from another player. That player scores one point."
+
+- name: "Swap Meet"
+  type: bunny
+  image: card-swapmeet
+  craft:
+    cost:
+      - bunny
+  text: "Once in Birdsong, may take a random card from another player and then give them a card."
+
+- name: "Sword"
+  type: mouse
+  image: card-sword
+  craft:
+    cost:
+      - fox
+      - fox
+    item: sword
+    vp: 2
+
+- name: "Tax Collector"
+  type: fox
+  image: card-taxcollector
+  craft:
+    cost:
+      - bunny
+      - fox
+      - mouse
+  text: "Once in Daylight, may remove one of your warriors to draw a card."
+
+- name: "Travel Gear (Fox)"
+  type: fox
+  image: card-travelgearfox
+  craft:
+    cost:
+      - bunny
+    item: boot
+    vp: 1
+
+- name: "Travel Gear (Mouse)"
+  type: mouse
+  image: card-travelgearmouse
+  craft:
+    cost:
+      - bunny
+    item: boot
+    vp: 1
+
+- name: "Tunnels"
+  type: bunny
+  image: card-tunnels
+  craft:
+    cost:
+      - bunny
+  text: "You treat clearings with any of your crafting pieces as adjacent."
+
+- name: "Woodland Runners"
+  type: bird
+  image: card-woodlandrunners
+  craft:
+    cost:
+      - bunny
+    item: boot
+    vp: 1

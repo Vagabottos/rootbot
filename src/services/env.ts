@@ -14,8 +14,4 @@ export class EnvService extends BaseService {
     return process.env.COMMAND_PREFIX || '!';
   }
 
-  public get ignorePresence(): boolean {
-    return !!process.env.IGNORE_PRESENCE;
-  }
-
 }

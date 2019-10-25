@@ -28,7 +28,7 @@
     "fuzzyset.js": "0.0.8",
     "typeorm": "^0.2.18",
     "typescript-ioc": "^1.2.5",
-    "x-ray": "^2.3.3"
+    "yamljs": "0.3.0"
   },
   "devDependencies": {
     "ava": "^2.1.0",

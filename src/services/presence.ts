@@ -16,12 +16,10 @@ export class PresenceService extends BaseService {
   }
 
   public resetPresence() {
-    this.setPresence('Magia Record ;help', false);
+    this.setPresence('Root !help', false);
   }
 
   public setPresence(str: string, allowReset = true): void {
-    if (this.envService.ignorePresence) { return; }
-
     this.client.user.setPresence({ game: { name: str } });
 
     if (allowReset) {
