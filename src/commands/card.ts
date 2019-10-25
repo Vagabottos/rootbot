@@ -90,7 +90,7 @@ export class CardCommand implements ICommand {
       }
     }
 
-    this.presenceService.setPresence(card.name);
+    this.presenceService.setPresence(`with ${card.name}`);
 
     message.channel.send({ embed });
 
