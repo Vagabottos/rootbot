@@ -1,7 +1,7 @@
 
-# Magireco Bot
+# Root Bot
 
-A bot made for the Magireco discord.
+A bot made for the Woodland Warriors discord.
 
 ## Environment Variables
 
