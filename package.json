@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/seiyria/DiscordBotExample#readme",
   "dependencies": {
+    "@types/node": "12.11.7",
     "discord.js": "^11.5.1",
     "dotenv": "^8.0.0",
     "fuzzyset.js": "0.0.8",
@@ -34,7 +35,6 @@
     "yamljs": "0.3.0"
   },
   "devDependencies": {
-    "@types/node": "12.11.7",
     "ava": "^2.1.0",
     "ava-ts": "^0.25.2",
     "nodemon": "^1.19.1",
