@@ -1,4 +1,3 @@
 
-export * from './girl';
+export * from './card';
 export * from './help';
-export * from './memoria';

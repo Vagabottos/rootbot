@@ -6,10 +6,9 @@ import { ICommandResult, IService } from './interfaces';
 
 import { Logger } from './services/logger';
 import { CommandParser } from './services/command-parser';
+import { CardService } from './services/card';
 import { PresenceService } from './services/presence';
 import { EnvService } from './services/env';
-import { DatabaseService } from './services/database';
-import { WikiService } from './services/wiki';
 import { EmojiService } from './services/emoji';
 import { BaseService } from './base/BaseService';
 
@@ -17,12 +16,11 @@ export class Bot {
   // these services have to be registered first
   @Inject private logger: Logger;
   @Inject private envService: EnvService;
-  @Inject private databaseService: DatabaseService;
 
   // these services can come in any particular order
+  @Inject private cardService: CardService;
   @Inject private emojiService: EmojiService;
   @Inject private presenceService: PresenceService;
-  @Inject private wikiService: WikiService;
 
   // this service should come last
   @Inject private commandParser: CommandParser;
