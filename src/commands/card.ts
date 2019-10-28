@@ -3,7 +3,6 @@ import { Inject, AutoWired, Singleton } from 'typescript-ioc';
 import * as Discord from 'discord.js';
 
 import { ICommand, ICommandArgs, ICommandResult } from '../interfaces';
-import { Logger } from '../services/logger';
 import { PresenceService } from '../services/presence';
 import { EmojiService } from '../services/emoji';
 import { CardService } from '../services/card';
