@@ -4,6 +4,7 @@ import * as Discord from 'discord.js';
 
 import { ICommand, ICommandArgs, ICommandResult } from '../interfaces';
 import { RulesService } from '../services/rules';
+import { EmojiService } from '../services/emoji';
 
 @Singleton
 @AutoWired
@@ -13,6 +14,7 @@ export class RuleCommand implements ICommand {
   aliases = ['rule', 'r'];
 
   @Inject private rulesService: RulesService;
+  @Inject private emojiService: EmojiService;
 
   async execute(cmdArgs: ICommandArgs): Promise<ICommandResult> {
     const { message, args } = cmdArgs;
@@ -23,16 +25,43 @@ export class RuleCommand implements ICommand {
       return;
     }
 
-    console.log(rule);
+    let text = this.fixText(rule.text || rule.pretext || rule.subtext || 'No subtext.');
 
     const embed = new Discord.RichEmbed()
       .setAuthor(`${rule.index} [${rule.parent}] ${rule.name}`)
-      .setDescription(rule.text || rule.pretext || rule.subtext || 'No subtext.')
+      .setDescription(text)
       .setColor(rule.color);
 
     message.channel.send({ embed });
 
     return { };
+  }
+
+  private fixText(text: string) {
+
+    let match = null;
+
+    // replace nice faction icons
+    // tslint:disable-next-line:no-conditional-assignment
+    while (match = text.match(/`faction:([a-z]+):([0-9.]+)`/)) {
+      const [replace, faction, rule] = match;
+
+      const factEmoji = this.emojiService.getEmoji(`faction_${faction}`);
+      text = text.replace(replace, `${factEmoji} (\`${rule}\`)`);
+    }
+
+    // replace nice item icons
+    // tslint:disable-next-line:no-conditional-assignment
+    while (match = text.match(/`item:([a-z]+)`/)) {
+      const [replace, faction] = match;
+
+      const itemEmoji = this.emojiService.getEmoji(`item_${faction}`);
+      text = text.replace(replace, `${itemEmoji}`);
+    }
+
+    text = text.split('rule:').join('');
+
+    return text;
   }
 
 }
