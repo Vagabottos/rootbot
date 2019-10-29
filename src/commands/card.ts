@@ -23,7 +23,7 @@ const CHAR_COLORS = {
 export class CardCommand implements ICommand {
 
   help = 'Display a card!';
-  aliases = ['card', 'c'];
+  aliases = ['card', 'ca'];
 
   @Inject private cardService: CardService;
   @Inject private presenceService: PresenceService;
