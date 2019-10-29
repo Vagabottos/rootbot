@@ -22,7 +22,7 @@ const CHAR_COLORS = {
 @AutoWired
 export class CardCommand implements ICommand {
 
-  help = 'Display a card!';
+  help = 'Display a card! Do `-card Tinker` to search for the Tinker card.';
   aliases = ['card', 'ca'];
 
   @Inject private cardService: CardService;

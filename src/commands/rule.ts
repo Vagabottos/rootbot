@@ -10,7 +10,8 @@ import { EmojiService } from '../services/emoji';
 @AutoWired
 export class RuleCommand implements ICommand {
 
-  help = 'Display a rule!';
+  // tslint:disable-next-line
+  help = 'Display a rule! Do `-rule 9.2.5.2` to search for that specific rule, `-rule satchel` to search for rules that include satchel, or `-rule vagabond satchel` to pull up that specific rule.';
   aliases = ['rule', 'ru'];
 
   @Inject private rulesService: RulesService;
