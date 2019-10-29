@@ -7,8 +7,6 @@ import { EnvService } from './env';
 @AutoWired
 export class PresenceService extends BaseService {
 
-  @Inject private envService: EnvService;
-
   public async init(client) {
     super.init(client);
 

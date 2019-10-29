@@ -11,7 +11,7 @@ import { EmojiService } from '../services/emoji';
 export class RuleCommand implements ICommand {
 
   help = 'Display a rule!';
-  aliases = ['rule', 'r'];
+  aliases = ['rule', 'ru'];
 
   @Inject private rulesService: RulesService;
   @Inject private emojiService: EmojiService;
