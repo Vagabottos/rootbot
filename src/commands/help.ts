@@ -23,7 +23,7 @@ export class HelpCommand implements ICommand {
 **__All Commands__**
 
 ${this.helpService.allHelp.map(({ aliases, help }) => {
-  return `${aliases.map((x) => `${this.envService.commandPrefix}${x}`).join(', ')}\n${help}\n`;
+  return `__${aliases.map((x) => `\`${this.envService.commandPrefix}${x}\``).join(', ')}__\n${help}\n`;
 })
 .join('\n')}`
     );
