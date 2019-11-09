@@ -5,16 +5,16 @@ import { ICommand, ICommandArgs, ICommandResult } from '../interfaces';
 
 @Singleton
 @AutoWired
-export class ContributeCommand implements ICommand {
+export class LRBCommand implements ICommand {
 
-  help = 'Display the contributor information!';
-  aliases = ['contribute'];
+  help = 'Get a quick link to the non-official Living Rulebook!';
+  aliases = ['lrb'];
 
   async execute(cmdArgs: ICommandArgs): Promise<ICommandResult> {
     const { message } = cmdArgs;
 
     // tslint:disable-next-line
-    message.reply(`head on over to https://github.com/seiyria/root/blob/master/README.md#want-to-contribute-rulesfaq to find where the files are located and contribute!`);
+    message.reply(`https://root.seiyria.com`);
 
     return { };
   }
