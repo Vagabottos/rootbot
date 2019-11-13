@@ -6,3 +6,4 @@ export * from './leaders';
 export * from './lrb';
 export * from './postgame';
 export * from './rule';
+export * from './rules';
