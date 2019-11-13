@@ -1,5 +1,6 @@
 
 import { AutoWired, Singleton, Inject } from 'typescript-ioc';
+import * as Discord from 'discord.js';
 import * as FuzzySet from 'fuzzyset.js';
 import slugify from 'slugify';
 import axios from 'axios';
@@ -28,6 +29,13 @@ export class RulesService extends BaseService {
     if (!res) { return null; }
 
     return this.rulesHash[res[0][1]];
+  }
+
+  public getRules(name: string): IRule[] {
+    const res = this.set.get(name, '', 0.5);
+    if (!res) { return []; }
+
+    return res.map((x) => this.rulesHash[x[1]]);
   }
 
   public fixRuleText(text: string) {
@@ -61,6 +69,22 @@ export class RulesService extends BaseService {
     const baseString = `${index}-${slugify(title.toLowerCase())}`.split('"').join('');
     if (baseString.match(/^.+(\.)$/)) { return baseString.substring(0, baseString.length - 1); }
     return baseString;
+  }
+
+  public formatTitle(rule: IRule): string {
+    return `${rule.index} [${rule.parent}] ${rule.name}`;
+  }
+
+  public getRuleURL(rule: IRule): string {
+    return `https://root.seiyria.com/#${this.slugTitle(rule.index, rule.name)}`;
+  }
+
+  public createRuleEmbed(rule: IRule): Discord.RichEmbed {
+    return new Discord.RichEmbed()
+      .setTitle(this.formatTitle(rule))
+      .setURL(this.getRuleURL(rule))
+      .setDescription(this.fixRuleText(rule.text || rule.pretext || rule.subtext || 'No subtext.'))
+      .setColor(rule.color);
   }
 
   private async loadRules() {

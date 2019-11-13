@@ -24,15 +24,7 @@ export class RuleCommand implements ICommand {
       return;
     }
 
-    let text = this.rulesService.fixRuleText(rule.text || rule.pretext || rule.subtext || 'No subtext.');
-
-    const embed = new Discord.RichEmbed()
-      .setTitle(`${rule.index} [${rule.parent}] ${rule.name}`)
-      .setURL(`https://root.seiyria.com/#${this.rulesService.slugTitle(rule.index, rule.name)}`)
-      .setDescription(text)
-      .setColor(rule.color);
-
-    message.channel.send({ embed });
+    message.channel.send({ embed: this.rulesService.createRuleEmbed(rule) });
 
     return { };
   }
