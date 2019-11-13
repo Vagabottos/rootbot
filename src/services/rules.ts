@@ -1,15 +1,18 @@
 
-import { AutoWired, Singleton } from 'typescript-ioc';
-import * as YAML from 'yamljs';
+import { AutoWired, Singleton, Inject } from 'typescript-ioc';
 import * as FuzzySet from 'fuzzyset.js';
+import slugify from 'slugify';
 import axios from 'axios';
 
 import { BaseService } from '../base/BaseService';
 import { IRule } from '../interfaces';
+import { EmojiService } from './emoji';
 
 @Singleton
 @AutoWired
 export class RulesService extends BaseService {
+
+  @Inject private emojiService: EmojiService;
 
   private rulesHash: { [key: string]: IRule } = {};
   private set: FuzzySet = new FuzzySet();
@@ -25,6 +28,39 @@ export class RulesService extends BaseService {
     if (!res) { return null; }
 
     return this.rulesHash[res[0][1]];
+  }
+
+  public fixRuleText(text: string) {
+
+    let match = null;
+
+    // replace nice faction icons
+    // tslint:disable-next-line:no-conditional-assignment
+    while (match = text.match(/`faction:([a-z]+):([0-9.]+)`/)) {
+      const [replace, faction, rule] = match;
+
+      const factEmoji = this.emojiService.getEmoji(`faction_${faction}`);
+      text = text.replace(replace, `${factEmoji} (\`${rule}\`)`);
+    }
+
+    // replace nice item icons
+    // tslint:disable-next-line:no-conditional-assignment
+    while (match = text.match(/`item:([a-z]+)`/)) {
+      const [replace, faction] = match;
+
+      const itemEmoji = this.emojiService.getEmoji(`item_${faction}`);
+      text = text.replace(replace, `${itemEmoji}`);
+    }
+
+    text = text.split('rule:').join('');
+
+    return text;
+  }
+
+  public slugTitle(index: string, title: string): string {
+    const baseString = `${index}-${slugify(title.toLowerCase())}`.split('"').join('');
+    if (baseString.match(/^.+(\.)$/)) { return baseString.substring(0, baseString.length - 1); }
+    return baseString;
   }
 
   private async loadRules() {
