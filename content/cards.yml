@@ -3,7 +3,7 @@
 - name: "Builder"
   owner: eyrie
   image: bird-builder
-  text: "Ignore your Didain for Trade when you craft."
+  text: "Ignore your Disain for Trade when you craft."
   subtext: "Recruit & Move"
 
 - name: "Charismatic"
@@ -539,7 +539,7 @@
   craft:
     cost:
       - mouse
-  text: "Once in Daylight, may exhaust an item in your Crafted ITems box to take a move or initiate battle."
+  text: "Once in Daylight, may exhaust an item in your Crafted Items box to take a move or initiate battle."
   
 - name: "Master Engravers"
   type: mouse
