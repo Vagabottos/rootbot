@@ -107,6 +107,24 @@
   text: "Instigate: Initiate a battle in your clearing. You choose both attacker and defender, and you remove pieces for both."
   subtext: "Starting Items: <emoji>:item_coin <emoji>:item_torch <emoji>:item_boot"
 
+- name: Adventurer
+  owner: vagabond
+  image: vagabond-adventurer
+  text: "Improvise: Once per turn, you may damage any unexhausted item to treat it as any other item in order to complete a quest."
+  subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_hammer"
+
+- name: Harrier
+  owner: vagabond
+  image: vagabond-harrier
+  text: "Glide: Move to any clearing (even Hostile) on the map without exhausting any <emoji>:item_boot."
+  subtext: "Starting Items: <emoji>:item_coin <emoji>:item_torch <emoji>:item_crossbow <emoji>:item_sword"
+
+- name: Ronin
+  owner: vagabond
+  image: vagabond-ronin
+  text: "Swift Strike: After rolling in battle, you may exhaust a sword to deal an extra hit."
+  subtext: "Starting Items: <emoji>:item_boot <emoji>:item_boot <emoji>:item_torch <emoji>:item_sword"
+
 # VAGABOND QUEST CARDS
 - name: "Errand in a rabbit clearing"
   owner: vagabond
