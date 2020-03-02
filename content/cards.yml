@@ -301,7 +301,7 @@
 
 - name: "Arms Trader"
   type: bird
-  image: card-armstraders
+  image: card-armstrader
   craft:
     cost:
       - fox
@@ -570,7 +570,7 @@
   
 - name: "Mouse-in-a-sack"
   type: mouse
-  image: card-mouseinsasack
+  image: card-mouseinasack
   craft:
     cost:
       - mouse
