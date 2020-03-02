@@ -25,3 +25,7 @@ Put these values in a [`.env`](https://www.npmjs.com/package/dotenv) file.
 ## Development
 
 * `npm run start:dev`
+
+### Building
+
+You don't need to build the app to deploy it. Just use ts-node, it's not that intensive. If you want to build the webpage, run `npm run build:webpage:root`.
