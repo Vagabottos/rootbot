@@ -443,19 +443,19 @@
 - name: "Dominance (Bunny)"
   type: bunny
   image: card-dominancebunny
-  text: You win the game if you rule two opposite corners at the start of your Birdsong.
+  text: You win the game if you rule three bunny clearings at the start of your Birdsong.
   subtext: If you have at least 10 points, play during Daylight and remove your score marker.
 
 - name: "Dominance (Fox)"
   type: fox
   image: card-dominancefox
-  text: You win the game if you rule two opposite corners at the start of your Birdsong.
+  text: You win the game if you rule three fox clearings at the start of your Birdsong.
   subtext: If you have at least 10 points, play during Daylight and remove your score marker.
 
 - name: "Dominance (Mouse)"
   type: mouse
   image: card-dominancemouse
-  text: You win the game if you rule two opposite corners at the start of your Birdsong.
+  text: You win the game if you rule three mouse clearings at the start of your Birdsong.
   subtext: If you have at least 10 points, play during Daylight and remove your score marker.
   
 - name: "Eyrie Emigre"
