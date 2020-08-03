@@ -8,3 +8,4 @@ export * from './postgame';
 export * from './rootcards';
 export * from './rule';
 export * from './rules';
+export * from './seiyria';

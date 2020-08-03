@@ -39,18 +39,18 @@ export class CardCommand implements ICommand {
     }
 
     const attachFiles = [
-      `./content/cards/${card.image}.png`
+      `./content/root/cards/${card.image}.png`
     ];
 
     let authorImage = null;
 
     if (card.owner) {
-      attachFiles.push(`./content/symbols/faction-${card.owner}.png`);
+      attachFiles.push(`./content/root/symbols/faction-${card.owner}.png`);
       authorImage = `attachment://faction-${card.owner}.png`;
     }
 
     if (card.type) {
-      attachFiles.push(`./content/symbols/card-${card.type}.png`);
+      attachFiles.push(`./content/root/symbols/card-${card.type}.png`);
       authorImage = `attachment://card-${card.type}.png`;
     }
 

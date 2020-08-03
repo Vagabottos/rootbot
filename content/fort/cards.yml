@@ -1,0 +1,157 @@
+
+# Books
+- name: Bones
+  image: book-bones
+
+- name: Noodle Twins
+  image: bookbook-noodletwins
+  
+- name: Captain
+  image: book-captain
+  
+- name: Chef
+  image: book-chef
+  
+- name: Doc
+  image: book-doc
+  
+- name: Einstein
+  image: book-einstein
+  
+- name: Patch
+  image: book-patch
+  
+# Crowns
+- name: Ghost
+  image: crown-ghost
+
+- name: Golden Boy
+  image: crown-goldenboy
+
+- name: Prince
+  image: crown-prince
+
+- name: Tiny
+  image: crown-tiny
+
+# Glue
+- name: Bitsy
+  image: glue-Bitsy
+
+- name: Doodles
+  image: glue-doodles
+
+- name: Dot
+  image: glue-dot
+
+- name: Giggles
+  image: glue-giggles
+
+- name: Icky & Sticky
+  image: glueglue-ickysticky
+
+- name: Kitty
+  image: glue-kitty
+
+- name: Penny
+  image: glue-penny
+
+- name: Sweet Pea
+  image: glue-sweetpea
+
+- name: Tink
+  image: glue-tink
+
+# Shovel
+- name: Bug
+  image: shovel-bug
+
+- name: Lefty
+  image: shovel-lefty
+
+- name: Moose
+  image: shovel-moose
+
+- name: Rusty
+  image: shovel-rusty
+
+- name: Sarge
+  image: shovel-sarge
+
+- name: Scout
+  image: shovel-scout
+
+- name: Moles
+  image: shovelshovel-moles
+
+- name: Wart
+  image: shovel-wart
+
+- name: Worm
+  image: shovel-worm
+
+# Skateboards
+- name: Ant
+  image: skate-ant
+
+- name: Zip
+  image: skate-zip
+
+- name: Dash
+  image: skate-dash
+
+- name: Munch
+  image: skate-munch
+
+- name: Rocket Bros
+  image: skateskate-rocketbros
+
+- name: Skids
+  image: skate-skids
+
+- name: Spike
+  image: skate-spike
+
+- name: Thunder
+  image: skate-thunder
+
+# Squirtgun
+- name: Baby Face
+  image: squirt-babyface
+
+- name: Blitz
+  image: squirt-blitz
+
+- name: Crash
+  image: squirt-crash
+
+- name: Lil Boss
+  image: squirt-lilboss
+
+- name: Punky
+  image: squirt-punky
+
+- name: The Scrappers
+  image: squirtsquirt-scrappers
+
+- name: Sparky
+  image: squirt-sparky
+
+# Wild
+- name: Ace
+  image: wild-ace
+
+- name: Blades
+  image: wild-blades
+
+- name: Bud
+  image: wild-bud
+
+- name: Puddin
+  image: wildcrown-puddin
+
+- name: Flipper
+  image: wild-flipper
+
+- name: Smoke
+  image: wild-smoke
