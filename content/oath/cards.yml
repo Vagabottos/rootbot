@@ -1,0 +1,774 @@
+
+- name: Abandoned Temple
+  image: edifice-abandonedtemple
+
+- name: Ancient Forge
+  image: edifice-ancientforge
+
+- name: Bandit Rampart
+  image: edifice-banditrampart
+
+- name: Broken Forge
+  image: edifice-brokenforge
+
+- name: Fallen Spire
+  image: edifice-fallenspire
+
+- name: Festival District
+  image: edifice-festivaldistrict
+
+- name: Forest Temple
+  image: edifice-foresttemple
+
+- name: Great Spire
+  image: edifice-greatspire
+
+- name: Hall of Debate
+  image: edifice-hallofdebate
+
+- name: Hall of Liberation
+  image: edifice-hallofliberation
+
+- name: Sprawling Rampart
+  image: edifice-sprawlingrampart
+
+- name: Squalid District
+  image: edifice-squaliddistrict
+
+- name: Ancient City
+  image: location-ancientcity
+
+- name: Barren Coast
+  image: location-barrencoast
+
+- name: Buried Giant
+  image: location-buriedgiant
+
+- name: Charming Valley
+  image: location-charmingvalley
+
+- name: Deep Woods
+  image: location-deepwoods
+
+- name: Drowned City
+  image: location-drownedcity
+
+- name: Fertile Valley
+  image: location-fertilevalley
+
+- name: Great Slum
+  image: location-greatslum
+
+- name: Imperial Seat
+  image: location-imperialseat
+
+- name: Lush Coast
+  image: location-lushcoast
+
+- name: Marshes
+  image: location-marshes
+
+- name: Mine
+  image: location-mine
+
+- name: Mountain
+  image: location-mountain
+
+- name: Narrow Pass
+  image: location-narrowpass
+
+- name: Plains
+  image: location-plains
+
+- name: River
+  image: location-river
+
+- name: Rocky Coast
+  image: location-rockycoast
+
+- name: Salt Flats
+  image: location-saltflats
+
+- name: Shrouded Wood
+  image: location-shroudedwood
+
+- name: Standing Stones
+  image: location-standingstones
+
+- name: Steppe
+  image: location-steppe
+
+- name: The Hidden Place
+  image: location-thehiddenplace
+
+- name: Wastes
+  image: location-wastes
+
+- name: Bandit Crown
+  image: relic-banditcrown
+
+- name: Banner of Devotion
+  image: relic-bannerofdevotion
+
+- name: Book of Records
+  image: relic-bookofrecords
+
+- name: Brass Horse
+  image: relic-brasshorse
+
+- name: Circlet of Command
+  image: relic-circletofcommand
+
+- name: Cracked Horn
+  image: relic-crackedhorn
+
+- name: Cup of Plenty
+  image: relic-cupofplenty
+
+- name: Cursed Cauldron
+  image: relic-cursedcauldron
+
+- name: Dowsing Sticks
+  image: relic-dowsingsticks
+
+- name: Dragonskin Drum
+  image: relic-dragonskindrum
+
+- name: Grand Mask
+  image: relic-grandmask
+
+- name: Horned Mask
+  image: relic-hornedmask
+
+- name: Map
+  image: relic-map
+
+- name: Obsidian Cage
+  image: relic-obsidiancage
+
+- name: Oracular Pig
+  image: relic-oracularpig
+
+- name: Proof of Nobility
+  image: relic-proofofnobility
+
+- name: Skeleton Key
+  image: relic-skeletonkey
+
+- name: Sticky Fire
+  image: relic-stickyfire
+
+- name: Truthful Harp
+  image: relic-truthfulharp
+
+- name: Whistle
+  image: relic-whistle
+
+- name: Vision of Conquest
+  image: vision-conquest
+
+- name: Conspiracy
+  image: vision-conspiracy
+
+- name: Vision of Faith
+  image: vision-faith
+
+- name: Vision of Rebellion
+  image: vision-rebellion
+
+- name: Vision of Sanctuary
+  image: vision-sanctuary
+
+- name: Acting Troupe
+  image: world-arcane-actingtroupe
+
+- name: Alchemist
+  image: world-arcane-alchemist
+
+- name: Augury
+  image: world-arcane-augury
+
+- name: Bewitch
+  image: world-arcane-bewitch
+
+- name: Billowing Fog
+  image: world-arcane-billowingfog
+
+- name: Blood Pact
+  image: world-arcane-bloodpact
+
+- name: Cracking Ground
+  image: world-arcane-crackingground
+
+- name: Dazzle
+  image: world-arcane-dazzle
+
+- name: Dream Thief
+  image: world-arcane-dreamthief
+
+- name: Fire Talkers
+  image: world-arcane-firetalkers
+
+- name: Forgotten Vault
+  image: world-arcane-forgottenvault
+
+- name: Gleaming Armor
+  image: world-arcane-gleamingarmor
+
+- name: Initiation Rite
+  image: world-arcane-initiationrite
+
+- name: Inquisitor
+  image: world-arcane-inquisitor
+
+- name: Jinx
+  image: world-arcane-jinx
+
+- name: Kindred Warriors
+  image: world-arcane-kindredwarriors
+
+- name: Magician's Code
+  image: world-arcane-magicianscode
+
+- name: Map Library
+  image: world-arcane-maplibrary
+
+- name: Master of Disguise
+  image: world-arcane-masterofdisguise
+
+- name: Observatory
+  image: world-arcane-observatory
+
+- name: Plague Engines
+  image: world-arcane-plagueengines
+
+- name: Portal
+  image: world-arcane-portal
+
+- name: Revelation
+  image: world-arcane-revelation
+
+- name: Rusting Bay
+  image: world-arcane-rustingbay
+
+- name: Sealing Ward
+  image: world-arcane-sealingward
+
+- name: Secret Signal
+  image: world-arcane-secretsignal
+
+- name: Spirit Snare
+  image: world-arcane-spiritsnare
+
+- name: Taming Charm
+  image: world-arcane-tamingcharm
+
+- name: Terror Spells
+  image: world-arcane-terrorspells
+
+- name: Tutor
+  image: world-arcane-tutor
+
+- name: Vow of Silence
+  image: world-arcane-vowofsilence
+
+- name: Witch's Bargain
+  image: world-arcane-witchsbargain
+
+- name: Wizard School
+  image: world-arcane-wizardschool
+
+- name: Animal Host
+  image: world-beast-animalhost
+
+- name: Animal Playmate
+  image: world-beast-animalplaymate
+
+- name: Birdsong
+  image: world-beast-birdsong
+
+- name: Bracken
+  image: world-beast-bracken
+
+- name: Errand Boy
+  image: world-beast-errandboy
+
+- name: Fae Merchant
+  image: world-beast-faemerchant
+
+- name: Forest Council
+  image: world-beast-forestcouncil
+
+- name: Forest Paths
+  image: world-beast-forestpaths
+
+- name: Giant Python
+  image: world-beast-giantpython
+
+- name: Grasping Vines
+  image: world-beast-graspingvines
+
+- name: Insect Swarm
+  image: world-beast-insectswarm
+
+- name: Long Lost Heir
+  image: world-beast-longlostheir
+
+- name: Marsh Spirit
+  image: world-beast-marshspirit
+
+- name: Memory of Nature
+  image: world-beast-memoryofnature
+
+- name: Mushrooms
+  image: world-beast-mushrooms
+
+- name: Nature Worship
+  image: world-beast-natureworship
+
+- name: New Growth
+  image: world-beast-newgrowth
+
+- name: Pied Piper
+  image: world-beast-piedpiper
+
+- name: Rangers
+  image: world-beast-rangers
+
+- name: Roving Terror
+  image: world-beast-rovingterror
+
+- name: Second Chance
+  image: world-beast-secondchance
+
+- name: Small Friends
+  image: world-beast-smallfriends
+
+- name: The Old Oak
+  image: world-beast-theoldoak
+
+- name: Threatening Roar
+  image: world-beast-threateningroar
+
+- name: True Names
+  image: world-beast-truenames
+
+- name: Vow of Beastkin
+  image: world-beast-vowofbeastkin
+
+- name: Vow of Poverty
+  image: world-beast-vowofpoverty
+
+- name: Vow of Union
+  image: world-beast-vowofunion
+
+- name: Walled Garden
+  image: world-beast-walledgarden
+
+- name: War Tortoise
+  image: world-beast-wartortoise
+
+- name: Wild Allies
+  image: world-beast-wildallies
+
+- name: Wild Cry
+  image: world-beast-wildcry
+
+- name: Wolves
+  image: world-beast-wolves
+
+- name: A Small Favor
+  image: world-discord-asmallfavor
+
+- name: Assassin
+  image: world-discord-assassin
+
+- name: Bandit King
+  image: world-discord-banditking
+
+- name: Beast Tamer
+  image: world-discord-beasttamer
+
+- name: Blackmail
+  image: world-discord-blackmail
+
+- name: Boiling Lake
+  image: world-discord-boilinglake
+
+- name: Book Burning
+  image: world-discord-bookburning
+
+- name: Charlatans
+  image: world-discord-charlatans
+
+- name: Cracked Sage
+  image: world-discord-crackedsage
+
+- name: Cult of Chaos
+  image: world-discord-cultofchaos
+
+- name: Disgraced Captain
+  image: world-discord-disgracedcaptain
+
+- name: Dissent
+  image: world-discord-dissent
+
+- name: Downtrodden
+  image: world-discord-downtrodden
+
+- name: Enchantress
+  image: world-discord-enchantress
+
+- name: False Prophet
+  image: world-discord-falseprophet
+
+- name: Gambling Hall
+  image: world-discord-gamblinghall
+
+- name: Gossip
+  image: world-discord-gossip
+
+- name: Insomnia
+  image: world-discord-insomnia
+
+- name: Key to the City
+  image: world-discord-keytothecity
+
+- name: Mercenaries
+  image: world-discord-mercenaries
+
+- name: Naysayers
+  image: world-discord-naysayers
+
+- name: Relic Thief
+  image: world-discord-relicthief
+
+- name: Riots
+  image: world-discord-riots
+
+- name: Royal Ambitions
+  image: world-discord-royalambitions
+
+- name: Salt the Earth
+  image: world-discord-salttheearth
+
+- name: Scryer
+  image: world-discord-scryer
+
+- name: Second Wind
+  image: world-discord-secondwind
+
+- name: Silver Tongue
+  image: world-discord-silvertongue
+
+- name: Slander
+  image: world-discord-slander
+
+- name: Sleight of Hand
+  image: world-discord-sleightofhand
+
+- name: Surprise Attack
+  image: world-discord-surpriseattack
+
+- name: Vow of Renewal
+  image: world-discord-vowofrenewal
+
+- name: Zealots
+  image: world-discord-zealots
+
+- name: Armed Mob
+  image: world-hearth-armedmob
+
+- name: A Round of Ale
+  image: world-hearth-aroundofale
+
+- name: Awaited Return
+  image: world-hearth-awaitedreturn
+
+- name: Ballot Box
+  image: world-hearth-ballotbox
+
+- name: Book Binders
+  image: world-hearth-bookbinders
+
+- name: Charming Friend
+  image: world-hearth-charmingfriend
+
+- name: Crop Rotation
+  image: world-hearth-croprotation
+
+- name: Deed Writer
+  image: world-hearth-deedwriter
+
+- name: Extra Provisions
+  image: world-hearth-extraprovisions
+
+- name: Fabled Feast
+  image: world-hearth-fabledfeast
+
+- name: Family Heirloom
+  image: world-hearth-familyheirloom
+
+- name: Hearts and Minds
+  image: world-hearth-heartsandminds
+
+- name: Herald
+  image: world-hearth-herald
+
+- name: Homesteaders
+  image: world-hearth-homesteaders
+
+- name: Hospital
+  image: world-hearth-hospital
+
+- name: Land Warden
+  image: world-hearth-landwarden
+
+- name: Levelers
+  image: world-hearth-levelers
+
+- name: Marriage
+  image: world-hearth-marriage
+
+- name: Memory of Home
+  image: world-hearth-memoryofhome
+
+- name: News From Afar
+  image: world-hearth-newsfromafar
+
+- name: Relic Breaker
+  image: world-hearth-relicbreaker
+
+- name: Rowdy Pub
+  image: world-hearth-rowdypub
+
+- name: Saddlemakers
+  image: world-hearth-saddlemakers
+
+- name: Salad Days
+  image: world-hearth-saladdays
+
+- name: Storyteller
+  image: world-hearth-storyteller
+
+- name: Tavern Songs
+  image: world-hearth-tavernsongs
+
+- name: The Great Levy
+  image: world-hearth-thegreatlevy
+
+- name: Tinker's Fair
+  image: world-hearth-tinkersfair
+
+- name: Traveling Doctor
+  image: world-hearth-travelingdoctor
+
+- name: Village Constable
+  image: world-hearth-villageconstable
+
+- name: Vow of Peace
+  image: world-hearth-vowofpeace
+
+- name: Wayside Inn
+  image: world-hearth-waysideinn
+
+- name: Welcoming Party
+  image: world-hearth-welcomingparty
+
+- name: A Fast Steed
+  image: world-nomad-afaststeed
+
+- name: Ancient Binding
+  image: world-nomad-ancientbinding
+
+- name: Ancient Bloodline
+  image: world-nomad-ancientbloodline
+
+- name: Ancient Pact
+  image: world-nomad-ancientpact
+
+- name: Convoys
+  image: world-nomad-convoys
+
+- name: Elders
+  image: world-nomad-elders
+
+- name: Faithful Friend
+  image: world-nomad-faithfulfriend
+
+- name: Family Wagon
+  image: world-nomad-familywagon
+
+- name: Great Crusade
+  image: world-nomad-greatcrusade
+
+- name: Great Herd
+  image: world-nomad-greatherd
+
+- name: Horse Archers
+  image: world-nomad-horsearchers
+
+- name: Hospitality
+  image: world-nomad-hospitality
+
+- name: Lancers
+  image: world-nomad-lancers
+
+- name: Lost Tongue
+  image: world-nomad-losttongue
+
+- name: Mountain Giant
+  image: world-nomad-mountaingiant
+
+- name: Mounted Patrol
+  image: world-nomad-mountedpatrol
+
+- name: Oracle
+  image: world-nomad-oracle
+
+- name: Pilgrimage
+  image: world-nomad-pilgrimage
+
+- name: Rainboots
+  image: world-nomad-rainboots
+
+- name: Relic Worship
+  image: world-nomad-relicworship
+
+- name: Resettle
+  image: world-nomad-resettle
+
+- name: Rival Khan
+  image: world-nomad-rivalkhan
+
+- name: Sacred Ground
+  image: world-nomad-sacredground
+
+- name: Special Envoy
+  image: world-nomad-specialenvoy
+
+- name: Spell Breaker
+  image: world-nomad-spellbreaker
+
+- name: Storm Caller
+  image: world-nomad-stormcaller
+
+- name: Tents
+  image: world-nomad-tents
+
+- name: The Gathering
+  image: world-nomad-thegathering
+
+- name: Twin Brother
+  image: world-nomad-twinbrother
+
+- name: Vow of Kinship
+  image: world-nomad-vowofkinship
+
+- name: Warning Signals
+  image: world-nomad-warningsignals
+
+- name: Way Station
+  image: world-nomad-waystation
+
+- name: Wild Mounts
+  image: world-nomad-wildmounts
+
+- name: Battle Honors
+  image: world-order-battlehonors
+
+- name: Bear Traps
+  image: world-order-beartraps
+
+- name: Captains
+  image: world-order-captains
+
+- name: Code of Honor
+  image: world-order-codeofhonor
+
+- name: Council Seat
+  image: world-order-councilseat
+
+- name: Curfew
+  image: world-order-curfew
+
+- name: Encirclement
+  image: world-order-encirclement
+
+- name: Field Promotion
+  image: world-order-fieldpromotion
+
+- name: Forced Labor
+  image: world-order-forcedlabor
+
+- name: Garrison
+  image: world-order-garrison
+
+- name: Hunting Party
+  image: world-order-huntingparty
+
+- name: Keep
+  image: world-order-keep
+
+- name: Knights Errant
+  image: world-order-knightserrant
+
+- name: Longbows
+  image: world-order-longbows
+
+- name: Martial Culture
+  image: world-order-martialculture
+
+- name: Messenger
+  image: world-order-messenger
+
+- name: Military Parade
+  image: world-order-militaryparade
+
+- name: Outriders
+  image: world-order-outriders
+
+- name: Palanquin
+  image: world-order-palanquin
+
+- name: Peace Envoy
+  image: world-order-peaceenvoy
+
+- name: Pressgangs
+  image: world-order-pressgangs
+
+- name: Relic Hunter
+  image: world-order-relichunter
+
+- name: Royal Tax
+  image: world-order-royaltax
+
+- name: Scouts
+  image: world-order-scouts
+
+- name: Secret Police
+  image: world-order-secretpolice
+
+- name: Shield Wall
+  image: world-order-shieldwall
+
+- name: Siege Engines
+  image: world-order-siegeengines
+
+- name: Specialist
+  image: world-order-specialist
+
+- name: Toll Roads
+  image: world-order-tollroads
+
+- name: Tome Guardians
+  image: world-order-tomeguardians
+
+- name: Tyrant
+  image: world-order-tyrant
+
+- name: Vow of Obedience
+  image: world-order-vowofobedience
+
+- name: Wrestlers
+  image: world-order-wrestlers
