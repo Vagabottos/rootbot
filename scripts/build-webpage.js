@@ -22,7 +22,8 @@ const allCardInfos = relevantInfo.map(x => {
   `
 });
 
-const formattedTemplate = template.split('<fillmein>').join(allCardInfos.join(''));
+const title = style.slice(0, 1).toUpperCase() + style.slice(1);
+const formattedTemplate = template.split('<fillmein>').join(allCardInfos.join('')).split('<addgamehere>').join(title);
 
 fs.writeFileSync('dist/index.html', formattedTemplate);
 fs.copySync(`content/${style}/cards`, 'dist/cards');
