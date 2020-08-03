@@ -27,7 +27,7 @@ export class CardService extends BaseService {
   }
 
   private loadCards() {
-    const cards = YAML.load('content/cards.yml');
+    const cards = YAML.load('content/root/cards.yml');
 
     cards.forEach((card) => {
       this.cardsByName[card.name] = card;
