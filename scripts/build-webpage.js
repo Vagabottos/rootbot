@@ -17,7 +17,7 @@ const allCardInfos = relevantInfo.map(x => {
   return `
   <div class="img-container">
     <div class="img-text">${x.name}</div>
-    <img class="lazy similar" src="placeholder.png" data-src="cards/${x.image}.png" />
+    <img class="lazy similar" loading="lazy" src="placeholder.png" data-src="cards/${x.image}.png" />
   </div>
   `
 });
