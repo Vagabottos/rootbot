@@ -11,21 +11,16 @@ fs.mkdirSync('dist');
 const template = fs.readFileSync('scripts/template.html', 'UTF-8');
 const allCards = YAML.load(`content/${style}/cards.yml`);
 
-const relevantInfo = allCards.map(x => ({ name: x.name, image: x.image }));
-
-const allCardInfos = relevantInfo.map(x => {
-  return `
-  <div class="img-container">
-    <div class="img-text">${x.name}</div>
-    <img class="lazy similar" loading="lazy" src="placeholder.png" data-src="cards/${x.image}.png" />
-  </div>
-  `
-});
+const relevantInfo = allCards.map(x => ({ name: x.name, image: x.image, set: x.set }));
 
 const title = style.slice(0, 1).toUpperCase() + style.slice(1);
 const formattedTemplate = template
-  .split('<fillmein>').join(allCardInfos.join(''))
-  .split('<addgamescripthere>').join(`<script>window.__gamename = '${title}'</script>`)
+  .split('<addgamescripthere>').join(`
+  <script>
+    window.__gamename = '${title}';
+    window.__gamedata = ${JSON.stringify(relevantInfo)};
+  </script>
+  `)
   .split('<addgamehere>').join(title);
 
 fs.writeFileSync('dist/index.html', formattedTemplate);

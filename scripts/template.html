@@ -1,25 +1,45 @@
-
+<!doctype html>
 <html>
   <head>
 
     <title><addgamehere> Cards</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap@4.1.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <addgamescripthere>
 
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <a class="navbar-brand" href="#"><addgamehere> Cards</a>
-    </nav>
+    <div id="app">
+      <nav class="navbar navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#"><addgamehere> Cards</a>
 
-    <div class="card-container">
-      <fillmein>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <b-dropdown :text="currentSet || 'Card Set'" right>
+              <b-dropdown-item href="#" @click="changeSet('')">All</b-dropdown-item>
+              <b-dropdown-item href="#" v-for="set in sets" @click="changeSet(set)" :key="set">{{ set }}</b-dropdown-item>
+            </b-dropdown>
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="card-container">
+        <div class="img-container" v-for="card in cards" v-show="!card.hide" :key="card.name">
+          <div class="img-text">{{ card.name }}</div>
+          <img class="lazy similar" loading="lazy" src="placeholder.png" :data-src="'cards/' + card.image + '.png'" />
+        </div>
+      </div>
     </div>
 
+    <!-- First script is dev mode, uncomment to see errors -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.js"></script> -->
+    <script src="//unpkg.com/vue@2.6/dist/vue.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
