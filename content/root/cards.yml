@@ -42,7 +42,7 @@
   image: mole-banker
   text: "Spend any number of cards of the same suit to score equal VP."
   set: 
-    - Base Game
+    - Underworld
     - Moles
 
 - name: "Baron of Dirt"
@@ -50,7 +50,7 @@
   image: mole-baronofdirt
   text: "Score +1 VP per market on the map."
   set: 
-    - Base Game
+    - Underworld
     - Moles
 
 - name: "Brigadier"
@@ -58,7 +58,7 @@
   image: mole-brigadier
   text: "Take up to two moves OR initiate up to two battles."
   set: 
-    - Base Game
+    - Underworld
     - Moles
 
 - name: "Captain"
@@ -66,7 +66,7 @@
   image: mole-captain
   text: "Initiate a battle."
   set: 
-    - Base Game
+    - Underworld
     - Moles
 
 - name: "Duchess of Mud"
@@ -74,7 +74,7 @@
   image: mole-duchessofmud
   text: "Score +2 VP if all tunnels are on the map."
   set: 
-    - Base Game
+    - Underworld
     - Moles
 
 - name: "Earl of Stone"
@@ -82,7 +82,7 @@
   image: mole-earlofstone
   text: "Score +1 VP per citadel on the map."
   set: 
-    - Base Game
+    - Underworld
     - Moles
 
 - name: "Foremole"
@@ -90,7 +90,7 @@
   image: mole-foremole
   text: "Spend a card to place a building in any clearing you rule."
   set: 
-    - Base Game
+    - Underworld
     - Moles
 
 - name: "Marshal"
@@ -98,7 +98,7 @@
   image: mole-marshal
   text: "Take a move."
   set: 
-    - Base Game
+    - Underworld
     - Moles
 
 - name: "Mayor"
@@ -106,7 +106,7 @@
   image: mole-mayor
   text: "Take the action of any swayed noble of squire."
   set: 
-    - Base Game
+    - Underworld
     - Moles
 
 # VAGABOND OWNED CARDS
@@ -170,7 +170,7 @@
   text: "Improvise: Once per turn, you may damage any unexhausted item to treat it as any other item in order to complete a quest."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_hammer"
   set: 
-    - Base Game
+    - Underworld
     - Vagabond
 
 - name: Harrier
@@ -179,7 +179,7 @@
   text: "Glide: Move to any clearing (even Hostile) on the map without exhausting any <emoji>:item_boot."
   subtext: "Starting Items: <emoji>:item_coin <emoji>:item_torch <emoji>:item_crossbow <emoji>:item_sword"
   set: 
-    - Base Game
+    - Underworld
     - Vagabond
 
 - name: Ronin
@@ -188,7 +188,7 @@
   text: "Swift Strike: After rolling in battle, you may exhaust a sword to deal an extra hit."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_boot <emoji>:item_torch <emoji>:item_sword"
   set: 
-    - Base Game
+    - Underworld
     - Vagabond
 
 # VAGABOND QUEST CARDS
@@ -729,9 +729,9 @@
     - Standard Deck
     - Exiles & Partisans Deck
   
-- name: "Fox Partisans Deck"
+- name: "Fox Partisans"
   type: fox
-  image: card-foxPartisans Deck
+  image: card-fox-partisans
   craft:
     cost:
       - fox
@@ -811,9 +811,9 @@
     - Standard Deck
     - Exiles & Partisans Deck
   
-- name: "Mouse Partisans Deck"
+- name: "Mouse Partisans"
   type: mouse
-  image: card-mousePartisans Deck
+  image: card-mouse-partisans
   craft:
     cost:
       - mouse
@@ -858,9 +858,9 @@
     - Standard Deck
     - Exiles & Partisans Deck
   
-- name: "Rabbit Partisans Deck"
+- name: "Rabbit Partisans"
   type: bunny
-  image: card-rabbitPartisans Deck
+  image: card-rabbit-partisans
   craft:
     cost:
       - bunny
