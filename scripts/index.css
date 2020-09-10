@@ -25,6 +25,8 @@
 }
 
 img.similar {
+  min-height: 300px;
+  min-width: 200px;
   width: 200px;
   height: 300px;
 }
