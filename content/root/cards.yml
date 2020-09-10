@@ -5,70 +5,109 @@
   image: bird-builder
   text: "Ignore your Disain for Trade when you craft."
   subtext: "Recruit & Move"
+  set: 
+    - Base Game
+    - Eyrie
 
 - name: "Charismatic"
   owner: eyrie
   image: bird-charismatic
   text: "You place two warriors, not one, each time you recruit."
   subtext: "Recruit & Battle"
+  set: 
+    - Base Game
+    - Eyrie
 
 - name: "Commander"
   owner: eyrie
   image: bird-commander
   text: "As attacker in battle, you deal an extra hit."
   subtext: "Move & Battle"
+  set: 
+    - Base Game
+    - Eyrie
 
 - name: "Despot"
   owner: eyrie
   image: bird-despot
   text: "Score a point if you remove at least one building or token in battle."
   subtext: "Move & Build"
+  set: 
+    - Base Game
+    - Eyrie
 
 # MOLE OWNED CARDS
 - name: "Banker"
   owner: duchy
   image: mole-banker
   text: "Spend any number of cards of the same suit to score equal VP."
+  set: 
+    - Base Game
+    - Moles
 
 - name: "Baron of Dirt"
   owner: duchy
   image: mole-baronofdirt
   text: "Score +1 VP per market on the map."
+  set: 
+    - Base Game
+    - Moles
 
 - name: "Brigadier"
   owner: duchy
   image: mole-brigadier
   text: "Take up to two moves OR initiate up to two battles."
+  set: 
+    - Base Game
+    - Moles
 
 - name: "Captain"
   owner: duchy
   image: mole-captain
   text: "Initiate a battle."
+  set: 
+    - Base Game
+    - Moles
 
 - name: "Duchess of Mud"
   owner: duchy
   image: mole-duchessofmud
   text: "Score +2 VP if all tunnels are on the map."
+  set: 
+    - Base Game
+    - Moles
 
 - name: "Earl of Stone"
   owner: duchy
   image: mole-earlofstone
   text: "Score +1 VP per citadel on the map."
+  set: 
+    - Base Game
+    - Moles
 
 - name: "Foremole"
   owner: duchy
   image: mole-foremole
   text: "Spend a card to place a building in any clearing you rule."
+  set: 
+    - Base Game
+    - Moles
 
 - name: "Marshal"
   owner: duchy
   image: mole-marshal
   text: "Take a move."
+  set: 
+    - Base Game
+    - Moles
 
 - name: "Mayor"
   owner: duchy
   image: mole-mayor
   text: "Take the action of any swayed noble of squire."
+  set: 
+    - Base Game
+    - Moles
 
 # VAGABOND OWNED CARDS
 - name: Arbiter
@@ -76,59 +115,89 @@
   image: vagabond-arbiter
   text: "Protector: Before rolling in battle, the defender may enlist the Arbiter if he is in the battle's clearing. The Arbiter scores one point and adds undamaged swords to the defender's maximum rolled hits."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_sword <emoji>:item_sword"
+  set: 
+    - Base Game
+    - Vagabond
 
 - name: Ranger
   owner: vagabond
   image: vagabond-ranger
   text: "Hideout: Repair three items. Then, immediately end daylight."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_crossbow <emoji>:item_sword"
+  set: 
+    - Base Game
+    - Vagabond
 
 - name: Scoundrel
   owner: vagabond
   image: vagabond-scoundrel
   text: "Scorched Earth: Place this torch in your clearing. Remove all enemy pieces there. Pieces can no longer be placed in or moved into this clearing."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_boot <emoji>:item_torch <emoji>:item_crossbow"
+  set: 
+    - Base Game
+    - Vagabond
 
 - name: Thief
   owner: vagabond
   image: vagabond-thief
   text: "Steal: Take a random card from a player in your clearing"
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_tea <emoji>:item_sword"
+  set: 
+    - Base Game
+    - Vagabond
 
 - name: Tinker
   owner: vagabond
   image: vagabond-tinker
   text: "Day Labor: Take a card from the discard pile matching your clearing."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_sack <emoji>:item_hammer"
+  set: 
+    - Base Game
+    - Vagabond
 
 - name: Vagrant
   owner: vagabond
   image: vagabond-vagrant
   text: "Instigate: Initiate a battle in your clearing. You choose both attacker and defender, and you remove pieces for both."
   subtext: "Starting Items: <emoji>:item_coin <emoji>:item_torch <emoji>:item_boot"
+  set: 
+    - Base Game
+    - Vagabond
 
 - name: Adventurer
   owner: vagabond
   image: vagabond-adventurer
   text: "Improvise: Once per turn, you may damage any unexhausted item to treat it as any other item in order to complete a quest."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_hammer"
+  set: 
+    - Base Game
+    - Vagabond
 
 - name: Harrier
   owner: vagabond
   image: vagabond-harrier
   text: "Glide: Move to any clearing (even Hostile) on the map without exhausting any <emoji>:item_boot."
   subtext: "Starting Items: <emoji>:item_coin <emoji>:item_torch <emoji>:item_crossbow <emoji>:item_sword"
+  set: 
+    - Base Game
+    - Vagabond
 
 - name: Ronin
   owner: vagabond
   image: vagabond-ronin
   text: "Swift Strike: After rolling in battle, you may exhaust a sword to deal an extra hit."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_boot <emoji>:item_torch <emoji>:item_sword"
+  set: 
+    - Base Game
+    - Vagabond
 
 # VAGABOND QUEST CARDS
 - name: "Errand in a rabbit clearing"
   owner: vagabond
   image: quest-errandbunny
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - tea
@@ -138,6 +207,9 @@
 - name: "Errand in a fox clearing"
   owner: vagabond
   image: quest-errandfox
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - tea
@@ -147,6 +219,9 @@
 - name: "Escort in a mouse clearing"
   owner: vagabond
   image: quest-escort
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - boot
@@ -156,6 +231,9 @@
 - name: "Expel Bandits in a rabbit clearing"
   owner: vagabond
   image: quest-expelbanditsbunny
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - sword
@@ -165,6 +243,9 @@
 - name: "Expel Bandits in a mouse clearing"
   owner: vagabond
   image: quest-expelbanditsmouse
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - sword
@@ -174,6 +255,9 @@
 - name: "Fend off a Bear in a rabbit clearing"
   owner: vagabond
   image: quest-fendoffabearbunny
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - torch
@@ -183,6 +267,9 @@
 - name: "Fend off a Bear in a mouse clearing"
   owner: vagabond
   image: quest-fendoffabearmouse
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - torch
@@ -192,6 +279,9 @@
 - name: "Fundraising in a fox clearing"
   owner: vagabond
   image: quest-fundraising
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - tea
@@ -201,6 +291,9 @@
 - name: "Give a Speech in a rabbit clearing"
   owner: vagabond
   image: quest-giveaspeechbunny
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - torch
@@ -210,6 +303,9 @@
 - name: "Give a Speech in a fox clearing"
   owner: vagabond
   image: quest-giveaspeechfox
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - torch
@@ -219,6 +315,9 @@
 - name: "Guard Duty in a rabbit clearing"
   owner: vagabond
   image: quest-guarddutybunny
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - torch
@@ -228,6 +327,9 @@
 - name: "Guard Duty in a mouse clearing"
   owner: vagabond
   image: quest-guarddutymouse
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - torch
@@ -237,6 +339,9 @@
 - name: "Logistics Help in a fox clearing"
   owner: vagabond
   image: quest-logisticshelpfox
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - boot
@@ -246,6 +351,9 @@
 - name: "Logistics Help in a mouse clearing"
   owner: vagabond
   image: quest-logisticshelpmouse
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - boot
@@ -255,6 +363,9 @@
 - name: "Repair a Shed in a fox clearing"
   owner: vagabond
   image: quest-repairashed
+  set: 
+    - Base Game
+    - Vagabond
   quest:
     cost:
       - torch
@@ -266,21 +377,37 @@
   type: bird
   image: card-ambushbird
   text: "At start of battle, defender may play to deal two immediate hits, then discard. Cancel if attacker plays matching ambush."
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Ambush (Bunny)"
   type: bunny
   image: card-ambushbunny
   text: "At start of battle, defender may play to deal two immediate hits, then discard. Cancel if attacker plays matching ambush."
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Ambush (Fox)"
   type: fox
   image: card-ambushfox
   text: "At start of battle, defender may play to deal two immediate hits, then discard. Cancel if attacker plays matching ambush."
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Ambush (Mouse)"
   type: mouse
   image: card-ambushmouse
   text: "At start of battle, defender may play to deal two immediate hits, then discard. Cancel if attacker plays matching ambush."
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Anvil"
   type: fox
@@ -290,6 +417,10 @@
       - fox
     item: anvil
     vp: 2
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Armorers"
   type: bird
@@ -298,6 +429,9 @@
     cost:
       - fox
   text: "In battle, may discard this to ignore all rolled hits taken."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Arms Trader"
   type: bird
@@ -308,6 +442,10 @@
       - fox
     item: anvil
     vp: 2
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "A Visit To Friends"
   type: bunny
@@ -317,6 +455,10 @@
       - bunny
     item: boot
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Bake Sale"
   type: bunny
@@ -327,6 +469,10 @@
       - bunny
     item: coin
     vp: 3
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Better Burrow Bank"
   type: bunny
@@ -336,6 +482,9 @@
       - bunny
       - bunny
   text: "At start of Birdsong, you and another player draw a card."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Birdy Bindle"
   type: bird
@@ -345,6 +494,10 @@
       - mouse
     item: sack
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Boat Builders"
   type: bird
@@ -354,6 +507,8 @@
       - bird
       - bird
   text: "You treat rivers as paths."
+  set:
+    - Exiles & Partisans Deck
 
 - name: "Brutal Tactics"
   type: bird
@@ -363,6 +518,9 @@
       - fox
       - fox
   text: "In battle as attacker, may deal an extra hit, but defender scores one point."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Charm Offensive"
   type: bunny
@@ -370,7 +528,9 @@
   craft:
     cost:
       - bunny
-  text: "At start of Evening, may draw a card and choose another palyer to score one point."
+  text: "At start of Evening, may draw a card and choose another player to score one point."
+  set:
+    - Exiles & Partisans Deck
 
 - name: "Cobbler"
   type: bunny
@@ -380,6 +540,9 @@
       - bunny
       - bunny
   text: "At start of Evening, may take a move."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Codebreakers"
   type: mouse
@@ -388,6 +551,9 @@
     cost:
       - mouse
   text: "Once in Daylight, may look at another player's hand."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Coffin Makers"
   type: bunny
@@ -397,6 +563,8 @@
       - bunny
       - bunny
   text: "Whenever any warriors would return to a supply, place them on this card instead. At the start of Birdsong, you score one point per five warriors here, then return all warriors here to their supplies."
+  set:
+    - Exiles & Partisans Deck
 
 - name: "Command Warren"
   type: bunny
@@ -406,6 +574,9 @@
       - bunny
       - bunny
   text: "At start of Daylight, may initiate a battle."
+  set:
+    - Base Game
+    - Standard Deck
   
 - name: "Corvid Planners"
   type: bird
@@ -415,6 +586,8 @@
       - bird
       - bird
   text: "While moving, you ignore rule."
+  set:
+    - Exiles & Partisans Deck
 
 - name: "Crossbow (Bird)"
   type: bird
@@ -424,6 +597,10 @@
       - fox
     item: crossbow
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Crossbow (Mouse)"
   type: bird
@@ -433,30 +610,50 @@
       - fox
     item: crossbow
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Dominance (Bird)"
   type: bird
   image: card-dominancebird
   text: You win the game if you rule two opposite corners at the start of your Birdsong.
   subtext: If you have at least 10 points, play during Daylight and remove your score marker.
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Dominance (Bunny)"
   type: bunny
   image: card-dominancebunny
   text: You win the game if you rule three bunny clearings at the start of your Birdsong.
   subtext: If you have at least 10 points, play during Daylight and remove your score marker.
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Dominance (Fox)"
   type: fox
   image: card-dominancefox
   text: You win the game if you rule three fox clearings at the start of your Birdsong.
   subtext: If you have at least 10 points, play during Daylight and remove your score marker.
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Dominance (Mouse)"
   type: mouse
   image: card-dominancemouse
   text: You win the game if you rule three mouse clearings at the start of your Birdsong.
   subtext: If you have at least 10 points, play during Daylight and remove your score marker.
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
   
 - name: "Eyrie Emigre"
   type: bird
@@ -466,6 +663,8 @@
       - fox
       - fox
   text: "At the end of Birdsong, take a move, then initiate a battle in the clearing you moved into. If you did not take both actions, discard this card."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "False Orders"
   type: fox
@@ -474,6 +673,8 @@
     cost:
       - fox
   text: "In Birdsong, may discard this card to move half of an enemy's warriors (rounded up) from any clearing, as if you were that player, ignoring rule."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Favor of the Foxes"
   type: fox
@@ -484,6 +685,9 @@
       - fox
       - fox
   text: "Remove all enemy pieces in fox clearings, then discard."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Favor of the Mice"
   type: mouse
@@ -494,6 +698,9 @@
       - mouse
       - mouse
   text: "Remove all enemy pieces in mouse clearings, then discard."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Favor of the Rabbits"
   type: bunny
@@ -504,6 +711,9 @@
       - bunny
       - bunny
   text: "Remove all enemy pieces in bunny clearings, then discard."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Foxfolk Steel"
   type: fox
@@ -514,14 +724,20 @@
       - fox
     item: sword
     vp: 2
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
   
-- name: "Fox Partisans"
+- name: "Fox Partisans Deck"
   type: fox
-  image: card-foxpartisans
+  image: card-foxPartisans Deck
   craft:
     cost:
       - fox
   text: "In battle in fox clearings, may deal one extra hit, then discard all your cards except foxes."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Gently Used Knapsack"
   type: fox
@@ -531,6 +747,10 @@
       - mouse
     item: sack
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
   
 - name: "Informants"
   type: fox
@@ -540,6 +760,8 @@
       - fox
       - fox
   text: "In Evening, if you would draw cards, you may instead take one ambush card from the discard pile."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Investments"
   type: mouse
@@ -550,6 +772,10 @@
       - bunny
     item: coin
     vp: 3
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
   
 - name: "League of Adventrous Mice"
   type: mouse
@@ -558,6 +784,8 @@
     cost:
       - mouse
   text: "Once in Daylight, may exhaust an item in your Crafted Items box to take a move or initiate battle."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Master Engravers"
   type: mouse
@@ -567,6 +795,8 @@
       - mouse
       - mouse
   text: "Whenever you craft an item, score one extra point."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Mouse-in-a-sack"
   type: mouse
@@ -576,14 +806,20 @@
       - mouse
     item: sack
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
   
-- name: "Mouse Partisans"
+- name: "Mouse Partisans Deck"
   type: mouse
-  image: card-mousepartisans
+  image: card-mousePartisans Deck
   craft:
     cost:
       - mouse
   text: "In battle in mouse clearings, may deal one extra hit, then discard all your cards except mice."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Murine Broker"
   type: mouse
@@ -593,6 +829,8 @@
       - mouse
       - mouse
   text: "Whenever another player crafts an item, draw a card."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Propaganda Bureau"
   type: fox
@@ -603,6 +841,8 @@
       - bird
       - bird
   text: "Once in Daylight, may spend a card to remove an enemy warrior from a matching clearing and place a warrior there."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Protection Racket"
   type: fox
@@ -613,14 +853,20 @@
       - bunny
     item: coin
     vp: 3
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
   
-- name: "Rabbit Partisans"
+- name: "Rabbit Partisans Deck"
   type: bunny
-  image: card-rabbitpartisans
+  image: card-rabbitPartisans Deck
   craft:
     cost:
       - bunny
   text: "In battle in rabbit clearings, may deal one extra hit, then discard all your cards except rabbits."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Root Tea (Bunny)"
   type: bunny
@@ -630,6 +876,10 @@
       - mouse
     item: tea
     vp: 2
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
   
 - name: "Root Tea (Fox)"
   type: fox
@@ -639,6 +889,10 @@
       - mouse
     item: tea
     vp: 2
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
   
 - name: "Root Tea (Mouse)"
   type: mouse
@@ -648,6 +902,10 @@
       - mouse
     item: tea
     vp: 2
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
   
 - name: "Royal Claim"
   type: bird
@@ -659,6 +917,9 @@
       - bird
       - bird
   text: "In Birdsong, may discard this to score one point per clearing you rule."
+  set:
+    - Base Game
+    - Standard Deck
   
 - name: "Saboteurs"
   type: bird
@@ -667,6 +928,8 @@
     cost:
       - bird
   text: "At the start of Birdsong, may discard this card to discard an enemys crafted card."
+  set:
+    - Exiles & Partisans Deck
   
 - name: "Sappers"
   type: bird
@@ -675,6 +938,9 @@
     cost:
       - mouse
   text: "In battle as defender, may discard this to deal an extra hit."
+  set:
+    - Base Game
+    - Standard Deck
   
 - name: "Scouting Party"
   type: mouse
@@ -684,6 +950,9 @@
       - mouse
       - mouse
   text: "As attacker in battle, you are not affected by ambush cards."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Smuggler's Trail"
   type: bunny
@@ -693,6 +962,10 @@
       - mouse
     item: sack
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Soup Kitchens"
   type: bird
@@ -703,26 +976,36 @@
       - fox
       - mouse
   text: "Your tokens now count towards rule, and each of your tokens counts twice."
+  set:
+    - Exiles & Partisans Deck
 
 - name: "Spy (Bird)"
   type: bird
   image: card-spybird
   text: "In Daylight, reveal an order. If the spy reveals a bird card, discard the spy. If the spy is not discarded, you may swap any two order cards."
+  set:
+    - Mechanical Marquise 1.0
 
 - name: "Spy (Bunny)"
   type: bunny
   image: card-spybunny
   text: "In Daylight, reveal an order. If the spy reveals a bunny card, discard the spy. If the spy is not discarded, you may swap any two order cards."
+  set:
+    - Mechanical Marquise 1.0
 
 - name: "Spy (Fox)"
   type: fox
   image: card-spyfox
   text: "In Daylight, reveal an order. If the spy reveals a fox card, discard the spy. If the spy is not discarded, you may swap any two order cards."
+  set:
+    - Mechanical Marquise 1.0
 
 - name: "Spy (Mouse)"
   type: mouse
   image: card-spymouse
   text: "In Daylight, reveal an order. If the spy reveals a mouse card, discard the spy. If the spy is not discarded, you may swap any two order cards."
+  set:
+    - Mechanical Marquise 1.0
 
 - name: "Stand and Deliver!"
   type: fox
@@ -733,6 +1016,9 @@
       - mouse
       - mouse
   text: "In Birdsong, may take a random card from another player. That player scores one point."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Swap Meet"
   type: bunny
@@ -741,6 +1027,8 @@
     cost:
       - bunny
   text: "Once in Birdsong, may take a random card from another player and then give them a card."
+  set:
+    - Exiles & Partisans Deck
 
 - name: "Sword"
   type: mouse
@@ -751,6 +1039,10 @@
       - fox
     item: sword
     vp: 2
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Tax Collector"
   type: fox
@@ -761,6 +1053,9 @@
       - fox
       - mouse
   text: "Once in Daylight, may remove one of your warriors to draw a card."
+  set:
+    - Base Game
+    - Standard Deck
 
 - name: "Travel Gear (Fox)"
   type: fox
@@ -770,6 +1065,10 @@
       - bunny
     item: boot
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Travel Gear (Mouse)"
   type: mouse
@@ -779,6 +1078,10 @@
       - bunny
     item: boot
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
 
 - name: "Tunnels"
   type: bunny
@@ -787,6 +1090,8 @@
     cost:
       - bunny
   text: "You treat clearings with any of your crafting pieces as adjacent."
+  set:
+    - Exiles & Partisans Deck
 
 - name: "Woodland Runners"
   type: bird
@@ -796,3 +1101,7 @@
       - bunny
     item: boot
     vp: 1
+  set:
+    - Base Game
+    - Standard Deck
+    - Exiles & Partisans Deck
