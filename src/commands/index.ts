@@ -11,3 +11,4 @@ export * from './rootcards';
 export * from './rule';
 export * from './rules';
 export * from './seiyria';
+export * from './vcard';

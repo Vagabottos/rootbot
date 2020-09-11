@@ -18,6 +18,7 @@ export class SeiyriaCommand implements ICommand {
     message.author.send(`
 **__Vast__**
 Vast: The Crystal Companion - https://vast.seiyria.com
+Vast Cards - https://vastcards.seiyria.com
 
 **__Root__**
 Vagabot (Me!)
