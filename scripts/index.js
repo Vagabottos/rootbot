@@ -9,7 +9,7 @@ const app = new Vue({
 
   data: {
     cards: window.__gamedata,
-    sets,
+    sets: [...sets].sort(),
     observer: null,
     currentSet: ''
   },

@@ -14,6 +14,7 @@ import { BaseService } from './base/BaseService';
 import { RulesService } from './services/rules';
 import { FortCardService } from './services/fort-card';
 import { OathCardService } from './services/oath-card';
+import { VastCardService } from './services/vast-card';
 
 export class Bot {
   // these services have to be registered first
@@ -25,6 +26,7 @@ export class Bot {
   @Inject private cardService: CardService;
   @Inject private fortCardService: FortCardService;
   @Inject private oathCardService: OathCardService;
+  @Inject private vastCardService: VastCardService;
   @Inject private emojiService: EmojiService;
   @Inject private presenceService: PresenceService;
 
