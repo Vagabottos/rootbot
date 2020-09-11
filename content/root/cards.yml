@@ -731,7 +731,7 @@
   
 - name: "Fox Partisans"
   type: fox
-  image: card-fox-partisans
+  image: card-foxpartisans
   craft:
     cost:
       - fox
@@ -813,7 +813,7 @@
   
 - name: "Mouse Partisans"
   type: mouse
-  image: card-mouse-partisans
+  image: card-mousepartisans
   craft:
     cost:
       - mouse
@@ -860,7 +860,7 @@
   
 - name: "Rabbit Partisans"
   type: bunny
-  image: card-rabbit-partisans
+  image: card-rabbitpartisans
   craft:
     cost:
       - bunny
