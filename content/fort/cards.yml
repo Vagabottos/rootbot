@@ -312,3 +312,125 @@
   set:
     - Base Game
     - Wild
+
+# Rules
+- name: Big Plans
+  image: rule-0
+  set:
+    - Base Game
+    - Rule
+
+- name: Loner
+  image: rule-1
+  set:
+    - Base Game
+    - Rule
+
+- name: Friendship Bracelet
+  image: rule-2
+  set:
+    - Base Game
+    - Rule
+
+- name: Sleepover
+  image: rule-3
+  set:
+    - Base Game
+    - Rule
+
+- name: Minimalism
+  image: rule-4
+  set:
+    - Base Game
+    - Rule
+
+- name: Slime Lab
+  image: rule-5
+  set:
+    - Base Game
+    - Rule
+
+- name: Play Palace
+  image: rule-6
+  set:
+    - Base Game
+    - Rule
+
+- name: Popularity
+  image: rule-7
+  set:
+    - Base Game
+    - Rule
+
+- name: Secret Stash
+  image: rule-8
+  set:
+    - Base Game
+    - Rule
+
+- name: Pizza Party
+  image: rule-9
+  set:
+    - Base Game
+    - Rule
+
+- name: Piggy Bank
+  image: rule-10
+  set:
+    - Base Game
+    - Rule
+
+# Perks
+- name: DIY
+  image: perk-0
+  set:
+    - Base Game
+    - Perk
+    
+- name: Sticky Fingers
+  image: perk-1
+  set:
+    - Base Game
+    - Perk
+
+- name: Recycling
+  image: perk-2
+  set:
+    - Base Game
+    - Perk
+
+- name: XXL Backpack
+  image: perk-3
+  set:
+    - Base Game
+    - Perk
+
+- name: Do-Over
+  image: perk-4
+  set:
+    - Base Game
+    - Perk
+
+- name: Birthday Party
+  image: perk-5
+  set:
+    - Base Game
+    - Perk
+
+- name: Rough Housing
+  image: perk-6
+  set:
+    - Base Game
+    - Perk
+
+- name: Bribe
+  image: perk-7
+  set:
+    - Base Game
+    - Perk
+
+- name: Copycat
+  image: perk-8
+  set:
+    - Base Game
+    - Perk
