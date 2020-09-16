@@ -743,8 +743,8 @@
     - Standard Deck
     - Order
   
-- name: Envoys
-  image: Envoys
+- name: Peace Envoy
+  image: Peace Envoy
   set:
     - Standard Deck
     - Order
@@ -869,8 +869,8 @@
     - Standard Deck
     - Hearth
   
-- name: Relic Song
-  image: Relic Song
+- name: Deed Writer
+  image: Deed Writer
   set:
     - Standard Deck
     - Hearth
@@ -1007,8 +1007,8 @@
     - Standard Deck
     - Nomad
   
-- name: A New Home
-  image: A New Home
+- name: Way Station
+  image: Way Station
   set:
     - Standard Deck
     - Nomad
