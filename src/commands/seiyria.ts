@@ -35,6 +35,7 @@ Fort Cards - https://fortcards.seiyria.com
 
 **__Oath__**
 Oath Cards - https://oathcards.seiyria.com
+Oath Legacy Vision - https://oath.vision
 `
     );
 
