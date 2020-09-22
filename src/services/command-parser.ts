@@ -63,7 +63,7 @@ export class CommandParser extends BaseService {
 
   private loadCommands(commands) {
     Object.keys(commands).forEach((cmdName) => {
-      const cmdInst = Container.get(Commands[cmdName]);
+      const cmdInst = Container.get(Commands[cmdName]) as ICommand;
 
       this.registerCommand(cmdInst);
     });
