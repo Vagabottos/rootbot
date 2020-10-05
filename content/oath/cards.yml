@@ -1187,6 +1187,7 @@
     - Standard Deck
     - Beast
   
+# Edifices
 - name: Sprawling Rampart
   image: Sprawling Rampart
   set:
@@ -1271,123 +1272,179 @@
     - Edifice
     - Nomad
   
+  # Relics
 - name: Sticky Fire
   image: Sticky Fire
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Cursed Cauldron
   image: Cursed Cauldron
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Brass Horse
   image: Brass Horse
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Truthful Harp
   image: Truthful Harp
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Grand Mask
   image: Grand Mask
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Horned Mask
   image: Horned Mask
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Cup of Plenty
   image: Cup of Plenty
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Whistle
   image: Whistle
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Dowsing Sticks
   image: Dowsing Sticks
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Cracked Horn
   image: Cracked Horn
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Bandit Crown
   image: Bandit Crown
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Banner of Devotion
   image: Banner of Devotion
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Skeleton Key
   image: Skeleton Key
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Oracular Pig
   image: Oracular Pig
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Circlet of Command
   image: Circlet of Command
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Ivory Eye
   image: Ivory Eye
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Map
   image: Map
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Obsidian Cage
   image: Obsidian Cage
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Book of Records
   image: Book of Records
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
 - name: Dragonskin Drum
   image: Dragonskin Drum
+  imageClass: square
   set:
     - Standard Deck
     - Relic
   
+# Visions
+- name: Conspiracy
+  image: Conspiracy
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Vision
+
+- name: Vision of Faith
+  image: Vision of Faith
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Vision
+
+- name: Vision of Rebellion
+  image: Vision of Rebellion
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Vision
+
+- name: Vision of Sanctuary
+  image: Vision of Sanctuary
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Vision
+
+- name: Vision of Conquest
+  image: Vision of Conquest
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Vision

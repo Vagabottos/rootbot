@@ -29,13 +29,23 @@
 .img-text {
   width: 100%;
   text-align: center;
-  max-width: 200px;
+  max-width: 100%;
   min-height: 36px;
 }
 
-img.similar {
+.img-container.similar img {
   min-height: 300px;
   min-width: 200px;
   width: 200px;
   height: 300px;
+}
+
+.img-container.square img {
+  width: 200px;
+  height: 200px;
+}
+
+.img-container.rotated img {
+  width: 300px;
+  height: 200px;
 }
