@@ -29,9 +29,9 @@
       </nav>
   
       <div class="card-container" v-cloak>
-        <div class="img-container" v-for="card in cards" v-show="!card.hide" :key="card.name">
+        <div class="img-container" v-for="card in cards" v-show="!card.hide" :key="card.name" :class="card.imageClass || 'similar'">
           <div class="img-text">{{ card.name }}</div>
-          <img class="lazy similar" loading="lazy" src="placeholder.png" :data-src="'cards/' + card.image + '.png'" />
+          <img class="lazy" loading="lazy" src="placeholder.png" :data-src="'cards/' + card.image + '.png'" />
         </div>
       </div>
     </div>
