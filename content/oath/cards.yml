@@ -4,1189 +4,1189 @@
   set:
     - Standard Deck
     - Order
-  
+
 - name: Battle Honors
   image: Battle Honors
   set:
     - Standard Deck
     - Order
-  
+
 - name: Bear Traps
   image: Bear Traps
   set:
     - Standard Deck
     - Order
-  
+
 - name: Longbows
   image: Longbows
   set:
     - Standard Deck
     - Order
-  
+
 - name: Keep
   image: Keep
   set:
     - Standard Deck
     - Order
-  
+
 - name: Pressgangs
   image: Pressgangs
   set:
     - Standard Deck
     - Order
-  
+
 - name: Garrison
   image: Garrison
   set:
     - Standard Deck
     - Order
-  
+
 - name: Scouts
   image: Scouts
   set:
     - Standard Deck
     - Order
-  
+
 - name: Alchemist
   image: Alchemist
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Martial Culture
   image: Martial Culture
   set:
     - Standard Deck
     - Order
-  
+
 - name: Errand Boy
   image: Errand Boy
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Zealots
   image: Zealots
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Tinker's Fair
   image: Tinker's Fair
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Rain Boots
   image: Rain Boots
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: A Small Favor
   image: A Small Favor
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Second Wind
   image: Second Wind
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Gossip
   image: Gossip
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Key to the City
   image: Key to the City
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Scryer
   image: Scryer
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Disgraced Captain
   image: Disgraced Captain
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Naysayers
   image: Naysayers
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Book Burning
   image: Book Burning
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Ancient Binding
   image: Ancient Binding
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Horse Archers
   image: Horse Archers
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Warning Signals
   image: Warning Signals
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Elders
   image: Elders
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: The Gathering
   image: The Gathering
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Faithful Friend
   image: Faithful Friend
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Tents
   image: Tents
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Great Herd
   image: Great Herd
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Fire Talkers
   image: Fire Talkers
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Magician's Code
   image: Magician's Code
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Spirit Snare
   image: Spirit Snare
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Wizard School
   image: Wizard School
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Dazzle
   image: Dazzle
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Acting Troupe
   image: Acting Troupe
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Taming Charm
   image: Taming Charm
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Inquisitor
   image: Inquisitor
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Wolves
   image: Wolves
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Animal Playmates
   image: Animal Playmates
   set:
     - Standard Deck
     - Beast
-  
+
 - name: True Names
   image: True Names
   set:
     - Standard Deck
     - Beast
-  
+
 - name: The Old Oak
   image: The Old Oak
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Forest Paths
   image: Forest Paths
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Long-Lost Heir
   image: Long-Lost Heir
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Rangers
   image: Rangers
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Memory of Nature
   image: Memory of Nature
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Wayside Inn
   image: Wayside Inn
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Extra Provisions
   image: Extra Provisions
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Memory of Home
   image: Memory of Home
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Welcoming Party
   image: Welcoming Party
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Traveling Doctor
   image: Traveling Doctor
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Storyteller
   image: Storyteller
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Armed Mob
   image: Armed Mob
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Tavern Songs
   image: Tavern Songs
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Secret Signal
   image: Secret Signal
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Augury
   image: Augury
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Rusting Ray
   image: Rusting Ray
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Portal
   image: Portal
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Billowing Fog
   image: Billowing Fog
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Kindred Warriors
   image: Kindred Warriors
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Terror Spells
   image: Terror Spells
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Blood Pact
   image: Blood Pact
   set:
     - Standard Deck
     - Arcane
-  
-- name: Revelation 
-  image: Revelation 
+
+- name: Revelation
+  image: Revelation
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Observatory
   image: Observatory
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Plague Engines
   image: Plague Engines
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Gleaming Armor
   image: Gleaming Armor
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Bewitch
   image: Bewitch
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Jinx
   image: Jinx
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Tutor
   image: Tutor
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Dream Thief
   image: Dream Thief
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Cracking Ground
   image: Cracking Ground
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Sealing Ward
   image: Sealing Ward
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Initiation Rite
   image: Initiation Rite
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Vow of Silence
   image: Vow of Silence
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Forgotten Vault
   image: Forgotten Vault
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Map Library
   image: Map Library
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Witch's Bargain
   image: Witch's Bargain
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Master of Disguise
   image: Master of Disguise
   set:
     - Standard Deck
     - Arcane
-  
+
 - name: Charlatans
   image: Charlatans
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Assassin
   image: Assassin
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Downtrodden
   image: Downtrodden
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Blackmail
   image: Blackmail
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Cracked Sage
   image: Cracked Sage
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Dissent
   image: Dissent
   set:
     - Standard Deck
     - Discord
-  
+
 - name: False Prophet
   image: False Prophet
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Vow of Renewal
   image: Vow of Renewal
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Mercenaries
   image: Mercenaries
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Royal Ambitions
   image: Royal Ambitions
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Salt the Earth
   image: Salt the Earth
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Beast Tamer
   image: Beast Tamer
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Riots
   image: Riots
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Silver Tongue
   image: Silver Tongue
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Gambling Hall
   image: Gambling Hall
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Boiling Lake
   image: Boiling Lake
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Relic Thief
   image: Relic Thief
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Enchantress
   image: Enchantress
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Insomnia
   image: Insomnia
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Sneak Attack
   image: Sneak Attack
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Sleight of Hand
   image: Sleight of Hand
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Bandit King
   image: Bandit King
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Chaos Cult
   image: Chaos Cult
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Slander
   image: Slander
   set:
     - Standard Deck
     - Discord
-  
+
 - name: Code of Honor
   image: Code of Honor
   set:
     - Standard Deck
     - Order
-  
+
 - name: Outriders
   image: Outriders
   set:
     - Standard Deck
     - Order
-  
+
 - name: Messenger
   image: Messenger
   set:
     - Standard Deck
     - Order
-  
+
 - name: Field Promotion
   image: Field Promotion
   set:
     - Standard Deck
     - Order
-  
+
 - name: Palanquin
   image: Palanquin
   set:
     - Standard Deck
     - Order
-  
+
 - name: Shield Wall
   image: Shield Wall
   set:
     - Standard Deck
     - Order
-  
+
 - name: Military Parade
   image: Military Parade
   set:
     - Standard Deck
     - Order
-  
+
 - name: Tome Guardians
   image: Tome Guardians
   set:
     - Standard Deck
     - Order
-  
+
 - name: Tyrant
   image: Tyrant
   set:
     - Standard Deck
     - Order
-  
+
 - name: Forced Labor
   image: Forced Labor
   set:
     - Standard Deck
     - Order
-  
+
 - name: Secret Police
   image: Secret Police
   set:
     - Standard Deck
     - Order
-  
+
 - name: Specialist
   image: Specialist
   set:
     - Standard Deck
     - Order
-  
+
 - name: Captains
   image: Captains
   set:
     - Standard Deck
     - Order
-  
+
 - name: Siege Engines
   image: Siege Engines
   set:
     - Standard Deck
     - Order
-  
+
 - name: Royal Tax
   image: Royal Tax
   set:
     - Standard Deck
     - Order
-  
+
 - name: Toll Roads
   image: Toll Roads
   set:
     - Standard Deck
     - Order
-  
+
 - name: Curfew
   image: Curfew
   set:
     - Standard Deck
     - Order
-  
+
 - name: Knights Errant
   image: Knights Errant
   set:
     - Standard Deck
     - Order
-  
+
 - name: Vow of Obedience
   image: Vow of Obedience
   set:
     - Standard Deck
     - Order
-  
+
 - name: Hunting Party
   image: Hunting Party
   set:
     - Standard Deck
     - Order
-  
+
 - name: Council Seat
   image: Council Seat
   set:
     - Standard Deck
     - Order
-  
+
 - name: Encirclement
   image: Encirclement
   set:
     - Standard Deck
     - Order
-  
+
 - name: Peace Envoy
   image: Peace Envoy
   set:
     - Standard Deck
     - Order
-  
+
 - name: Relic Hunter
   image: Relic Hunter
   set:
     - Standard Deck
     - Order
-  
+
 - name: Homesteaders
   image: Homesteaders
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Crop Rotation
   image: Crop Rotation
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: A Round of Ale
   image: A Round of Ale
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Land Warden
   image: Land Warden
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Charming Friend
   image: Charming Friend
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Village Constable
   image: Village Constable
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Family Heirloom
   image: Family Heirloom
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: News from Afar
   image: News from Afar
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Levelers
   image: Levelers
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Fabled Feast
   image: Fabled Feast
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: The Great Levy
   image: The Great Levy
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Hearts and Minds
   image: Hearts and Minds
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Relic Breaker
   image: Relic Breaker
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Book Binders
   image: Book Binders
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Ballot Box
   image: Ballot Box
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Saddle Makers
   image: Saddle Makers
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Herald
   image: Herald
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Rowdy Pub
   image: Rowdy Pub
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Vow of Peace
   image: Vow of Peace
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Deed Writer
   image: Deed Writer
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Salad Days
   image: Salad Days
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Marriage
   image: Marriage
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Hospital
   image: Hospital
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Awaited Return
   image: Awaited Return
   set:
     - Standard Deck
     - Hearth
-  
+
 - name: Convoys
   image: Convoys
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Vow of Kinship
   image: Vow of Kinship
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Wild Mounts
   image: Wild Mounts
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Lancers
   image: Lancers
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Mountain Giant
   image: Mountain Giant
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Rival Khan
   image: Rival Khan
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Lost Tongue
   image: Lost Tongue
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Special Envoy
   image: Special Envoy
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Resettle
   image: Resettle
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Oracle
   image: Oracle
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Pilgrimage
   image: Pilgrimage
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Spell Breaker
   image: Spell Breaker
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Mounted Patrol
   image: Mounted Patrol
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Great Crusade
   image: Great Crusade
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Ancient Bloodline
   image: Ancient Bloodline
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Ancient Pact
   image: Ancient Pact
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Storm Caller
   image: Storm Caller
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Family Wagon
   image: Family Wagon
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Way Station
   image: Way Station
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Twin Brother
   image: Twin Brother
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Hospitality
   image: Hospitality
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: A Fast Steed
   image: A Fast Steed
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Relic Worship
   image: Relic Worship
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Sacred Ground
   image: Sacred Ground
   set:
     - Standard Deck
     - Nomad
-  
+
 - name: Nature Worship
   image: Nature Worship
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Birdsong
   image: Birdsong
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Small Friends
   image: Small Friends
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Grasping Vines
   image: Grasping Vines
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Threatening Roar
   image: Threatening Roar
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Fae Merchant
   image: Fae Merchant
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Second Chance
   image: Second Chance
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Pied Piper
   image: Pied Piper
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Mushrooms
   image: Mushrooms
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Insect Swarm
   image: Insect Swarm
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Vow of Union
   image: Vow of Union
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Giant Python
   image: Giant Python
   set:
     - Standard Deck
     - Beast
-  
+
 - name: War Tortoise
   image: War Tortoise
   set:
     - Standard Deck
     - Beast
-  
+
 - name: New Growth
   image: New Growth
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Wild Cry
   image: Wild Cry
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Animal Host
   image: Animal Host
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Roving Terror
   image: Roving Terror
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Marsh Spirit
   image: Marsh Spirit
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Vow of Poverty
   image: Vow of Poverty
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Forest Council
   image: Forest Council
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Walled Garden
   image: Walled Garden
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Vow of Beast-kin
   image: Vow of Beast-kin
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Bracken
   image: Bracken
   set:
     - Standard Deck
     - Beast
-  
+
 - name: Wild Allies
   image: Wild Allies
   set:
     - Standard Deck
     - Beast
-  
+
 # Edifices
 - name: Sprawling Rampart
   image: Sprawling Rampart
@@ -1194,84 +1194,84 @@
     - Standard Deck
     - Edifice
     - Order
-  
+
 - name: Bandit Rampart
   image: Bandit Rampart
   set:
     - Standard Deck
     - Edifice
     - Order
-  
+
 - name: Hall of Debate
   image: Hall of Debate
   set:
     - Standard Deck
     - Edifice
     - Hearth
-  
+
 - name: Hall of Mockery
   image: Hall of Mockery
   set:
     - Standard Deck
     - Edifice
     - Hearth
-  
+
 - name: Forest Temple
   image: Forest Temple
   set:
     - Standard Deck
     - Edifice
     - Beast
-  
+
 - name: Abandoned Temple
   image: Abandoned Temple
   set:
     - Standard Deck
     - Edifice
     - Beast
-  
+
 - name: Festival District
   image: Festival District
   set:
     - Standard Deck
     - Edifice
     - Discord
-  
+
 - name: Squalid District
   image: Squalid District
   set:
     - Standard Deck
     - Edifice
     - Discord
-  
+
 - name: Great Spire
   image: Great Spire
   set:
     - Standard Deck
     - Edifice
     - Arcane
-  
+
 - name: Fallen Spire
   image: Fallen Spire
   set:
     - Standard Deck
     - Edifice
     - Arcane
-  
+
 - name: Ancient Forge
   image: Ancient Forge
   set:
     - Standard Deck
     - Edifice
     - Nomad
-  
+
 - name: Broken Forge
   image: Broken Forge
   set:
     - Standard Deck
     - Edifice
     - Nomad
-  
+
   # Relics
 - name: Sticky Fire
   image: Sticky Fire
@@ -1279,140 +1279,140 @@
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Cursed Cauldron
   image: Cursed Cauldron
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Brass Horse
   image: Brass Horse
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Truthful Harp
   image: Truthful Harp
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Grand Mask
   image: Grand Mask
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Horned Mask
   image: Horned Mask
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Cup of Plenty
   image: Cup of Plenty
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Whistle
   image: Whistle
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Dowsing Sticks
   image: Dowsing Sticks
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Cracked Horn
   image: Cracked Horn
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Bandit Crown
   image: Bandit Crown
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Banner of Devotion
   image: Banner of Devotion
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Skeleton Key
   image: Skeleton Key
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Oracular Pig
   image: Oracular Pig
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Circlet of Command
   image: Circlet of Command
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Ivory Eye
   image: Ivory Eye
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Map
   image: Map
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Obsidian Cage
   image: Obsidian Cage
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Book of Records
   image: Book of Records
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 - name: Dragonskin Drum
   image: Dragonskin Drum
   imageClass: square
   set:
     - Standard Deck
     - Relic
-  
+
 # Visions
 - name: Conspiracy
   image: Conspiracy
@@ -1448,3 +1448,165 @@
   set:
     - Standard Deck
     - Vision
+
+# Sites
+- name: Ancient City
+  image: Ancient City
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Barren Coast
+  image: Barren Coast
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Buried Giant
+  image: Buried Giant
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Charming Valley
+  image: Charming Valley
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Deep Woods
+  image: Deep Woods
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Drowned City
+  image: Drowned City
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Fertile Valley
+  image: Fertile Valley
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Great Slum
+  image: Great Slum
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Imperial Seat
+  image: Imperial Seat
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Lush Coast
+  image: Lush Coast
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Marshes
+  image: Marshes
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Mine
+  image: Mine
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Mountain
+  image: Mountain
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Narrow Pass
+  image: Narrow Pass
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Plains
+  image: Plains
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: River
+  image: River
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Rocky Coast
+  image: Rocky Coast
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Salt Flats
+  image: Salt Flats
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Shrouded Wood
+  image: Shrouded Wood
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Standing Stones
+  image: Standing Stones
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Steppe
+  image: Steppe
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: The Hidden Place
+  image: The Hidden Place
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
+
+- name: Wastes
+  image: Wastes
+  imageClass: rotated
+  set:
+    - Standard Deck
+    - Site
