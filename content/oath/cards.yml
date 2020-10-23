@@ -1350,8 +1350,8 @@
     - Standard Deck
     - Relic
 
-- name: Banner of Devotion
-  image: Banner of Devotion
+- name: Ring of Devotion
+  image: Ring of Devotion
   imageClass: square
   set:
     - Standard Deck
@@ -1408,6 +1408,13 @@
 
 - name: Dragonskin Drum
   image: Dragonskin Drum
+  imageClass: square
+  set:
+    - Standard Deck
+    - Relic
+
+- name: The Grand Scepter
+  image: The Grand Scepter
   imageClass: square
   set:
     - Standard Deck
@@ -1506,8 +1513,8 @@
     - Standard Deck
     - Site
 
-- name: Imperial Seat
-  image: Imperial Seat
+- name: The Tribunal
+  image: The Tribunal
   imageClass: rotated
   set:
     - Standard Deck
