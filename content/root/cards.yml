@@ -1274,3 +1274,54 @@
   text: "Defenseless sympathy tokens benefit from Automated Ambush when attacked."
   set:
     - Clockwork
+
+# Intro
+- name: "Corvid Intro"
+  image: intro-corvid
+  set:
+    - Learn to Play
+
+- name: "Cult Intro"
+  image: intro-cult
+  set:
+    - Learn to Play
+    
+- name: "Cult Intro (2)"
+  image: intro-cult-2
+  set:
+    - Learn to Play
+    
+- name: "Duchy Intro"
+  image: intro-duchy
+  set:
+    - Learn to Play
+    
+- name: "Eyrie Intro"
+  image: intro-eyrie
+  set:
+    - Learn to Play
+    
+- name: "Marquise Intro"
+  image: intro-marquise
+  set:
+    - Learn to Play
+    
+- name: "Riverfolk Intro"
+  image: intro-riverfolk
+  set:
+    - Learn to Play
+    
+- name: "Riverfolk Intro (2)"
+  image: intro-riverfolk
+  set:
+    - Learn to Play
+    
+- name: "Vagabond Intro"
+  image: intro-vagabond
+  set:
+    - Learn to Play
+    
+- name: "Woodland Intro"
+  image: intro-woodland
+  set:
+    - Learn to Play
