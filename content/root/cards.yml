@@ -1138,13 +1138,13 @@
     - Clockwork
 
 - name: "Swoop"
-  image: trait-eyrie-nobility
+  image: trait-eyrie-swoop
   text: "At the end of Daylight, recruit two warriors in the highest priority clearing in which you have no pieces."
   set:
     - Clockwork
 
 - name: "War Tax"
-  image: trait-eyrie-nobility
+  image: trait-eyrie-wartax
   text: "Whenever you destroy a token or building, the owner of the token loses 1 VP."
   set:
     - Clockwork
