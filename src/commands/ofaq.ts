@@ -25,7 +25,7 @@ export class OathFAQCommand implements ICommand {
       return;
     }
 
-    const faq = this.cardService.getFAQ(card.name);
+    const faq = await this.cardService.getFAQ(card.name);
     if (!faq) {
       message.channel.send(`Sorry! I could not find any FAQ for "${card.name}"`);
       return;

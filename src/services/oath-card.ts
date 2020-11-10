@@ -29,7 +29,8 @@ export class OathCardService extends BaseService {
     return this.cardsByName[res[0][1]];
   }
 
-  public getFAQ(name: string): any[]|null {
+  public async getFAQ(name: string): Promise<any[]|null> {
+    await this.loadFAQ();
     return this.faqByCard[name];
   }
 
