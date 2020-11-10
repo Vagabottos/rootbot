@@ -60,6 +60,10 @@
   text-align: left;
 }
 
+.tt .q, .tt .a {
+  display: flex;
+}
+
 .tt p {
   float: left;
   margin-right: 10px;
