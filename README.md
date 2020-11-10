@@ -1,7 +1,7 @@
 
 # Root Bot
 
-A bot made for the Woodland Warriors discord.
+A bot made for the Woodland Warriors Discord.
 
 ## Want to Invite Me?
 
