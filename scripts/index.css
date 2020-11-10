@@ -49,3 +49,18 @@
   width: 300px;
   height: 200px;
 }
+
+.faq {
+  color: blue;
+  font-size: 90%;
+  cursor: help;
+}
+
+.tt {
+  text-align: left;
+}
+
+.tt p {
+  float: left;
+  margin-right: 10px;
+}
