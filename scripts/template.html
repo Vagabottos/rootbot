@@ -30,7 +30,11 @@
   
       <div class="card-container" v-cloak>
         <div class="img-container" v-for="card in cards" v-show="!card.hide" :key="card.name" :class="card.imageClass || 'similar'">
-          <div class="img-text">{{ card.name }}</div>
+          <div class="img-text">
+            {{ card.name }}
+
+            <span class="faq" v-show="faqHash[card.name]" :content="tippyFor(faqHash[card.name])" v-tippy>[faq]</span>
+          </div>
           <img class="lazy" loading="lazy" src="placeholder.png" :data-src="'cards/' + card.image + '.png'" />
         </div>
       </div>
@@ -38,7 +42,10 @@
 
     <!-- First script is dev mode, uncomment to see errors -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.js"></script> -->
+    <script src="//unpkg.com/@popperjs/core@2"></script>
+    <script src="//unpkg.com/tippy.js@6"></script>
     <script src="//unpkg.com/vue@2.6/dist/vue.min.js"></script>
+    <script src="//unpkg.com/vue-tippy@4.7.2/dist/vue-tippy.min.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
     <script src="index.js"></script>
   </body>

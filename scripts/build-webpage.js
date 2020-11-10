@@ -8,6 +8,10 @@ const style = process.argv[2].split('=')[1];
 rimraf.sync('dist');
 fs.mkdirSync('dist');
 
+const faqUrls = {
+  oath: 'https://seiyria.com/test/oath.json'
+};
+
 const template = fs.readFileSync('scripts/template.html', 'UTF-8');
 const allCards = YAML.load(`content/${style}/cards.yml`);
 
@@ -19,6 +23,7 @@ const formattedTemplate = template
   <script>
     window.__gamename = '${title}';
     window.__gamedata = ${JSON.stringify(relevantInfo)};
+    window.__faqurl = '${faqUrls[style] || ''}'
   </script>
   `)
   .split('<addgamehere>').join(title);
