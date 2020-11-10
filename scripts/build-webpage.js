@@ -9,7 +9,7 @@ rimraf.sync('dist');
 fs.mkdirSync('dist');
 
 const faqUrls = {
-  oath: 'https://seiyria.com/test/oath.json'
+  oath: 'https://dl.dropboxusercontent.com/s/qq3ckwivu0jixt4/oath.json?dl=0'
 };
 
 const template = fs.readFileSync('scripts/template.html', 'UTF-8');
