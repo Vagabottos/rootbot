@@ -63,4 +63,5 @@
 .tt p {
   float: left;
   margin-right: 10px;
+  margin-bottom: 0 !important;
 }
