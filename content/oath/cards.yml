@@ -593,8 +593,8 @@
     - Standard Deck
     - Discord
 
-- name: Bandit King
-  image: Bandit King
+- name: Bandit Chief
+  image: Bandit Chief
   set:
     - Standard Deck
     - Discord
@@ -1223,8 +1223,8 @@
     - Edifice
     - Beast
 
-- name: Abandoned Temple
-  image: Abandoned Temple
+- name: Ruined Temple
+  image: Ruined Temple
   set:
     - Standard Deck
     - Edifice
