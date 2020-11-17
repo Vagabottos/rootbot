@@ -65,8 +65,8 @@
     - Standard Deck
     - Beast
 
-- name: Zealots
-  image: Zealots
+- name: Mercenaries
+  image: Mercenaries
   set:
     - Standard Deck
     - Discord
@@ -95,8 +95,8 @@
     - Standard Deck
     - Discord
 
-- name: Gossip
-  image: Gossip
+- name: Sleight of Hand
+  image: Sleight of Hand
   set:
     - Standard Deck
     - Discord
@@ -269,8 +269,8 @@
     - Standard Deck
     - Beast
 
-- name: Memory of Nature
-  image: Memory of Nature
+- name: Roving Terror
+  image: Roving Terror
   set:
     - Standard Deck
     - Beast
@@ -515,8 +515,8 @@
     - Standard Deck
     - Discord
 
-- name: Mercenaries
-  image: Mercenaries
+- name: Zealots
+  image: Zealots
   set:
     - Standard Deck
     - Discord
@@ -587,8 +587,8 @@
     - Standard Deck
     - Discord
 
-- name: Sleight of Hand
-  image: Sleight of Hand
+- name: Gossip
+  image: Gossip
   set:
     - Standard Deck
     - Discord
@@ -1138,9 +1138,9 @@
   set:
     - Standard Deck
     - Beast
-
-- name: Roving Terror
-  image: Roving Terror
+    
+- name: Memory of Nature
+  image: Memory of Nature
   set:
     - Standard Deck
     - Beast
