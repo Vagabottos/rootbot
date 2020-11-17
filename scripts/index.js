@@ -13,7 +13,8 @@ const app = new Vue({
     sets: [...sets].sort(),
     observer: null,
     currentSet: '',
-    faqHash: {}
+    faqHash: {},
+    faqSubmitUrl: ''
   },
   
   methods: {
@@ -70,6 +71,10 @@ const app = new Vue({
       });
 
       this.faqHash = faqHash;
+    }
+
+    if(window.__faqsubmiturl) {
+      this.faqSubmitUrl = window.__faqsubmiturl;
     }
   },
   
