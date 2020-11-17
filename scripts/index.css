@@ -90,3 +90,7 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.tippy-tooltip {
+  max-width: 600px !important;
+}
