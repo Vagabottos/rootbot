@@ -12,6 +12,10 @@ const faqUrls = {
   oath: 'https://dl.dropboxusercontent.com/s/qq3ckwivu0jixt4/oath.json?dl=0'
 };
 
+const faqSubmitUrls = {
+  oath: 'https://forms.gle/iuJtmYzh74XoRQPj7'
+};
+
 const template = fs.readFileSync('scripts/template.html', 'UTF-8');
 const allCards = YAML.load(`content/${style}/cards.yml`);
 
@@ -23,7 +27,8 @@ const formattedTemplate = template
   <script>
     window.__gamename = '${title}';
     window.__gamedata = ${JSON.stringify(relevantInfo)};
-    window.__faqurl = '${faqUrls[style] || ''}'
+    window.__faqurl = '${faqUrls[style] || ''}';
+    window.__faqsubmiturl = '${faqSubmitUrls[style] || ''}';
   </script>
   `)
   .split('<addgamehere>').join(title);

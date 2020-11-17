@@ -38,6 +38,12 @@
           <img class="lazy" loading="lazy" src="placeholder.png" :data-src="'cards/' + card.image + '.png'" />
         </div>
       </div>
+
+      <div class="form-container" v-cloak v-if="faqSubmitUrl">
+        <div class="form-text">
+          Got a FAQ question that's not answered here? <a :href="faqSubmitUrl" target="_blank">Ask the Leder Games team!</a>
+        </div>
+      </div>
     </div>
 
     <!-- First script is dev mode, uncomment to see errors -->
