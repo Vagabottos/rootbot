@@ -35,6 +35,7 @@ Fort Cards - https://fortcards.seiyria.com
 
 **__Oath__**
 Oath Cards - https://oathcards.seiyria.com
+Oath: The Chronicle Companion - https://oath.seiyria.com
 Oath Legacy Vision - https://oath.vision
 `
     );
