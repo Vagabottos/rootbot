@@ -8,6 +8,7 @@ export interface IRule {
   pretext?: string;
   text?: string;
   subtext?: string;
+  posttext?: string;
 
   children?: IRule[];
   subchildren?: IRule[];
