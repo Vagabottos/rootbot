@@ -51,7 +51,7 @@ export class OathFAQCommand implements ICommand {
   }
 
   private trimExtra(msg: string): string {
-    return msg.split('$link:').join('').split('$').join('');
+    return msg.split('$link:').join('').split('$rule:').join('').split('$').join('');
   }
 
 }
