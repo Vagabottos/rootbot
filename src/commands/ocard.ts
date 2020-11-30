@@ -49,7 +49,7 @@ export class OathCardCommand implements ICommand {
       .attachFiles(attachFiles)
       .setDescription(this.formatTextForEmojis(card.text))
       .setAuthor(card.name, authorImage)
-      .setThumbnail(`https://oathcards.seiyria.com/cards/${encodeURIComponent(card.image)}.png`)
+      .setImage(`https://oathcards.seiyria.com/cards/${encodeURIComponent(card.image)}.png`)
       .setColor(SUIT_COLORS[card.suit]);
 
     if (card.initialLoadout) {
