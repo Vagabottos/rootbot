@@ -4,13 +4,13 @@ import * as YAML from 'yamljs';
 import * as FuzzySet from 'fuzzyset.js';
 
 import { BaseService } from '../base/BaseService';
-import { ICard } from '../interfaces';
+import { IVastCard } from '../interfaces';
 
 @Singleton
 @AutoWired
 export class VastCardService extends BaseService {
 
-  private cardsByName: { [key: string]: ICard } = {};
+  private cardsByName: { [key: string]: IVastCard } = {};
   private set: FuzzySet = new FuzzySet();
 
   public async init(client) {
@@ -19,7 +19,7 @@ export class VastCardService extends BaseService {
     this.loadCards();
   }
 
-  public getCard(name: string): ICard {
+  public getCard(name: string): IVastCard {
     const res = this.set.get(name);
     if (!res) { return null; }
 
