@@ -5,13 +5,13 @@ import * as FuzzySet from 'fuzzyset.js';
 import fetch from 'node-fetch';
 
 import { BaseService } from '../base/BaseService';
-import { ICard } from '../interfaces';
+import { IOathCard } from '../interfaces';
 
 @Singleton
 @AutoWired
 export class OathCardService extends BaseService {
 
-  private cardsByName: { [key: string]: ICard } = {};
+  private cardsByName: { [key: string]: IOathCard } = {};
   private set: FuzzySet = new FuzzySet();
   private faqByCard: Record<string, any[]> = {};
 
@@ -22,7 +22,7 @@ export class OathCardService extends BaseService {
     this.loadFAQ();
   }
 
-  public getCard(name: string): ICard {
+  public getCard(name: string): IOathCard {
     const res = this.set.get(name);
     if (!res) { return null; }
 
@@ -44,8 +44,8 @@ export class OathCardService extends BaseService {
   }
 
   private async loadFAQ() {
-    const faq = await fetch('https://dl.dropboxusercontent.com/s/qq3ckwivu0jixt4/oath.json?dl=0');
-    const json = await faq.json();
+    const faqData = await fetch('https://dl.dropboxusercontent.com/s/qq3ckwivu0jixt4/oath.json?dl=0');
+    const json = await faqData.json();
 
     json.forEach(({ card, faq }) => {
       this.faqByCard[card] = faq;
