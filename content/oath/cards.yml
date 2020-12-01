@@ -662,8 +662,8 @@
     - Standard Deck
     - Arcane
 
-- name: Charlatans
-  image: Charlatans
+- name: Charlatan
+  image: Charlatan
   suit: discord
   text: "**When Played**, burn all `symbol:secret` but one from the Darkest Secret."
   set:
@@ -1630,8 +1630,8 @@
     - Standard Deck
     - Beast
 
-- name: Vow of Beast-kin
-  image: Vow of Beast-kin
+- name: Vow of Beastkin
+  image: Vow of Beastkin
   suit: beast
   text: "You **must** muster on a card that matching any of your advisers, but you gain one more warband."
   set:
