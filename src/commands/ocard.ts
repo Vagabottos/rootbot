@@ -36,6 +36,8 @@ export class OathCardCommand implements ICommand {
       return;
     }
 
+    const faq = await this.cardService.getFAQ(card.name);
+
     const attachFiles = [];
 
     let authorImage = null;
@@ -51,6 +53,10 @@ export class OathCardCommand implements ICommand {
       .setAuthor(card.name, authorImage)
       .setImage(`https://oathcards.seiyria.com/cards/${encodeURIComponent(card.image)}.png`)
       .setColor(SUIT_COLORS[card.suit]);
+    
+    if (faq) {
+      embed.setFooter(`This card has FAQ associated with it. Do \`-ofaq ${card.name}\` to see it.`);
+    }
 
     if (card.initialLoadout) {
       embed.addField('Loadout', this.formatTextForEmojis(card.initialLoadout), true);
