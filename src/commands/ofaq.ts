@@ -32,11 +32,10 @@ export class OathFAQCommand implements ICommand {
     }
 
     const attachFiles = [
-      `./content/oath/cards/${card.image}.png`
+      // `./content/oath/cards/${card.image}.png`
     ];
 
     const embed = new Discord.RichEmbed()
-      .attachFiles(attachFiles)
       .setImage(`https://oathcards.seiyria.com/cards/${encodeURIComponent(card.image)}.png`)
 
     faq.forEach(({ q, a }) => {
