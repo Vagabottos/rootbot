@@ -74,7 +74,11 @@ export class OathRulesService extends BaseService {
   }
 
   public formatTitle(rule: IRule): string {
-    return `${rule.index} [${rule.parent}] ${rule.name}`;
+    if(rule.name) {
+      return `${rule.index} [${rule.parent}] ${rule.name}`;
+    }
+    
+    return `${rule.index} ${rule.parent}`;
   }
 
   public getRuleURL(rule: IRule): string {
