@@ -2261,3 +2261,51 @@
     - Standard Deck
     - Site
 
+- name: Banner of the Darkest Secret
+  image: Banner of the Darkest Secret
+  text: "**Recovery**: Players can only recover this from you if there is a card at your site whose suit does not match any of your advisers. _(You can recover it from yourself or the shared bank freely.)_ The new holder must place more `symbol:secret` than old `symbol:secret` here, then takes one `symbol:secret` from the old `symbol:secret` here, and the old holder takes the rest. **Search**: Spend 2 Supply if you're drawing from the world deck _(not the printed cost)_."
+  imageClass: rotated
+  set:
+    - Reference
+
+- name: Banner of the Mob's Favor
+  image: Banner of the Mob's Favor
+  text: "**Recovery**: Put more `symbol:favor` here than old `symbol:favor`. Put old `symbol:favor` in the favor banks, one by one, starting with any suit. Then, flip this banner. **Wake**: You **must** put `symbol:favor` here or move `symbol:favor` here to the favor bank with the least `symbol:favor`. Do this twice. **Search**: When playing to site, you may first discard a denizen card at any card in your region, and you may play to any site in your region."
+  imageClass: rotated
+  set:
+    - Reference
+
+- name: Banner of the People's Favor
+  image: Banner of the People's Favor
+  text: "**Recovery**: Put more `symbol:favor` here than old `symbol:favor`. Put old `symbol:favor` in the favor banks, one by one, starting with any suit. **Wake**: You **must** put `symbol:favor` here or move `symbol:favor` here to the favor bank with the least `symbol:favor`. Then, if this banner has 6+ `symbol:favor`, flip it. **Search**: When playing to site, you may first discard a denizen card at any card in your region, and you may play to any site in your region."
+  imageClass: rotated
+  set:
+    - Reference
+
+- name: Oathkeeper of Devotion
+  image: Oathkeeper of Devotion
+  text: "Oathkeeper of Devotion holds the Darkest Secret. Successor to the Chancellor holds the Grand Scepter."
+  set:
+    - Reference
+
+- name: Oathkeeper of Protection
+  image: Oathkeeper of Protection
+  text: "Oathkeeper of Protection holds the most relics and banners. Successor to the Chancellor holds the People's Favor."
+  set:
+    - Reference
+
+
+- name: Oathkeeper of Supremacy
+  image: Oathkeeper of Supremacy
+  text: "Oathkeeper of Supremacy rules the most sites. Successor to the Chancellor holds more relics and banners."
+  set:
+    - Reference
+
+
+- name: Oathkeeper of the People
+  image: Oathkeeper of the People
+  text: "Oathkeeper of the People holds the People's Favor. Successor to the Chancellor holds the Darkest Secret."
+  set:
+    - Reference
+
+
