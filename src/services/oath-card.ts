@@ -44,12 +44,18 @@ export class OathCardService extends BaseService {
   }
 
   private async loadFAQ() {
-    const faqData = await fetch('https://dl.dropboxusercontent.com/s/qq3ckwivu0jixt4/oath.json?dl=0');
-    const json = await faqData.json();
+    try {
+      
+      const faqData = await fetch('https://dl.dropboxusercontent.com/s/qq3ckwivu0jixt4/oath.json?dl=0');
+      const json = await faqData.json();
 
-    json.forEach(({ card, faq }) => {
-      this.faqByCard[card] = faq;
-    });
+      json.forEach(({ card, faq }) => {
+        this.faqByCard[card] = faq;
+      });
+    } catch(e) {
+      console.error('FAQ could not be loaded.');
+      console.error(e);
+    }
   }
 
 }
