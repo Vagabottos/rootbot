@@ -7,6 +7,7 @@ export * from './leaders';
 export * from './lrb';
 export * from './ocard';
 export * from './ofaq';
+export * from './opreview';
 export * from './orule';
 export * from './postgame';
 export * from './rootcards';
