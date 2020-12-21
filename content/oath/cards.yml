@@ -101,7 +101,7 @@
 - name: Tinker's Fair
   image: Tinker's Fair
   suit: hearth
-  text: "**Action**: Negotiate a binding exchange of `symbol:favor`, `symbol:secrets`, and relics with any player."
+  text: "**Action**: Negotiate a binding exchange of `symbol:favor`, `symbol:secret`, and relics with any player."
   set:
     - Standard Deck
     - Hearth
