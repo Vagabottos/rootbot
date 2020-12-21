@@ -40,7 +40,7 @@ export class OathVisionPreviewCommand implements ICommand {
       .setURL(`https://oath.vision/preview-chronicle/?seed=${encodeURIComponent(args)}`);
 
     embed.addField('Tale', `#${parsedGame.gameCount}`, true);
-    embed.addField('Oath', `of the ${parsedGame.oath}`, true);
+    embed.addField('Oath', `${parsedGame.oath}`, true);
 
     message.channel.send({ embed });
 
