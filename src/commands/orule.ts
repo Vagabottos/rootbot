@@ -9,7 +9,7 @@ import { OathRulesService } from '../services/oath-rules';
 export class OathRuleCommand implements ICommand {
 
   // tslint:disable-next-line
-  help = 'Display an Oath rule! Do `-rule 5.5.5` to search for that specific rule, `-rule Reliquary` to search for rules that include satchel, or `-rule imperial reliquary board` to pull up that specific rule.';
+  help = 'Display an Oath rule! Do `-orule 5.5.5` to search for that specific rule, `-rule Reliquary` to search for rules that include satchel, or `-rule imperial reliquary board` to pull up that specific rule.';
   aliases = ['orule', 'oru'];
 
   @Inject private oathRulesService: OathRulesService;
