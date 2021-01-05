@@ -31,7 +31,7 @@
   "dependencies": {
     "@seiyria/oath-parser": "^1.0.6",
     "@types/node": "12.11.7",
-    "axios": "0.19.0",
+    "axios": "0.21.1",
     "discord.js": "11.5.1",
     "discord.js-reaction-menu": "1.0.1",
     "dotenv": "8.0.0",
