@@ -24,6 +24,16 @@ export class RulesService extends BaseService {
     this.loadRules();
   }
 
+  public getRuleAndChildren(name: string): IRule[] {
+    const primaryRule = this.getRule(name);
+
+    if (!primaryRule) {
+      return [];
+    }
+
+    return [primaryRule, ...(primaryRule.children || primaryRule.subchildren || [])];
+  }
+
   public getRule(name: string): IRule {
     const res = this.set.get(name);
     if (!res) { return null; }
