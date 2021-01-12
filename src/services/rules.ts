@@ -31,10 +31,6 @@ export class RulesService extends BaseService {
       return [];
     }
 
-    if (!primaryRule.index) {
-      return [primaryRule];
-    }
-
     return [primaryRule, ...primaryRule.children || primaryRule.subchildren || []];
   }
 
