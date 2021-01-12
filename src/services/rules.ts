@@ -31,7 +31,7 @@ export class RulesService extends BaseService {
       return [];
     }
 
-    return [primaryRule, ...primaryRule.children || primaryRule.subchildren || []];
+    return [primaryRule, ...(primaryRule.children || primaryRule.subchildren || [])];
   }
 
   public getRule(name: string): IRule {
