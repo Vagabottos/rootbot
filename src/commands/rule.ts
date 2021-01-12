@@ -1,6 +1,6 @@
 
 import { Inject, AutoWired, Singleton } from 'typescript-ioc';
-import * as Discord from 'discord.js';
+import * as DiscordMenu from 'discord.js-reaction-menu';
 
 import { ICommand, ICommandArgs, ICommandResult } from '../interfaces';
 import { RulesService } from '../services/rules';
@@ -18,13 +18,24 @@ export class RuleCommand implements ICommand {
   async execute(cmdArgs: ICommandArgs): Promise<ICommandResult> {
     const { message, args } = cmdArgs;
 
-    const rule = this.rulesService.getRule(args);
-    if (!rule) {
+    const rules = this.rulesService.getRuleAndChildren(args);
+    if (!rules) {
       message.channel.send(`Sorry! I could not find anything like "${args}"`);
       return;
     }
 
-    message.channel.send({ embed: this.rulesService.createRuleEmbed(rule) });
+    if (rules.length === 1) {
+      message.channel.send({ embed: this.rulesService.createRuleEmbed(rules[0]) });
+    } else {
+      const allRules = rules.slice(0, 9);
+
+      const pages = allRules.map((x) => this.rulesService.createRuleEmbed(x));
+
+      const reactions = { first: '⏪', back: '◀', next: '▶' };
+
+      // tslint:disable-next-line
+      new DiscordMenu.menu(message.channel, message.author.id, pages, 120000, reactions);
+    }
 
     return { };
   }
