@@ -16,6 +16,8 @@ export class SeiyriaCommand implements ICommand {
   async execute(cmdArgs: ICommandArgs): Promise<ICommandResult> {
     const { message } = cmdArgs;
     message.author.send(`
+Check them all these out @ https://leder.seiyria.com
+
 **__Vast__**
 Vast: The Crystal Companion - https://vast.seiyria.com
 Vast Cards - https://vastcards.seiyria.com
