@@ -53,5 +53,5 @@ dl('Vagabottos/cards-app-shell', 'dist', () => {
     .split('$AppShortTitle$').join(config.AppShortTitle)
     .split('$AppThemeColor$').join(config.AppThemeColor);
 
-  fs.writeFileSync('dist/index.html', formattedManifest);
+  fs.writeFileSync('dist/www/assets/favicon/manifest.json', formattedManifest);
 });
