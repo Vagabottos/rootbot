@@ -1,0 +1,14 @@
+{
+  "AppTitle": "Vast Cards",
+  "AppShortTitle": "Vast Cards",
+  "AppDescription": "Vast Cards contains a reference of all Vast: The Crystal Caverns & Vast: The Mysterious Manor cards.",
+  "AppRootDomain": "vastcards.seiyria.com",
+  "AppThemeColor": "#99629a",
+  "AppLanguages": [
+    { "code": "en-US", "name": "English" }
+  ],
+  "AppFAQ": {
+  },
+  "AppFAQRequest": {
+  }
+}
