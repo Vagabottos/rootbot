@@ -1,0 +1,14 @@
+{
+  "AppTitle": "Fort Cards",
+  "AppShortTitle": "Fort Cards",
+  "AppDescription": "Fort Cards contains a reference of all Fort cards.",
+  "AppRootDomain": "fortcards.seiyria.com",
+  "AppThemeColor": "#99629a",
+  "AppLanguages": [
+    { "code": "en-US", "name": "English" }
+  ],
+  "AppFAQ": {
+  },
+  "AppFAQRequest": {
+  }
+}

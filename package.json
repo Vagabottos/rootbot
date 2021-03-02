@@ -9,11 +9,11 @@
     "test:lint": "tslint --project .",
     "test:unit": "ava-ts src/test/**.test.ts",
     "test": "npm run test:lint && npm run test:unit",
-    "watch:webpage": "live-server --open=dist --watch=dist",
-    "build:webpage:root": "node scripts/build-webpage --style=root",
-    "build:webpage:fort": "node scripts/build-webpage --style=fort",
-    "build:webpage:oath": "node scripts/build-webpage --style=oath",
-    "build:webpage:vast": "node scripts/build-webpage --style=vast"
+    "watch:app": "live-server --open=dist --watch=dist",
+    "build:app:root": "node scripts/build-app --style=root",
+    "build:app:fort": "node scripts/build-app --style=fort",
+    "build:app:oath": "node scripts/build-app --style=oath",
+    "build:app:vast": "node scripts/build-app --style=vast"
   },
   "repository": {
     "type": "git",
@@ -46,9 +46,11 @@
   "devDependencies": {
     "ava": "^2.1.0",
     "ava-ts": "^0.25.2",
+    "download-github-repo": "^0.1.4",
     "fs-extra": "^8.1.0",
     "live-server": "^1.2.1",
     "nodemon": "^1.19.1",
+    "require-dir": "^1.2.0",
     "rimraf": "^3.0.2",
     "tslint": "^5.18.0"
   }

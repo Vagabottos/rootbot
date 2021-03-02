@@ -1,0 +1,14 @@
+{
+  "AppTitle": "Root Cards",
+  "AppShortTitle": "Root Cards",
+  "AppDescription": "Root Cards contains a reference of all Root: A Game of Woodland Might and Right.",
+  "AppRootDomain": "rootcards.seiyria.com",
+  "AppThemeColor": "#99629a",
+  "AppLanguages": [
+    { "code": "en-US", "name": "English" }
+  ],
+  "AppFAQ": {
+  },
+  "AppFAQRequest": {
+  }
+}
