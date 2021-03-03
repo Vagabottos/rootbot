@@ -51,9 +51,9 @@ export class OathCardCommand implements ICommand {
       .attachFiles(attachFiles)
       .setDescription(this.formatTextForEmojis(card.text))
       .setAuthor(card.name, authorImage)
-      .setImage(`https://oathcards.seiyria.com/cards/${encodeURIComponent(card.image)}.png`)
+      .setImage(`https://oathcards.seiyria.com/assets/cards/${encodeURIComponent(card.image)}.png`)
       .setColor(SUIT_COLORS[card.suit]);
-    
+
     if (faq) {
       embed.setFooter(`This card has FAQ associated with it. Do \`-ofaq ${card.name}\` to see it.`);
     }
