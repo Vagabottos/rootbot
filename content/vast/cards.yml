@@ -1255,6 +1255,60 @@
     - Mysterious Manor
     - MM - Enchanter
 
+- name: Slashy
+  image: skeleton-0
+  set:
+    - Mysterious Manor
+    - MM - Skeletons
+
+- name: Casty
+  image: skeleton-1
+  set:
+    - Mysterious Manor
+    - MM - Skeletons
+
+- name: Stabby
+  image: skeleton-2
+  set:
+    - Mysterious Manor
+    - MM - Skeletons
+
+- name: Shooty
+  image: skeleton-3
+  set:
+    - Mysterious Manor
+    - MM - Skeletons
+
+- name: Screamy
+  image: skeleton-4
+  set:
+    - Mysterious Manor
+    - MM - Skeletons
+
+- name: Shiny
+  image: skeleton-5
+  set:
+    - Mysterious Manor
+    - MM - Skeletons
+
+- name: Singy
+  image: skeleton-6
+  set:
+    - Mysterious Manor
+    - MM - Skeletons
+
+- name: Sniffy
+  image: skeleton-7
+  set:
+    - Mysterious Manor
+    - MM - Skeletons
+
+- name: Smashy
+  image: skeleton-8
+  set:
+    - Mysterious Manor
+    - MM - Skeletons
+
 - name: Dark Lamp
   image: items-0
   set:
