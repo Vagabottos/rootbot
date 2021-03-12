@@ -1273,7 +1273,7 @@
 - name: Vow of Kinship
   image: Vow of Kinship
   suit: nomad
-  text: "Move all of your `symbol:favor` to the `suit:nomad` bank. Any `symbol:favor` you gain or take is put in the `symbol:nomad` bank. You can use `symbol:favor` in the `suit:nomad` bank as if it is on your board."
+  text: "Move all of your `symbol:favor` to the `suit:nomad` bank. Any `symbol:favor` you gain or take is put in the `suit:nomad` bank. You can use `symbol:favor` in the `suit:nomad` bank as if it is on your board."
   set:
     - Standard Deck
     - Nomad
@@ -1306,7 +1306,7 @@
 - name: Rival Khan
   image: Rival Khan
   suit: nomad
-  text: "±4 `symbol:dicer` if your enemy has a `symbol:nomad` adviser. At end, discard Rival Khan."
+  text: "±4 `symbol:dicer` if your enemy has a `suit:nomad` adviser. At end, discard Rival Khan."
   set:
     - Standard Deck
     - Nomad
@@ -1314,7 +1314,7 @@
 - name: Lost Tongue
   image: Lost Tongue
   suit: nomad
-  text: "Other players **cannot** target or take your relics or banners in any way unless they rule a `symbol:nomad` card."
+  text: "Other players **cannot** target or take your relics or banners in any way unless they rule a `suit:nomad` card."
   set:
     - Standard Deck
     - Nomad
