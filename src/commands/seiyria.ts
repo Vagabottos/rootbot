@@ -20,6 +20,7 @@ Check them all these out @ https://leder.seiyria.com
 
 **__Vast__**
 Vast: The Crystal Companion - https://vast.seiyria.com
+Vast: Cards & Boards - https://vastcb.seiyria.com
 Vast Cards - https://vastcards.seiyria.com
 
 **__Root__**
