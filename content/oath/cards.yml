@@ -177,7 +177,7 @@
 - name: Book Burning
   image: Book Burning
   suit: discord
-  text: "**Action**: If you're victorious and targeted the defender's pawn, they also burn all of the `symbol:favor` on their board except their last."
+  text: "**Action**: If you're victorious and targeted the defender's pawn, they also burn all of the `symbol:secret` on their board except their last."
   set:
     - Standard Deck
     - Discord
@@ -647,7 +647,7 @@
 - name: Witch's Bargain
   image: Witch's Bargain
   suit: arcane
-  text: "Give `symbol:secret` to a player whose pawn is at your site to take `symbol:favor` `symbol:favor` from them, or give `symbol:favor` `symbol:favor` for `symbol:secret`, any number of times."
+  text: "**Action**: Give `symbol:secret` to a player whose pawn is at your site to take `symbol:favor` `symbol:favor` from them, or give `symbol:favor` `symbol:favor` for `symbol:secret`, any number of times."
   powerCost: `symbol:secret`
   set:
     - Standard Deck
