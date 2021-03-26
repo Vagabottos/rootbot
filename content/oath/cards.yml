@@ -1961,7 +1961,7 @@
 # Visions
 - name: Conspiracy
   image: Conspiracy
-  text: "_If drawn from the world deck, increase Visions Drawn._ **Anyone** can play his face up._ **When Played**: You may burn `symbol:secret` to take one relic or banner from a player whose pawn is at your site. If it's a banner, it burns `symbol:favor` `symbol:favor` / `symbol:secret` `symbol:secret`. To do so, you **must** have at least two advisers whose units match any of their adviers. Return this card to the box."
+  text: "_If drawn from the world deck, increase Visions Drawn. **Anyone** can play his face up._ **When Played**: You may burn `symbol:secret` to take one relic or banner from a player whose pawn is at your site. If it's a banner, it burns `symbol:favor` `symbol:favor` / `symbol:secret` `symbol:secret`. To do so, you **must** have at least two advisers whose units match any of their adviers. Return this card to the box."
   imageClass: rotated
   set:
     - Standard Deck
@@ -1969,7 +1969,7 @@
 
 - name: Vision of Faith
   image: Vision of Faith
-  text: "_If drawn from the world deck, increase Visions Drawn._ **Exiles** can play this face up on their Revealed Vision space. **Wake**: You win if you hold the Darkest Secret and at least three visions have been drawn from the deck."
+  text: "_If drawn from the world deck, increase Visions Drawn. **Exiles** can play this face up on their Revealed Vision space._ **Wake**: You win if you hold the Darkest Secret and at least three visions have been drawn from the deck."
   imageClass: rotated
   set:
     - Standard Deck
@@ -1977,7 +1977,7 @@
 
 - name: Vision of Rebellion
   image: Vision of Rebellion
-  text: "_If drawn from the world deck, increase Visions Drawn._ **Exiles** can play this face up on their Revealed Vision space. **Wake**: You win if you hold the People's Favor and at least three visions have been drawn from the deck."
+  text: "_If drawn from the world deck, increase Visions Drawn. **Exiles** can play this face up on their Revealed Vision space._ **Wake**: You win if you hold the People's Favor and at least three visions have been drawn from the deck."
   imageClass: rotated
   set:
     - Standard Deck
@@ -1985,7 +1985,7 @@
 
 - name: Vision of Sanctuary
   image: Vision of Sanctuary
-  text: "_If drawn from the world deck, increase Visions Drawn._ **Exiles** can play this face up on their Revealed Vision space. **Wake**: You win if you hold the most relics and banners, and at least three visions have been drawn from the deck."
+  text: "_If drawn from the world deck, increase Visions Drawn. **Exiles** can play this face up on their Revealed Vision space._ **Wake**: You win if you hold the most relics and banners, and at least three visions have been drawn from the deck."
   imageClass: rotated
   set:
     - Standard Deck
@@ -1993,7 +1993,7 @@
 
 - name: Vision of Conquest
   image: Vision of Conquest
-  text: "_If drawn from the world deck, increase Visions Drawn._ **Exiles** can play this face up on their Revealed Vision space. **Wake**: You win if you rule the most sites and at least three visions have been drawn from the deck."
+  text: "_If drawn from the world deck, increase Visions Drawn. **Exiles** can play this face up on their Revealed Vision space._ **Wake**: You win if you rule the most sites and at least three visions have been drawn from the deck."
   imageClass: rotated
   set:
     - Standard Deck
