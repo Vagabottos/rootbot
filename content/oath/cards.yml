@@ -2294,17 +2294,43 @@
   set:
     - Reference
 
-
 - name: Oathkeeper of Supremacy
   image: Oathkeeper of Supremacy
   text: "Oathkeeper of Supremacy rules the most sites. Successor to the Chancellor holds more relics and banners."
   set:
     - Reference
 
-
 - name: Oathkeeper of the People
   image: Oathkeeper of the People
   text: "Oathkeeper of the People holds the People's Favor. Successor to the Chancellor holds the Darkest Secret."
+  set:
+    - Reference
+
+- name: Brutal
+  image: Brutal
+  imageClass: square
+  text: "If you're the attacker, the defeated player _(even you)_ **must** kill all warbands in their force."
+  set:
+    - Reference
+
+- name: Careless
+  image: Careless
+  imageClass: square
+  text: "You gain one more `symbol:favor` _(even when trading for `symbol:secret`)_. You **must** gain one less `symbol:secret` when trading for `symbol:secret`."
+  set:
+    - Reference
+
+- name: Decadent
+  image: Decadent
+  imageClass: square
+  text: "Spend no Supply if you're traveling to a site in the Cradle from a site in the Provinces or Hinterland. If you're traveling to a site in the Hinterland, increase the Travel cost by 1 Supply."
+  set:
+    - Reference
+
+- name: Greedy
+  image: Greedy
+  imageClass: square
+  text: "Draw two more cards. _(Stop after a Vision as normal.)_ You **cannot** search if you would spend more than 2 Supply."
   set:
     - Reference
 
