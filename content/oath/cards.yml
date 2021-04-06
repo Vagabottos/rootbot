@@ -723,7 +723,7 @@
 - name: Vow of Renewal
   image: Vow of Renewal
   suit: discord
-  text: "You **cannot** recover the People's Favor. Whenever any player burns `secret:favor`, you take the `secret:favor` instead."
+  text: "You **cannot** recover the People's Favor. Whenever any player burns `symbol:favor`, you take the `symbol:favor` instead."
   set:
     - Standard Deck
     - Discord
