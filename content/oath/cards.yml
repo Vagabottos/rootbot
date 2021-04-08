@@ -1961,7 +1961,7 @@
 # Visions
 - name: Conspiracy
   image: Conspiracy
-  text: "_If drawn from the world deck, increase Visions Drawn. **Anyone** can play his face up._ **When Played**: You may burn `symbol:secret` to take one relic or banner from a player whose pawn is at your site. If it's a banner, it burns `symbol:favor` `symbol:favor` / `symbol:secret` `symbol:secret`. To do so, you **must** have at least two advisers whose units match any of their adviers. Return this card to the box."
+  text: "_If drawn from the world deck, increase Visions Drawn. **Anyone** can play his face up._ **When Played**: You may burn `symbol:secret` to take one relic or banner from a player whose pawn is at your site. If it's a banner, it burns `symbol:favor` `symbol:favor` / `symbol:secret` `symbol:secret`. To do so, you **must** have at least two advisers whose suits match any of their adviers. Return this card to the box."
   imageClass: rotated
   set:
     - Standard Deck
