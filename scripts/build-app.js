@@ -14,7 +14,7 @@ const style = process.argv[2].split('=')[1];
 const allCards = YAML.load(`content/${style}/cards.yml`);
 
 const config = require(`${__dirname}/../content/${style}/config.json`);
-const relevantInfo = allCards.map(x => ({ name: x.name, image: x.image, imageClass: x.imageClass, set: x.set }));
+const relevantInfo = allCards.map(x => ({ name: x.name, image: x.image, imageClass: x.imageClass, set: x.set, text: x.text }));
 const i18n = reqdir(`${__dirname}/../content/${style}/i18n`);
 
 // clone the shell
