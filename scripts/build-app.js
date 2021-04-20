@@ -1,12 +1,31 @@
 
 const childProcess = require('child_process');
 const YAML = require('yamljs');
-const rimraf = require('rimraf');
+const imagemin = require('imagemin');
+const webp = require('imagemin-webp');
 const fs = require('fs-extra');
 const reqdir = require('require-dir');
 const dl = require('download-github-repo');
 
 const style = process.argv[2].split('=')[1];
+
+const fixImages = async () => {
+  await imagemin([
+    `./content/${style}/cards/*.png`
+  ], {
+    destination: `./content/${style}/cards`,
+    plugins: [
+      webp({
+        quality: 40
+      })
+    ]
+  });
+
+  console.log('Done compressing images.');
+
+};
+
+fixImages();
 
 // rimraf.sync('dist');
 // fs.mkdirSync('dist');
@@ -14,7 +33,7 @@ const style = process.argv[2].split('=')[1];
 const allCards = YAML.load(`content/${style}/cards.yml`);
 
 const config = require(`${__dirname}/../content/${style}/config.json`);
-const relevantInfo = allCards.map(x => ({ name: x.name, image: x.image, imageClass: x.imageClass, set: x.set }));
+const relevantInfo = allCards.map(x => ({ name: x.name, image: x.image.split('.png').join('.webp'), imageClass: x.imageClass, set: x.set }));
 const i18n = reqdir(`${__dirname}/../content/${style}/i18n`);
 
 // clone the shell
