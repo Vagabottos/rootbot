@@ -18,7 +18,21 @@ export class RuleCommand implements ICommand {
   async execute(cmdArgs: ICommandArgs): Promise<ICommandResult> {
     const { message, args } = cmdArgs;
 
+    if(args === '9.8' || args === '9.8.1') {
+      message.channel.send({
+        embed: this.rulesService.createRuleEmbed({
+          name: 'We understand the Vagabond is a dick, but...',
+          text: '**Deal with It**: Life isn\'t fair.',
+          parent: 'Vagabond',
+          color: '6d6e70',
+          index: args
+         })
+      });
+      return { };
+    }
+
     const rules = this.rulesService.getRuleAndChildren(args);
+    console.log(rules)
     if (!rules) {
       message.channel.send(`Sorry! I could not find anything like "${args}"`);
       return;
