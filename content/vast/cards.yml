@@ -1639,19 +1639,19 @@
     - Mysterious Manor
     - MM - Shadow Paladin
 
-- name: Shroud
+- name: Gaze
   image: shadowpaladin-12
   set:
     - Mysterious Manor
     - MM - Shadow Paladin
 
-- name: Strike
+- name: Shroud
   image: shadowpaladin-4
   set:
     - Mysterious Manor
     - MM - Shadow Paladin
 
-- name: Gaze
+- name: Strike
   image: shadowpaladin-8
   set:
     - Mysterious Manor
