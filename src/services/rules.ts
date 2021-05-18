@@ -99,7 +99,7 @@ export class RulesService extends BaseService {
 
   private async loadRules() {
 
-    const rules: any[] = (await axios.get('https://root.seiyria.com/assets/rules.json')).data;
+    const rules: any[] = (await axios.get('https://root.seiyria.com/assets/i18n/rules/en-US.json')).data;
 
     const recurse = (rule, curIdx, { parent, color }) => {
       const children = rule.children || rule.subchildren;
