@@ -88,7 +88,7 @@
 - name: "Foremole"
   owner: duchy
   image: mole-foremole
-  text: "Spend a card to place a building in any clearing you rule."
+  text: "Reveal a card to place a building in any clearing you rule."
   set:
     - Underworld
     - Moles
