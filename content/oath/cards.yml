@@ -372,7 +372,7 @@
 - name: Rangers
   image: Rangers
   suit: beast
-  text: "Ignore all skulls `symbol:skull` you roll. +2 `symbol:dicer` if the defense pool as 4+ `symbol:diceb`."
+  text: "Ignore all skulls `symbol:skull` you roll. +2 `symbol:dicer` if the defense pool has 4+ `symbol:diceb`."
   powerCost: `symbol:favor`
   set:
     - Standard Deck
