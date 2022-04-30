@@ -1411,8 +1411,6 @@
   set:
     - Landmarks
 
-- name:
-
 # Intro
 - name: "Corvid Intro"
   image: intro-corvid
