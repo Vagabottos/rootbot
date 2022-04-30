@@ -5,7 +5,7 @@
   image: bird-builder
   text: "Ignore your Disain for Trade when you craft."
   subtext: "Recruit & Move"
-  set: 
+  set:
     - Base Game
     - Eyrie
 
@@ -14,7 +14,7 @@
   image: bird-charismatic
   text: "You place two warriors, not one, each time you recruit."
   subtext: "Recruit & Battle"
-  set: 
+  set:
     - Base Game
     - Eyrie
 
@@ -23,7 +23,7 @@
   image: bird-commander
   text: "As attacker in battle, you deal an extra hit."
   subtext: "Move & Battle"
-  set: 
+  set:
     - Base Game
     - Eyrie
 
@@ -32,7 +32,7 @@
   image: bird-despot
   text: "Score a point if you remove at least one building or token in battle."
   subtext: "Move & Build"
-  set: 
+  set:
     - Base Game
     - Eyrie
 
@@ -41,7 +41,7 @@
   owner: duchy
   image: mole-banker
   text: "Spend any number of cards of the same suit to score equal VP."
-  set: 
+  set:
     - Underworld
     - Moles
 
@@ -49,7 +49,7 @@
   owner: duchy
   image: mole-baronofdirt
   text: "Score +1 VP per market on the map."
-  set: 
+  set:
     - Underworld
     - Moles
 
@@ -57,7 +57,7 @@
   owner: duchy
   image: mole-brigadier
   text: "Take up to two moves OR initiate up to two battles."
-  set: 
+  set:
     - Underworld
     - Moles
 
@@ -65,7 +65,7 @@
   owner: duchy
   image: mole-captain
   text: "Initiate a battle."
-  set: 
+  set:
     - Underworld
     - Moles
 
@@ -73,7 +73,7 @@
   owner: duchy
   image: mole-duchessofmud
   text: "Score +2 VP if all tunnels are on the map."
-  set: 
+  set:
     - Underworld
     - Moles
 
@@ -81,7 +81,7 @@
   owner: duchy
   image: mole-earlofstone
   text: "Score +1 VP per citadel on the map."
-  set: 
+  set:
     - Underworld
     - Moles
 
@@ -89,7 +89,7 @@
   owner: duchy
   image: mole-foremole
   text: "Spend a card to place a building in any clearing you rule."
-  set: 
+  set:
     - Underworld
     - Moles
 
@@ -97,7 +97,7 @@
   owner: duchy
   image: mole-marshal
   text: "Take a move."
-  set: 
+  set:
     - Underworld
     - Moles
 
@@ -105,9 +105,74 @@
   owner: duchy
   image: mole-mayor
   text: "Take the action of any swayed noble of squire."
-  set: 
+  set:
     - Underworld
     - Moles
+
+# BADGER OWNED CARDS
+- name: "Faithful Retainer"
+  owner: badgers
+  image: badgers-retainer
+  text: "When you discard this card, remove it permanently."
+  set:
+    - Marauders
+
+# RATS OWNED CARDS
+- name: "Mood: Bitter"
+  owner: rats
+  image: rats-mood-bitter
+  text: "<emoji>:item_hammer In battle with warlord, before the roll, place one warrior in the battle clearing per mob you choose to removve from the battle clearing and adjacent ones."
+  set:
+    - Marauders
+
+- name: "Mood: Grandiose"
+  owner: rats
+  image: rats-mood-grandiose
+  text: "<emoji>:item_tea Swap your Advance the Warlord step and Command the Hundreds step."
+  set:
+    - Marauders
+
+- name: "Mood: Jubilant"
+  owner: rats
+  image: rats-mood-jubilant
+  text: "<emoji>:item_boot After you incite your warlord's clearing, you may roll the mob die to place a mob _(as described in your Rage step)_ up to four times."
+  set:
+    - Marauders
+
+- name: "Mood: Lavish"
+  owner: rats
+  image: rats-mood-lavish
+  text: "At the end of Birdsong, you may remove any items from your Hoard to place two warriors per item removed into your warlord's clearing."
+  set:
+    - Marauders
+
+- name: "Mood: Relentless"
+  owner: rats
+  image: rats-mood-relentless
+  text: "<emoji>:item_sack Whenever you advance your warlord and both move and battle, you may move or battle with your warlord _(like half of an advance)_."
+  set:
+    - Marauders
+
+- name: "Mood: Rowdy"
+  owner: rats
+  image: rats-mood-rowdy
+  text: "<emoji>:item_coin In Evening, draw one more card. If your warlord's clearing has three or more enemy pieces, draw two more cards instead."
+  set:
+    - Marauders
+
+- name: "Mood: Stubborn"
+  owner: rats
+  image: rats-mood-stubborn
+  text: "<emoji>:item_crossbow In battle with your warlord, you ignore the first hit you take."
+  set:
+    - Marauders
+
+- name: "Mood: Wrathful"
+  owner: rats
+  image: rats-mood-wrathful
+  text: "<emoji>:item_sword As attacker in battle with your warlord, you deal an extra hit _(When looting, you do deal this hit)_."
+  set:
+    - Marauders
 
 # VAGABOND OWNED CARDS
 - name: Arbiter
@@ -115,7 +180,7 @@
   image: vagabond-arbiter
   text: "Protector: Before rolling in battle, the defender may enlist the Arbiter if he is in the battle's clearing. The Arbiter scores one point and adds undamaged swords to the defender's maximum rolled hits."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_sword <emoji>:item_sword"
-  set: 
+  set:
     - Base Game
     - Vagabond
 
@@ -124,7 +189,7 @@
   image: vagabond-ranger
   text: "Hideout: Repair three items. Then, immediately end daylight."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_crossbow <emoji>:item_sword"
-  set: 
+  set:
     - Base Game
     - Vagabond
 
@@ -133,7 +198,7 @@
   image: vagabond-scoundrel
   text: "Scorched Earth: Place this torch in your clearing. Remove all enemy pieces there. Pieces can no longer be placed in or moved into this clearing."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_boot <emoji>:item_torch <emoji>:item_crossbow"
-  set: 
+  set:
     - Base Game
     - Vagabond
 
@@ -142,7 +207,7 @@
   image: vagabond-thief
   text: "Steal: Take a random card from a player in your clearing"
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_tea <emoji>:item_sword"
-  set: 
+  set:
     - Base Game
     - Vagabond
 
@@ -151,7 +216,7 @@
   image: vagabond-tinker
   text: "Day Labor: Take a card from the discard pile matching your clearing."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_sack <emoji>:item_hammer"
-  set: 
+  set:
     - Base Game
     - Vagabond
 
@@ -160,7 +225,7 @@
   image: vagabond-vagrant
   text: "Instigate: Initiate a battle in your clearing. You choose both attacker and defender, and you remove pieces for both."
   subtext: "Starting Items: <emoji>:item_coin <emoji>:item_torch <emoji>:item_boot"
-  set: 
+  set:
     - Base Game
     - Vagabond
 
@@ -169,7 +234,7 @@
   image: vagabond-adventurer
   text: "Improvise: Once per turn, you may damage any unexhausted item to treat it as any other item in order to complete a quest."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_torch <emoji>:item_hammer"
-  set: 
+  set:
     - Underworld
     - Vagabond
 
@@ -178,7 +243,7 @@
   image: vagabond-harrier
   text: "Glide: Move to any clearing (even Hostile) on the map without exhausting any <emoji>:item_boot."
   subtext: "Starting Items: <emoji>:item_coin <emoji>:item_torch <emoji>:item_crossbow <emoji>:item_sword"
-  set: 
+  set:
     - Underworld
     - Vagabond
 
@@ -187,7 +252,7 @@
   image: vagabond-ronin
   text: "Swift Strike: After rolling in battle, you may exhaust a sword to deal an extra hit."
   subtext: "Starting Items: <emoji>:item_boot <emoji>:item_boot <emoji>:item_torch <emoji>:item_sword"
-  set: 
+  set:
     - Underworld
     - Vagabond
 
@@ -195,7 +260,7 @@
 - name: "Errand in a rabbit clearing"
   owner: vagabond
   image: quest-errandbunny
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -207,7 +272,7 @@
 - name: "Errand in a fox clearing"
   owner: vagabond
   image: quest-errandfox
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -219,7 +284,7 @@
 - name: "Escort in a mouse clearing"
   owner: vagabond
   image: quest-escort
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -231,7 +296,7 @@
 - name: "Expel Bandits in a rabbit clearing"
   owner: vagabond
   image: quest-expelbanditsbunny
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -243,7 +308,7 @@
 - name: "Expel Bandits in a mouse clearing"
   owner: vagabond
   image: quest-expelbanditsmouse
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -255,7 +320,7 @@
 - name: "Fend off a Bear in a rabbit clearing"
   owner: vagabond
   image: quest-fendoffabearbunny
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -267,7 +332,7 @@
 - name: "Fend off a Bear in a mouse clearing"
   owner: vagabond
   image: quest-fendoffabearmouse
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -279,7 +344,7 @@
 - name: "Fundraising in a fox clearing"
   owner: vagabond
   image: quest-fundraising
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -291,7 +356,7 @@
 - name: "Give a Speech in a rabbit clearing"
   owner: vagabond
   image: quest-giveaspeechbunny
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -303,7 +368,7 @@
 - name: "Give a Speech in a fox clearing"
   owner: vagabond
   image: quest-giveaspeechfox
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -315,7 +380,7 @@
 - name: "Guard Duty in a rabbit clearing"
   owner: vagabond
   image: quest-guarddutybunny
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -327,7 +392,7 @@
 - name: "Guard Duty in a mouse clearing"
   owner: vagabond
   image: quest-guarddutymouse
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -339,7 +404,7 @@
 - name: "Logistics Help in a fox clearing"
   owner: vagabond
   image: quest-logisticshelpfox
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -351,7 +416,7 @@
 - name: "Logistics Help in a mouse clearing"
   owner: vagabond
   image: quest-logisticshelpmouse
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -363,7 +428,7 @@
 - name: "Repair a Shed in a fox clearing"
   owner: vagabond
   image: quest-repairashed
-  set: 
+  set:
     - Base Game
     - Vagabond
   quest:
@@ -577,7 +642,7 @@
   set:
     - Base Game
     - Standard Deck
-  
+
 - name: "Corvid Planners"
   type: bird
   image: card-corvidplanners
@@ -654,7 +719,7 @@
     - Base Game
     - Standard Deck
     - Exiles & Partisans Deck
-  
+
 - name: "Eyrie Emigre"
   type: bird
   image: card-eyrieemigre
@@ -665,7 +730,7 @@
   text: "At the end of Birdsong, take a move, then initiate a battle in the clearing you moved into. If you did not take both actions, discard this card."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "False Orders"
   type: fox
   image: card-falseorders
@@ -675,7 +740,7 @@
   text: "In Birdsong, may discard this card to move half of an enemy's warriors (rounded up) from any clearing, as if you were that player, ignoring rule."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Favor of the Foxes"
   type: fox
   image: card-favorofthefoxes
@@ -728,7 +793,7 @@
     - Base Game
     - Standard Deck
     - Exiles & Partisans Deck
-  
+
 - name: "Fox Partisans"
   type: fox
   image: card-foxpartisans
@@ -738,7 +803,7 @@
   text: "In battle in fox clearings, may deal one extra hit, then discard all your cards except foxes."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Gently Used Knapsack"
   type: fox
   image: card-gentlyusedknapsack
@@ -751,7 +816,7 @@
     - Base Game
     - Standard Deck
     - Exiles & Partisans Deck
-  
+
 - name: "Informants"
   type: fox
   image: card-informants
@@ -762,7 +827,7 @@
   text: "In Evening, if you would draw cards, you may instead take one ambush card from the discard pile."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Investments"
   type: mouse
   image: card-investments
@@ -776,7 +841,7 @@
     - Base Game
     - Standard Deck
     - Exiles & Partisans Deck
-  
+
 - name: "League of Adventurous Mice"
   type: mouse
   image: card-leagueofadventrousmice
@@ -786,7 +851,7 @@
   text: "Once in Daylight, may exhaust an item in your Crafted Items box to take a move or initiate battle."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Master Engravers"
   type: mouse
   image: card-masterengravers
@@ -797,7 +862,7 @@
   text: "Whenever you craft an item, score one extra point."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Mouse-in-a-sack"
   type: mouse
   image: card-mouseinasack
@@ -810,7 +875,7 @@
     - Base Game
     - Standard Deck
     - Exiles & Partisans Deck
-  
+
 - name: "Mouse Partisans"
   type: mouse
   image: card-mousepartisans
@@ -820,7 +885,7 @@
   text: "In battle in mouse clearings, may deal one extra hit, then discard all your cards except mice."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Murine Broker"
   type: mouse
   image: card-murinebroker
@@ -831,7 +896,7 @@
   text: "Whenever another player crafts an item, draw a card."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Propaganda Bureau"
   type: fox
   image: card-propagandabureau
@@ -843,7 +908,7 @@
   text: "Once in Daylight, may spend a card to remove an enemy warrior from a matching clearing and place a warrior there."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Protection Racket"
   type: fox
   image: card-protectionracket
@@ -857,7 +922,7 @@
     - Base Game
     - Standard Deck
     - Exiles & Partisans Deck
-  
+
 - name: "Rabbit Partisans"
   type: bunny
   image: card-rabbitpartisans
@@ -867,7 +932,7 @@
   text: "In battle in rabbit clearings, may deal one extra hit, then discard all your cards except rabbits."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Root Tea (Bunny)"
   type: bunny
   image: card-rootteabunny
@@ -880,7 +945,7 @@
     - Base Game
     - Standard Deck
     - Exiles & Partisans Deck
-  
+
 - name: "Root Tea (Fox)"
   type: fox
   image: card-rootteafox
@@ -893,7 +958,7 @@
     - Base Game
     - Standard Deck
     - Exiles & Partisans Deck
-  
+
 - name: "Root Tea (Mouse)"
   type: mouse
   image: card-rootteamouse
@@ -906,7 +971,7 @@
     - Base Game
     - Standard Deck
     - Exiles & Partisans Deck
-  
+
 - name: "Royal Claim"
   type: bird
   image: card-royalclaim
@@ -920,7 +985,7 @@
   set:
     - Base Game
     - Standard Deck
-  
+
 - name: "Saboteurs"
   type: bird
   image: card-saboteurs
@@ -930,7 +995,7 @@
   text: "At the start of Birdsong, may discard this card to discard an enemys crafted card."
   set:
     - Exiles & Partisans Deck
-  
+
 - name: "Sappers"
   type: bird
   image: card-sappers
@@ -941,7 +1006,7 @@
   set:
     - Base Game
     - Standard Deck
-  
+
 - name: "Scouting Party"
   type: mouse
   image: card-scoutingparty
@@ -1148,7 +1213,7 @@
   text: "Whenever you destroy a token or building, the owner of the token loses 1 VP."
   set:
     - Clockwork
-    
+
 - name: "Marquise Easy (Trait)"
   image: difficulty-marquise-easy
   text: "Recruit two warriors during the recruit action."
@@ -1275,6 +1340,79 @@
   set:
     - Clockwork
 
+# Landmarks
+- name: "Landmark Setup"
+  image: landmark-setup
+  set:
+    - Landmarks
+
+- name: "Landmark Rules"
+  image: landmark-rules
+  set:
+    - Landmarks
+
+- name: "Black Market (Setup)"
+  image: landmark-blackmarket-setup
+  set:
+    - Landmarks
+
+- name: "Black Market"
+  image: landmark-blackmarket
+  set:
+    - Landmarks
+
+- name: "Elder Treetop (Setup)"
+  image: landmark-treetop-setup
+  set:
+    - Landmarks
+
+- name: "Elder Treetop"
+  image: landmark-treetop
+  set:
+    - Landmarks
+
+- name: "The Ferry (Setup)"
+  image: landmark-ferry-setup
+  set:
+    - Landmarks
+
+- name: "The Ferry"
+  image: landmark-ferry
+  set:
+    - Landmarks
+
+- name: "Legendary Forge (Setup)"
+  image: landmark-legendaryforge-setup
+  set:
+    - Landmarks
+
+- name: "Legendary Forge"
+  image: landmark-legendaryforge
+  set:
+    - Landmarks
+
+- name: "Lost City (Setup)"
+  image: landmark-lostcity-setup
+  set:
+    - Landmarks
+
+- name: "Lost City"
+  image: landmark-lostcity
+  set:
+    - Landmarks
+
+- name: "The Tower (Setup)"
+  image: landmark-tower-setup
+  set:
+    - Landmarks
+
+- name: "The Tower"
+  image: landmark-tower
+  set:
+    - Landmarks
+
+- name:
+
 # Intro
 - name: "Corvid Intro"
   image: intro-corvid
@@ -1285,43 +1423,257 @@
   image: intro-cult
   set:
     - Learn to Play
-    
+
 - name: "Cult Intro (2)"
   image: intro-cult-2
   set:
     - Learn to Play
-    
+
 - name: "Duchy Intro"
   image: intro-duchy
   set:
     - Learn to Play
-    
+
 - name: "Eyrie Intro"
   image: intro-eyrie
   set:
     - Learn to Play
-    
+
+- name: "Keepers in Iron Intro"
+  image: intro-badgers
+  set:
+    - Learn to Play
+
+- name: "Lord of the Hundreds Intro"
+  image: intro-rats
+  set:
+    - Learn to Play
+
 - name: "Marquise Intro"
   image: intro-marquise
   set:
     - Learn to Play
-    
+
 - name: "Riverfolk Intro"
   image: intro-riverfolk
   set:
     - Learn to Play
-    
+
 - name: "Riverfolk Intro (2)"
   image: intro-riverfolk
   set:
     - Learn to Play
-    
+
 - name: "Vagabond Intro"
   image: intro-vagabond
   set:
     - Learn to Play
-    
+
 - name: "Woodland Intro"
   image: intro-woodland
   set:
     - Learn to Play
+
+# ADSET Faction Setup
+- name: "ADSET: Corvid Conspiracy"
+  image: adset-setup-corvids
+  set:
+    - ADSET
+
+- name: "ADSET: Eyrie Dynasties"
+  image: adset-setup-eyrie
+  set:
+    - ADSET
+
+- name: "ADSET: Keepers in Iron"
+  image: adset-setup-badgers
+  set:
+    - ADSET
+
+- name: "ADSET: Lizard Cult"
+  image: adset-setup-cult
+  set:
+    - ADSET
+
+- name: "ADSET: Lord of the Hundreds"
+  image: adset-setup-rats
+  set:
+    - ADSET
+
+- name: "ADSET: Marquise de Cat"
+  image: adset-setup-marquise
+  set:
+    - ADSET
+
+- name: "ADSET: Riverfolk Company"
+  image: adset-setup-riverfolk
+  set:
+    - ADSET
+
+- name: "ADSET: Underground Duchy"
+  image: adset-setup-duchy
+  set:
+    - ADSET
+
+- name: "ADSET: Vagabond"
+  image: adset-setup-vagabond
+  set:
+    - ADSET
+
+# ADSET Hirelings
+
+- name: "Vault Keepers"
+  image: adset-hirelings-badgers-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Badger Bodyguards"
+  image: adset-hirelings-badgers-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Popular Band"
+  image: adset-hirelings-band-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Street Band"
+  image: adset-hirelings-band-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Highway Bandits"
+  image: adset-hirelings-bandits-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Bandit Gangs"
+  image: adset-hirelings-bandits-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Corvid Spies"
+  image: adset-hirelings-corvids-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Raven Sentries"
+  image: adset-hirelings-corvids-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Warm Sun Prophets"
+  image: adset-hirelings-cult-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Lizard Envoys"
+  image: adset-hirelings-cult-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Sunward Expedition"
+  image: adset-hirelings-duchy-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Mole Artisans"
+  image: adset-hirelings-duchy-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Last Dynasty"
+  image: adset-hirelings-eyrie-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Bluebird Nobles"
+  image: adset-hirelings-eyrie-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Forest Patrol"
+  image: adset-hirelings-marquise-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Feline Physicians"
+  image: adset-hirelings-marquise-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Furious Protector"
+  image: adset-hirelings-protector-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Stoic Protector"
+  image: adset-hirelings-protector-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Flame Bearers"
+  image: adset-hirelings-rats-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Rat Smugglers"
+  image: adset-hirelings-rats-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Riverfolk Flotilla"
+  image: adset-hirelings-riverfolk-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Otter Divers"
+  image: adset-hirelings-riverfolk-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "The Exile"
+  image: adset-hirelings-vagabond-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "The Brigand"
+  image: adset-hirelings-vagabond-small
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Spring Uprising"
+  image: adset-hirelings-woodland-big
+  imageClass: rotated
+  set:
+    - ADSET
+
+- name: "Rabbit Scouts"
+  image: adset-hirelings-woodland-small
+  imageClass: rotated
+  set:
+    - ADSET
