@@ -1518,6 +1518,11 @@
   set:
     - ADSET
 
+- name: "ADSET: Woodland Alliance"
+  image: adset-setup-woodland
+  set:
+    - ADSET
+
 # ADSET Hirelings
 
 - name: "Vault Keepers"
