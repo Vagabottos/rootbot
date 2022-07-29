@@ -288,7 +288,11 @@
     "Oathkeeper of Devotion": "Oathkeeper of Devotion",
     "Oathkeeper of Protection": "Oathkeeper of Protection",
     "Oathkeeper of Supremacy": "Oathkeeper of Supremacy",
-    "Oathkeeper of the People": "Oathkeeper of the People"
+    "Oathkeeper of the People": "Oathkeeper of the People",
+    "Brutal": "Brutal",
+    "Careless": "Careless",
+    "Decadent": "Decadent",
+    "Greedy": "Greedy"
   },
   "CardDesc": {
     "Wrestlers": "+ `symbol:diceb` if you sacrifice one warband in your force.",

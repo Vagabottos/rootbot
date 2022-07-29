@@ -288,7 +288,11 @@
     "Oathkeeper of Devotion": "Serment de Dévotion",
     "Oathkeeper of Protection": "Serment de Protection",
     "Oathkeeper of Supremacy": "Serment de Suprématie",
-    "Oathkeeper of the People": "Serment de Popularité"
+    "Oathkeeper of the People": "Serment de Popularité",
+    "Brutal": "Brutale",
+    "Careless": "Imprudente",
+    "Decadent": "Décadente",
+    "Greedy": "Gloutonne"
   },
   "CardDesc": {
     "Wrestlers": "+ `symbol:diceb` if you sacrifice one warband in your force.",

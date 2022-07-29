@@ -288,7 +288,11 @@
     "Oathkeeper of Devotion": "Custode dei Misteri",
     "Oathkeeper of Protection": "Custode della Difesa",
     "Oathkeeper of Supremacy": "Custode del Potere",
-    "Oathkeeper of the People": "Custode del Popolo"
+    "Oathkeeper of the People": "Custode del Popolo",
+    "Brutal": "Brutale",
+    "Careless": "Incurante",
+    "Decadent": "Decadente",
+    "Greedy": "Avida"
   },
   "CardDesc": {
     "Wrestlers": "+ `symbol:diceb` if you sacrifice one warband in your force.",
