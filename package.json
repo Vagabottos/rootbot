@@ -13,7 +13,8 @@
     "build:app:root": "node scripts/build-app --style=root",
     "build:app:fort": "node scripts/build-app --style=fort",
     "build:app:oath": "node scripts/build-app --style=oath",
-    "build:app:vast": "node scripts/build-app --style=vast"
+    "build:app:vast": "node scripts/build-app --style=vast",
+    "build:app:ahoy": "node scripts/build-app --style=ahoy"
   },
   "repository": {
     "type": "git",
