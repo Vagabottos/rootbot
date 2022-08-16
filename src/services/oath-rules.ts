@@ -77,7 +77,7 @@ export class OathRulesService extends BaseService {
     if(rule.name) {
       return `${rule.index} [${rule.parent}] ${rule.name}`;
     }
-    
+
     return `${rule.index} ${rule.parent}`;
   }
 
@@ -85,8 +85,8 @@ export class OathRulesService extends BaseService {
     return `https://oath.seiyria.com/#${this.slugTitle(rule.index, rule.name)}`;
   }
 
-  public createRuleEmbed(rule: IRule): Discord.RichEmbed {
-    return new Discord.RichEmbed()
+  public createRuleEmbed(rule: IRule): Discord.MessageEmbed {
+    return new Discord.MessageEmbed()
       .setTitle(this.formatTitle(rule))
       .setURL(this.getRuleURL(rule))
       .setDescription(this.fixRuleText(rule.text || rule.pretext || rule.subtext || rule.posttext || 'No subtext.'))

@@ -31,7 +31,7 @@ export class OathVisionPreviewCommand implements ICommand {
       return { };
     }
 
-    const embed = new Discord.RichEmbed();
+    const embed = new Discord.MessageEmbed();
 
     embed
       .setAuthor(parsedGame.chronicleName)

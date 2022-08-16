@@ -73,13 +73,13 @@ export class Bot {
     client.on('messageReactionAdd', async (reaction, user) => {
       if (user.bot) { return; }
 
-      this.commandParser.handleEmojiAdd(reaction, user);
+      this.commandParser.handleEmojiAdd(reaction, user as Discord.User);
     });
 
     client.on('messageReactionRemove', async (reaction, user) => {
       if (user.bot) { return; }
 
-      this.commandParser.handleEmojiRemove(reaction, user);
+      this.commandParser.handleEmojiRemove(reaction, user as Discord.User);
     });
   }
 }

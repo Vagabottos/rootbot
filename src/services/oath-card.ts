@@ -47,7 +47,7 @@ export class OathCardService extends BaseService {
     return this.faqByCard[name];
   }
 
-  public createEmbed(card): Discord.RichEmbed {
+  public createEmbed(card): Discord.MessageEmbed {
 
     const attachFiles = [];
 
@@ -58,7 +58,7 @@ export class OathCardService extends BaseService {
       authorImage = `attachment://suit-${card.suit}.png`;
     }
 
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.MessageEmbed()
       .attachFiles(attachFiles)
       .setDescription(this.formatTextForEmojis(card.text))
       .setAuthor(card.name, authorImage)

@@ -18,7 +18,7 @@ export class PresenceService extends BaseService {
   }
 
   public setPresence(str: string, allowReset = true): void {
-    this.client.user.setPresence({ game: { name: str } });
+    this.client.user.setPresence({ activity: { name: str } });
 
     if (allowReset) {
       setTimeout(() => {

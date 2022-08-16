@@ -26,7 +26,7 @@ export class RulesCommand implements ICommand {
 
     const allRules = rules.slice(0, 9);
 
-    const index = new Discord.RichEmbed()
+    const index = new Discord.MessageEmbed()
       .setTitle(`Search results for '${args}'`)
       .setDescription(allRules.map((x, i) => `\`Result #${i + 1}\`: [${this.rulesService.formatTitle(x)}](${this.rulesService.getRuleURL(x)})`));
 

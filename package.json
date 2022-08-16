@@ -32,7 +32,7 @@
     "@seiyria/oath-parser": "^1.0.6",
     "@types/node": "12.11.7",
     "axios": "0.19.0",
-    "discord.js": "11.5.1",
+    "discord.js": "^12.5.3",
     "discord.js-reaction-menu": "1.0.1",
     "dotenv": "8.0.0",
     "fuzzyset.js": "0.0.8",
