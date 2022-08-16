@@ -47,8 +47,6 @@
     "yamljs": "0.3.0"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
-    "ava-ts": "^0.25.2",
     "download-github-repo": "^0.1.4",
     "fs-extra": "^8.1.0",
     "live-server": "^1.2.1",
