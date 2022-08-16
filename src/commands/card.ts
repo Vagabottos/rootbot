@@ -54,7 +54,7 @@ export class CardCommand implements ICommand {
       authorImage = `attachment://card-${card.type}.png`;
     }
 
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.MessageEmbed()
       .attachFiles(attachFiles)
       .setAuthor(card.name, authorImage)
       .setThumbnail(`attachment://${card.image}.png`)

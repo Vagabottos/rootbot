@@ -89,8 +89,8 @@ export class RulesService extends BaseService {
     return `https://root.seiyria.com/#${this.slugTitle(rule.index, rule.name)}`;
   }
 
-  public createRuleEmbed(rule: IRule): Discord.RichEmbed {
-    return new Discord.RichEmbed()
+  public createRuleEmbed(rule: IRule): Discord.MessageEmbed {
+    return new Discord.MessageEmbed()
       .setTitle(this.formatTitle(rule))
       .setURL(this.getRuleURL(rule))
       .setDescription(this.fixRuleText(rule.text || rule.pretext || rule.subtext || 'No subtext.'))

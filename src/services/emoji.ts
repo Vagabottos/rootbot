@@ -26,7 +26,7 @@ export class EmojiService extends BaseService {
   }
 
   private loadEmojis() {
-    this.client.emojis.forEach((emoji) => {
+    this.client.emojis.cache.forEach((emoji) => {
       this.emojiHash[emoji.name] = emoji.toString();
       this.emojiInstanceHash[emoji.name] = emoji;
     });
