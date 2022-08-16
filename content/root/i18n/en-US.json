@@ -18,7 +18,10 @@
     "Moles": "Moles",
     "Standard Deck": "Standard Deck",
     "Underworld": "Underworld",
-    "Vagabond": "Vagabond"
+    "Vagabond": "Vagabond",
+    "Marauders": "Marauders",
+    "ADSET": "ADSET",
+    "Landmarks": "Landmarks"
   },
   "Card": {
     "Builder": "Builder",

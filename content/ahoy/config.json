@@ -1,0 +1,14 @@
+{
+  "AppTitle": "Ahoy Cards",
+  "AppShortTitle": "Ahoy Cards",
+  "AppDescription": "Ahoy Cards contains a reference of all Ahoy cards.",
+  "AppRootDomain": "ahoycards.seiyria.com",
+  "AppThemeColor": "#99629a",
+  "AppLanguages": [
+    { "code": "en-US", "name": "English" }
+  ],
+  "AppFAQ": {
+  },
+  "AppFAQRequest": {
+  }
+}
