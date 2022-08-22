@@ -90,14 +90,14 @@
   set:
     - Swords
 - name: Convincing Comrade
-  image: '16'
+  image: '17'
   text: >-
     Take up to 2 Comrades from any one Island and place them on another Island.
     (There are two Convincing Comrades.)
   set:
     - Tree
 - name: Convincing Official
-  image: '17'
+  image: '16'
   text: >-
     Move up to 2 Patrols, each 1 or 2 spaces. They ignore battle. Take up to 2
     Comrades from any one Island and place them on another Island. (There are
