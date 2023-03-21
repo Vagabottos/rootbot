@@ -1529,154 +1529,154 @@
   image: adset-hirelings-badgers-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Badger Bodyguards"
   image: adset-hirelings-badgers-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Popular Band"
   image: adset-hirelings-band-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Street Band"
   image: adset-hirelings-band-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Highway Bandits"
   image: adset-hirelings-bandits-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Bandit Gangs"
   image: adset-hirelings-bandits-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Corvid Spies"
   image: adset-hirelings-corvids-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Raven Sentries"
   image: adset-hirelings-corvids-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Warm Sun Prophets"
   image: adset-hirelings-cult-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Lizard Envoys"
   image: adset-hirelings-cult-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Sunward Expedition"
   image: adset-hirelings-duchy-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Mole Artisans"
   image: adset-hirelings-duchy-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Last Dynasty"
   image: adset-hirelings-eyrie-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Bluebird Nobles"
   image: adset-hirelings-eyrie-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Forest Patrol"
   image: adset-hirelings-marquise-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Feline Physicians"
   image: adset-hirelings-marquise-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Furious Protector"
   image: adset-hirelings-protector-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Stoic Protector"
   image: adset-hirelings-protector-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Flame Bearers"
   image: adset-hirelings-rats-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Rat Smugglers"
   image: adset-hirelings-rats-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Riverfolk Flotilla"
   image: adset-hirelings-riverfolk-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Otter Divers"
   image: adset-hirelings-riverfolk-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "The Exile"
   image: adset-hirelings-vagabond-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "The Brigand"
   image: adset-hirelings-vagabond-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Spring Uprising"
   image: adset-hirelings-woodland-big
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
 
 - name: "Rabbit Scouts"
   image: adset-hirelings-woodland-small
   imageClass: rotated
   set:
-    - ADSET
+    - Hirelings
