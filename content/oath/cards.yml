@@ -185,7 +185,7 @@
 - name: Ancient Binding
   image: Ancient Binding
   suit: nomad
-  text: "**Action**: Each player burns all their `symbol:favor` except their last. _(The only `symbol:favor` you keep is the one here.)_"
+  text: "**Action**: Each player burns all their `symbol:secret` except their last. _(The only `symbol:secret` you keep is the one here.)_"
   powerCost: `symbol:secret` `symbol:secretb`
   set:
     - Standard Deck
