@@ -1509,7 +1509,7 @@
 - name: Second Chance
   image: Second Chance
   suit: beast
-  text: "**Action**: Kill one warband on the board of a player who has an `suit:order` or `suit:beast` adviser to gain one warband."
+  text: "**Action**: Kill one warband on the board of a player who has an `suit:order` or `suit:discord` adviser to gain one warband."
   powerCost: `symbol:secret`
   set:
     - Standard Deck
