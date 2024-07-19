@@ -99,6 +99,7 @@ export class Bot {
     this.logger.log(`Started refreshing application (/) commands.`);
 
     if (this.envService.discordServer) {
+      this.logger.log("Registering specific guild commands.");
       await rest.put(
         Discord.Routes.applicationGuildCommands(
           this.envService.discordClient,
@@ -107,6 +108,7 @@ export class Bot {
         { body: commandList }
       );
     } else {
+      this.logger.log("Registering global commands.");
       await rest.put(
         Discord.Routes.applicationCommands(this.envService.discordClient),
         { body: commandList }
