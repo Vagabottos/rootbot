@@ -4,7 +4,7 @@ A bot made for the Woodland Warriors Discord.
 
 ## Want to Invite Me?
 
-I'm Vaga#4950. Bring me to your Root servers!
+I'm Vaga#4950. [Bring me](https://top.gg/bot/637307031384096818) to your Root servers!
 
 ## Environment Variables
 
