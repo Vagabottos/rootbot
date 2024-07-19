@@ -4,7 +4,7 @@
   "description": "A bot for the Woodland Warriors Discord.",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "npm run load:content && ts-node src/index.ts",
     "start:dev": "nodemon --exec \"ts-node \"-- \"src/index.ts\"",
     "test:lint": "tslint --project .",
     "test:unit": "ava-ts src/test/**.test.ts",
