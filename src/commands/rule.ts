@@ -34,6 +34,18 @@ export class RuleCommand implements ICommand {
     const game = interaction.options.get("game").value as string;
     const rule = interaction.options.get("rule").value as string;
 
+    if (game === "root" && rule.startsWith("9.8")) {
+      const embed = new EmbedBuilder()
+        .setTitle(
+          `9.8 [We understand the Vagabond is a dick, but...] Deal With It`
+        )
+        .setDescription(this.rulesService.fixRuleText("Life isn't fair."));
+
+      await interaction.reply({ embeds: [embed] });
+
+      return;
+    }
+
     const ruleData = this.rulesService.getRule(game, rule);
     if (!ruleData) {
       await interaction.reply(
