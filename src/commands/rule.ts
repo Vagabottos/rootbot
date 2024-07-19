@@ -39,6 +39,7 @@ export class RuleCommand implements ICommand {
         .setTitle(
           `9.8 [We understand the Vagabond is a dick, but...] Deal With It`
         )
+        .setURL("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         .setDescription(this.rulesService.fixRuleText("Life isn't fair."));
 
       await interaction.reply({ embeds: [embed] });
