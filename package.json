@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "start:container": "npm run load:content && npm run start",
+    "start:container": "npm run load:content && ts-node src/index.ts",
     "start:dev": "nodemon --exec \"ts-node \"-- \"src/index.ts\"",
     "test:lint": "tslint --project .",
     "test:unit": "ava-ts src/test/**.test.ts",
