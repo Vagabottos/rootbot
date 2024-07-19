@@ -55,6 +55,7 @@ const start = async () => {
     console.log("got rules for", product.id);
   });
 
+  /*
   console.log("cloning card images and symbols...");
   dl("LederCards/cards", "content/_cards", (err) => {
     if (err) return;
@@ -65,6 +66,7 @@ const start = async () => {
     fs.copySync("content/_cards/content/card-symbols", "content/cards/symbols");
     fs.removeSync("content/_cards");
   });
+  */
 };
 
 start();

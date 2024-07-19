@@ -1,10 +1,8 @@
 import {
-  AttachmentBuilder,
   CommandInteraction,
   EmbedBuilder,
   SlashCommandBuilder,
 } from "discord.js";
-import * as path from "path";
 import { Inject } from "typescript-ioc";
 import { ICommand } from "../interfaces";
 import { CardService } from "../services/card";
@@ -47,6 +45,7 @@ export class CardCommand implements ICommand {
       cardData.name
     );
 
+    /*
     const realImage = path.basename(cardData.image, ".webp");
 
     const attachFiles = [
@@ -54,6 +53,7 @@ export class CardCommand implements ICommand {
         `./content/cards/images/${cardData.game}/en-US/${realImage}.png`
       ),
     ];
+    */
 
     const embed = new EmbedBuilder()
       .setTitle(cardData.name)
@@ -62,9 +62,9 @@ export class CardCommand implements ICommand {
       .setFooter({
         text: `${cardData.id} - ${faqData.length} FAQ | ${errataData.length} Errata`,
       })
-      .setThumbnail(`attachment://${realImage}.png`);
+      .setThumbnail(cardData.image);
 
-    await interaction.reply({ embeds: [embed], files: attachFiles });
+    await interaction.reply({ embeds: [embed] });
 
     this.presence.setPresence(`with ${cardData.name}`);
   }
