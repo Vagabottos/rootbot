@@ -16,3 +16,4 @@ temp/*
 dist
 .vscode
 *.webp
+content

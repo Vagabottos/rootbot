@@ -1,56 +1,56 @@
+import {
+  CommandInteraction,
+  EmbedBuilder,
+  SlashCommandBuilder,
+} from "discord.js";
+import { Inject } from "typescript-ioc";
+import { ICommand } from "../interfaces";
 
-import { Inject, AutoWired, Singleton } from 'typescript-ioc';
-import * as DiscordMenu from 'discord.js-reaction-menu';
+import * as productList from "../../content/data/products.json";
+import { RulesService } from "../services/rules";
+const products = (productList as any).default || productList;
 
-import { ICommand, ICommandArgs, ICommandResult } from '../interfaces';
-import { RulesService } from '../services/rules';
-
-@Singleton
-@AutoWired
 export class RuleCommand implements ICommand {
-
-  // tslint:disable-next-line
-  help = 'Display a rule! Do `-rule 9.2.5.2` to search for that specific rule, `-rule satchel` to search for rules that include satchel, or `-rule vagabond satchel` to pull up that specific rule.';
-  aliases = ['rule', 'rrule', 'rru', 'ru'];
-
   @Inject private rulesService: RulesService;
 
-  async execute(cmdArgs: ICommandArgs): Promise<ICommandResult> {
-    const { message, args } = cmdArgs;
+  data = new SlashCommandBuilder()
+    .setName("rule")
+    .setDescription("Retrieve rules for any game in the Leder Games catalog.")
+    .addStringOption((option) =>
+      option
+        .setName("game")
+        .setDescription("The game to get rules for.")
+        .setRequired(true)
+        .setChoices(products)
+    )
+    .addStringOption((option) =>
+      option
+        .setName("rule")
+        .setDescription("The rule name or id to query")
+        .setRequired(true)
+    );
 
-    if(args === '9.8' || args === '9.8.1') {
-      message.channel.send({
-        embed: this.rulesService.createRuleEmbed({
-          name: 'Deal with It',
-          text: 'Life isn\'t fair.',
-          parent: 'We understand the Vagabond is a dick, but...',
-          color: '6d6e70',
-          index: args
-         })
-      });
-      return { };
-    }
+  public async execute(interaction: CommandInteraction) {
+    const game = interaction.options.get("game").value as string;
+    const rule = interaction.options.get("rule").value as string;
 
-    const rules = this.rulesService.getRuleAndChildren(args);
-    if (!rules) {
-      message.channel.send(`Sorry! I could not find anything like "${args}"`);
+    const ruleData = this.rulesService.getRule(game, rule);
+    if (!ruleData) {
+      await interaction.reply(
+        `Could not find a rule in "${game}" for query "${rule}".`
+      );
       return;
     }
 
-    if (rules.length === 1) {
-      message.channel.send({ embed: this.rulesService.createRuleEmbed(rules[0]) });
-    } else {
-      const allRules = rules.slice(0, 9);
+    const embed = new EmbedBuilder()
+      .setTitle(this.rulesService.formatTitle(ruleData))
+      .setURL(this.rulesService.getRuleURL(game, ruleData))
+      .setDescription(
+        this.rulesService.fixRuleText(
+          ruleData.text || ruleData.pretext || ruleData.subtext || "No subtext."
+        )
+      );
 
-      const pages = allRules.map((x) => this.rulesService.createRuleEmbed(x));
-
-      const reactions = { first: '⏪', back: '◀', next: '▶' };
-
-      // tslint:disable-next-line
-      new DiscordMenu.menu(message.channel, message.author.id, pages, 120000, reactions);
-    }
-
-    return { };
+    await interaction.reply({ embeds: [embed] });
   }
-
 }

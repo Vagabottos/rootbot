@@ -10,11 +10,7 @@
     "test:unit": "ava-ts src/test/**.test.ts",
     "test": "npm run test:lint && npm run test:unit",
     "watch:app": "live-server --open=dist --watch=dist",
-    "build:app:root": "node scripts/build-app --style=root",
-    "build:app:fort": "node scripts/build-app --style=fort",
-    "build:app:oath": "node scripts/build-app --style=oath",
-    "build:app:vast": "node scripts/build-app --style=vast",
-    "build:app:ahoy": "node scripts/build-app --style=ahoy"
+    "load:content": "ts-node -O \"{\\\"module\\\": \\\"commonjs\\\"}\" scripts/load-content"
   },
   "repository": {
     "type": "git",
@@ -23,7 +19,7 @@
   "author": "Kyle Kemp <kyle@seiyria.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=12"
+    "node": ">=18"
   },
   "bugs": {
     "url": "https://github.com/seiyria/DiscordBotExample/issues"
@@ -33,21 +29,18 @@
     "@seiyria/oath-parser": "^1.0.6",
     "@types/node": "12.11.7",
     "axios": "0.19.0",
-    "discord.js": "^12.5.3",
+    "discord.js": "^14.15.3",
     "discord.js-reaction-menu": "1.0.1",
     "dotenv": "8.0.0",
+    "download-github-repo": "^0.1.4",
     "fuzzyset.js": "0.0.8",
-    "imagemin": "^7.0.1",
-    "imagemin-webp": "^6.0.0",
     "node-fetch": "^2.6.1",
     "slugify": "1.3.6",
     "ts-node": "8.3.0",
-    "typescript": "3.5.2",
-    "typescript-ioc": "^1.2.5",
-    "yamljs": "0.3.0"
+    "typescript": "^5.5.3",
+    "typescript-ioc": "^1.2.5"
   },
   "devDependencies": {
-    "download-github-repo": "^0.1.4",
     "fs-extra": "^8.1.0",
     "live-server": "^1.2.1",
     "nodemon": "^1.19.1",

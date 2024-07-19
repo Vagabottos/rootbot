@@ -1,12 +1,9 @@
-
-import { AutoWired, Singleton, Inject } from 'typescript-ioc';
-import { BaseService } from '../base/BaseService';
-import { EnvService } from './env';
+import { AutoWired, Singleton } from "typescript-ioc";
+import { BaseService } from "../base/BaseService";
 
 @Singleton
 @AutoWired
 export class PresenceService extends BaseService {
-
   public async init(client) {
     super.init(client);
 
@@ -14,11 +11,11 @@ export class PresenceService extends BaseService {
   }
 
   public resetPresence() {
-    this.setPresence('Root -rhelp', false);
+    this.setPresence("with Slash Commands!", false);
   }
 
   public setPresence(str: string, allowReset = true): void {
-    this.client.user.setPresence({ activity: { name: str } });
+    this.client.user.setPresence({ activities: [{ name: str }] });
 
     if (allowReset) {
       setTimeout(() => {

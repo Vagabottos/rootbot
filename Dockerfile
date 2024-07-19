@@ -1,4 +1,4 @@
-FROM node:12.22.12-alpine3.15
+FROM node:18-alpine3.19
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY ./package.json /usr/src/app/
@@ -7,4 +7,5 @@ COPY ./ /usr/src/app
 ENV NODE_ENV production
 ENV PORT 80
 EXPOSE 80
+CMD [ "npm", "run", "load:content" ]
 CMD [ "npm", "start" ]

@@ -1,5 +1,3 @@
-
-export * from './ICard';
-export * from './ICommand';
-export * from './IRule';
-export * from './IService';
+export * from "./ICommand";
+export * from "./IRule";
+export * from "./IService";

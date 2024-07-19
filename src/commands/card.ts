@@ -1,112 +1,87 @@
+import {
+  AttachmentBuilder,
+  CommandInteraction,
+  EmbedBuilder,
+  SlashCommandBuilder,
+} from "discord.js";
+import * as path from "path";
+import { Inject } from "typescript-ioc";
+import { ICommand } from "../interfaces";
+import { CardService } from "../services/card";
+import { EmojiService } from "../services/emoji";
+import { PresenceService } from "../services/presence";
 
-import { Inject, AutoWired, Singleton } from 'typescript-ioc';
-import * as Discord from 'discord.js';
-
-import { ICommand, ICommandArgs, ICommandResult } from '../interfaces';
-import { PresenceService } from '../services/presence';
-import { EmojiService } from '../services/emoji';
-import { CardService } from '../services/card';
-
-const CHAR_COLORS = {
-  eyrie: 0x3B65A2,
-  marquise: 0x3B65A2,
-  corvid: 0x4A2769,
-  cult: 0xE4DC31,
-  duchy: 0xD5AF91,
-  alliance: 0x5CA64C,
-  riverfolk: 0x53B4AE,
-  vagabond: 0xcccccc
-};
-
-@Singleton
-@AutoWired
 export class CardCommand implements ICommand {
-
-  help = 'Display a card! Do `-rcard Tinker` to search for the Tinker card.';
-  aliases = ['card', 'rcard'];
-
   @Inject private cardService: CardService;
-  @Inject private presenceService: PresenceService;
   @Inject private emojiService: EmojiService;
+  @Inject private presence: PresenceService;
 
-  async execute(cmdArgs: ICommandArgs): Promise<ICommandResult> {
-    const { message, args } = cmdArgs;
+  data = new SlashCommandBuilder()
+    .setName("card")
+    .setDescription(
+      "Retrieve card data for any card in the Leder Games catalog."
+    )
+    .addStringOption((option) =>
+      option
+        .setName("cardname")
+        .setDescription("The name of the card to search for.")
+        .setRequired(true)
+    );
 
-    const card = this.cardService.getCard(args);
-    if (!card) {
-      message.channel.send(`Sorry! I could not find anything like "${args}"`);
+  public async execute(interaction: CommandInteraction) {
+    const cardName = interaction.options.get("cardname").value as string;
+    const cardData = this.cardService.getCard(cardName);
+    if (!cardData) {
+      await interaction.reply(
+        `Could not find a card with a name like "${cardName}".`
+      );
       return;
     }
 
+    const faqData = this.cardService.getFAQsForCard(
+      cardData.game,
+      cardData.name
+    );
+    const errataData = this.cardService.getErratasForCard(
+      cardData.game,
+      cardData.name
+    );
+
+    const realImage = path.basename(cardData.image, ".webp");
+
     const attachFiles = [
-      `./content/root/cards/${card.image}.png`
+      new AttachmentBuilder(
+        `./content/cards/images/${cardData.game}/en-US/${realImage}.png`
+      ),
     ];
 
-    let authorImage = null;
+    const embed = new EmbedBuilder()
+      .setTitle(cardData.name)
+      .setURL(`https://cards.ledergames.com/card/${cardData.id}`)
+      .setDescription(this.formatTextForEmojis(cardData.text))
+      .setFooter({
+        text: `${cardData.id} - ${faqData.length} FAQ | ${errataData.length} Errata`,
+      })
+      .setThumbnail(`attachment://${realImage}.png`);
 
-    if (card.owner) {
-      attachFiles.push(`./content/root/symbols/faction-${card.owner}.png`);
-      authorImage = `attachment://faction-${card.owner}.png`;
-    }
+    await interaction.reply({ embeds: [embed], files: attachFiles });
 
-    if (card.type) {
-      attachFiles.push(`./content/root/symbols/card-${card.type}.png`);
-      authorImage = `attachment://card-${card.type}.png`;
-    }
-
-    const embed = new Discord.MessageEmbed()
-      .attachFiles(attachFiles)
-      .setAuthor(card.name, authorImage)
-      .setThumbnail(`attachment://${card.image}.png`)
-      .setColor(CHAR_COLORS[card.owner]);
-
-    if (card.text) {
-      embed.addField('Text', this.formatTextForEmojis(card.text));
-    }
-
-    if (card.subtext) {
-      embed.addField('Extra', this.formatTextForEmojis(card.subtext));
-    }
-
-    if (card.quest) {
-      const clearingEmoji = this.emojiService.getEmoji(`card_${card.quest.type}`);
-      const questEmoji = card.quest.cost.map((item) => this.emojiService.getEmoji(`item_${item}`));
-
-      embed.addField('Quest', `${clearingEmoji} ⇒ ${questEmoji.join(' ')}`);
-    }
-
-    if (card.craft) {
-
-      const craftEmoji = card.craft.cost.map((type) => this.emojiService.getEmoji(`card_${type}`));
-
-      embed.addField('Craft', craftEmoji.join(' '));
-
-      if (card.craft.item && card.craft.vp) {
-        const itemEmoji = this.emojiService.getEmoji(`item_${card.craft.item}`);
-        const vpEmoji = this.emojiService.getEmoji(`vp_${card.craft.vp}`);
-
-        embed.addField('Craft Result', itemEmoji + ' ' + vpEmoji);
-      }
-    }
-
-    this.presenceService.setPresence(`with ${card.name}`);
-
-    message.channel.send({ embed });
-
-    return { };
+    this.presence.setPresence(`with ${cardData.name}`);
   }
 
   private formatTextForEmojis(text: string): string {
+    text = text.split("`symbol:").join("<emoji>:symbol_").split("`").join("");
 
     const matches = text.match(/<emoji>:([a-zA-Z0-9_])+/g);
-    if (!matches || !matches[0]) { return text; }
+    if (!matches || !matches[0]) {
+      return text;
+    }
 
     matches.forEach((match) => {
-      const [_, replace] = match.split(':');
+      const [_, replace] = match.split(":");
       text = text.replace(match, this.emojiService.getEmoji(replace));
     });
 
     return text;
   }
-
 }

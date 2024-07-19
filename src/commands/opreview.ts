@@ -1,50 +1,49 @@
+import { OathGame, parseOathTTSSavefileString } from "@seiyria/oath-parser";
+import * as Discord from "discord.js";
 
-import { AutoWired, Singleton } from 'typescript-ioc';
-import * as Discord from 'discord.js';
-import { parseOathTTSSavefileString, OathGame } from '@seiyria/oath-parser';
+import { ICommand } from "../interfaces";
 
-import { ICommand, ICommandArgs, ICommandResult } from '../interfaces';
-
-@Singleton
-@AutoWired
 export class OathVisionPreviewCommand implements ICommand {
+  data = new Discord.SlashCommandBuilder()
+    .setName("op")
+    .setDescription(
+      "Preview the result of an Oath game, and link to oath.vision for easy recording."
+    )
+    .addStringOption((option) =>
+      option
+        .setName("seed")
+        .setDescription("The seed to parse.")
+        .setRequired(true)
+    );
 
-  // tslint:disable-next-line
-  help = 'Preview the result of an Oath game with oath.vision!';
-  aliases = ['op', 'opreview', 'ovision'];
-
-  async execute(cmdArgs: ICommandArgs): Promise<ICommandResult> {
-    cmdArgs.args = cmdArgs.args.trim();
-
-    const { message, args } = cmdArgs;
-
-    if (!args) {
-      message.reply('You need to give me your TTS seed string.');
-      return { };
-    }
+  public async execute(interaction: Discord.CommandInteraction) {
+    const seed = interaction.options.get("seed").value as string;
 
     let parsedGame: OathGame = {};
     try {
-      parsedGame = parseOathTTSSavefileString(args);
+      parsedGame = parseOathTTSSavefileString(seed);
     } catch {
-      message.reply('Your TTS seed string is invalid.');
-      return { };
+      await interaction.reply("Your TTS seed string is invalid.");
+      return;
     }
 
-    const embed = new Discord.MessageEmbed();
+    const embed = new Discord.EmbedBuilder();
 
     embed
-      .setAuthor(parsedGame.chronicleName)
+      .setAuthor({ name: parsedGame.chronicleName })
       .setColor(0x99629a)
-      .setTitle('Enter this chronicle on oath.vision!')
-      .setURL(`https://oath.vision/preview-chronicle/?seed=${encodeURIComponent(args)}`);
+      .setTitle("Enter this chronicle on oath.vision!")
+      .setURL(
+        `https://oath.vision/preview-chronicle/?seed=${encodeURIComponent(
+          seed
+        )}`
+      );
 
-    embed.addField('Tale', `#${parsedGame.gameCount}`, true);
-    embed.addField('Oath', `${parsedGame.oath}`, true);
+    embed.addFields([
+      { name: "Tale", value: `#${parsedGame.gameCount}`, inline: true },
+      { name: "Oath", value: `${parsedGame.oath}`, inline: true },
+    ]);
 
-    message.channel.send({ embed });
-
-    return { };
+    await interaction.reply({ embeds: [embed] });
   }
-
 }
