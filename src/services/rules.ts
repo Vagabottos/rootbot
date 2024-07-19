@@ -1,60 +1,71 @@
+import * as fs from "fs-extra";
+import * as FuzzySet from "fuzzyset.js";
+import { AutoWired, Inject, Singleton } from "typescript-ioc";
 
-import { AutoWired, Singleton, Inject } from 'typescript-ioc';
-import * as Discord from 'discord.js';
-import * as FuzzySet from 'fuzzyset.js';
-import slugify from 'slugify';
-import axios from 'axios';
+import { BaseService } from "../base/BaseService";
+import { IRule } from "../interfaces";
+import { EmojiService } from "./emoji";
 
-import { BaseService } from '../base/BaseService';
-import { IRule } from '../interfaces';
-import { EmojiService } from './emoji';
+import slugify from "slugify";
+import * as productList from "../../content/data/products.json";
+const products = (productList as any).default || productList;
 
 @Singleton
 @AutoWired
 export class RulesService extends BaseService {
-
   @Inject private emojiService: EmojiService;
 
-  private rulesHash: { [key: string]: IRule } = {};
-  private set: FuzzySet = new FuzzySet();
+  private rulesHash: Record<string, Record<string, IRule>> = {};
+  private ruleSets: Record<string, FuzzySet> = {};
 
   public async init(client) {
     super.init(client);
 
-    this.loadRules();
+    products.forEach((product) => {
+      this.rulesHash[product.value] = {};
+      this.ruleSets[product.value] = new FuzzySet();
+
+      this.loadRules(product.value);
+    });
   }
 
-  public getRuleAndChildren(name: string): IRule[] {
-    const primaryRule = this.getRule(name);
+  public getRuleAndChildren(game: string, name: string): IRule[] {
+    const primaryRule = this.getRule(game, name);
 
     if (!primaryRule) {
       return [];
     }
 
-    return [primaryRule, ...(primaryRule.children || primaryRule.subchildren || [])];
+    return [
+      primaryRule,
+      ...(primaryRule.children || primaryRule.subchildren || []),
+    ];
   }
 
-  public getRule(name: string): IRule {
-    const res = this.set.get(name);
-    if (!res) { return null; }
+  public getRule(game: string, name: string): IRule {
+    const res = this.ruleSets[game].get(name);
+    if (!res) {
+      return null;
+    }
 
-    return this.rulesHash[res[0][1]];
+    return this.rulesHash[game][res[0][1]];
   }
 
-  public getRules(name: string): IRule[] {
-    const res = this.set.get(name, '', 0.5);
-    if (!res) { return []; }
+  public getRules(game: string, name: string): IRule[] {
+    const res = this.ruleSets[game].get(name, "", 0.5);
+    if (!res) {
+      return [];
+    }
 
     return res.map((x) => this.rulesHash[x[1]]);
   }
 
   public fixRuleText(text: string) {
-
     let match = null;
 
     // replace nice faction icons
     // tslint:disable-next-line:no-conditional-assignment
-    while (match = text.match(/`faction:([a-z]+):([0-9.]+)`/)) {
+    while ((match = text.match(/`faction:([a-z]+):([0-9.]+)`/))) {
       const [replace, faction, rule] = match;
 
       const factEmoji = this.emojiService.getEmoji(`faction_${faction}`);
@@ -63,21 +74,25 @@ export class RulesService extends BaseService {
 
     // replace nice item icons
     // tslint:disable-next-line:no-conditional-assignment
-    while (match = text.match(/`item:([a-z]+)`/)) {
+    while ((match = text.match(/`item:([a-z]+)`/))) {
       const [replace, faction] = match;
 
       const itemEmoji = this.emojiService.getEmoji(`item_${faction}`);
       text = text.replace(replace, `${itemEmoji}`);
     }
 
-    text = text.split('rule:').join('');
+    text = text.split("rule:").join("");
 
     return text;
   }
 
   public slugTitle(index: string, title: string): string {
-    const baseString = `${index}-${slugify(title.toLowerCase())}`.split('"').join('');
-    if (baseString.match(/^.+(\.)$/)) { return baseString.substring(0, baseString.length - 1); }
+    const baseString = `${index}-${slugify(title.toLowerCase())}`
+      .split('"')
+      .join("");
+    if (baseString.match(/^.+(\.)$/)) {
+      return baseString.substring(0, baseString.length - 1);
+    }
     return baseString;
   }
 
@@ -85,43 +100,40 @@ export class RulesService extends BaseService {
     return `${rule.index} [${rule.parent}] ${rule.name}`;
   }
 
-  public getRuleURL(rule: IRule): string {
-    return `https://root.seiyria.com/#${this.slugTitle(rule.index, rule.name)}`;
+  public getRuleURL(game: string, rule: IRule): string {
+    return `https://${game}.seiyria.com/#${this.slugTitle(
+      rule.index,
+      rule.name
+    )}`;
   }
 
-  public createRuleEmbed(rule: IRule): Discord.MessageEmbed {
-    return new Discord.MessageEmbed()
-      .setTitle(this.formatTitle(rule))
-      .setURL(this.getRuleURL(rule))
-      .setDescription(this.fixRuleText(rule.text || rule.pretext || rule.subtext || 'No subtext.'))
-      .setColor(rule.color);
-  }
-
-  private async loadRules() {
-
-    const rules: any[] = (await axios.get('https://root.seiyria.com/assets/i18n/rules/en-US.json')).data;
+  private async loadRules(game: string) {
+    const rules = fs.readJsonSync(`./content/rules/${game}.json`);
 
     const recurse = (rule, curIdx, { parent, color }) => {
       const children = rule.children || rule.subchildren;
 
       if (children) {
-        children.forEach((child, idx) => recurse(child, `${curIdx}.${idx + 1}`, { parent, color }));
+        children.forEach((child, idx) =>
+          recurse(child, `${curIdx}.${idx + 1}`, { parent, color })
+        );
       }
 
-      this.set.add(`${parent} ${rule.name}`);
-      this.set.add(rule.name);
-      this.set.add(curIdx);
+      this.ruleSets[game].add(`${parent} ${rule.name}`);
+      this.ruleSets[game].add(`${rule.name}`);
+      this.ruleSets[game].add(curIdx);
 
       rule.parent = parent;
       rule.color = color;
       rule.index = curIdx;
 
-      this.rulesHash[`${parent} ${rule.name}`] = rule;
-      this.rulesHash[rule.name] = rule;
-      this.rulesHash[curIdx] = rule;
+      this.rulesHash[game][`${parent} ${rule.name}`] = rule;
+      this.rulesHash[game][`${rule.name}`] = rule;
+      this.rulesHash[game][curIdx] = rule;
     };
 
-    rules.forEach((rule, index) => recurse(rule, `${index + 1}`, { parent: rule.name, color: rule.color }));
+    rules.forEach((rule, index) =>
+      recurse(rule, `${index + 1}`, { parent: rule.name, color: rule.color })
+    );
   }
-
 }
