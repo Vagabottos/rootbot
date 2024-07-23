@@ -59,7 +59,9 @@ export class CardService extends BaseService {
 
     cards.forEach((card) => {
       this.cardsByName[card.name] = card;
+      this.cardsByName[card.id] = card;
       this.set.add(card.name);
+      this.set.add(card.id);
     });
   }
 }

@@ -31,7 +31,7 @@ export class CardCommand implements ICommand {
     const cardData = this.cardService.getCard(cardName);
     if (!cardData) {
       await interaction.reply(
-        `Could not find a card with a name like "${cardName}".`
+        `Could not find a card with a name or id like "${cardName}".`
       );
       return;
     }
