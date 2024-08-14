@@ -58,11 +58,15 @@ export class CardCommand implements ICommand {
     const embed = new EmbedBuilder()
       .setTitle(cardData.name)
       .setURL(`https://cards.ledergames.com/card/${cardData.id}`)
-      .setDescription(this.formatTextForEmojis(cardData.text))
       .setFooter({
         text: `${cardData.id} - ${faqData.length} FAQ | ${errataData.length} Errata`,
       })
       .setThumbnail(cardData.image);
+
+    const text = this.formatTextForEmojis(cardData.text);
+    if(text) {
+      embed.setDescription(text);
+    }
 
     await interaction.reply({ embeds: [embed] });
 
