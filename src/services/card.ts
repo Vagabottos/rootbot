@@ -41,7 +41,7 @@ export class CardService extends BaseService {
   }
 
   public getFAQsForCard(product: string, cardName: string): any[] {
-    const faqData = this.faq[product]["en-US"]?.find(
+    const faqData = this.faq[product]?.["en-US"]?.find(
       (e) => e.card === cardName
     );
     return faqData?.faq ?? [];
