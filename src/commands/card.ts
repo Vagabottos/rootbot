@@ -70,6 +70,8 @@ export class CardCommand implements ICommand {
   }
 
   private formatTextForEmojis(text: string): string {
+    if(!text) return '';
+    
     text = text.split("`symbol:").join("<emoji>:symbol_").split("`").join("");
 
     const matches = text.match(/<emoji>:([a-zA-Z0-9_])+/g);
