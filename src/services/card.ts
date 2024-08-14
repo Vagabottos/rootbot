@@ -48,7 +48,7 @@ export class CardService extends BaseService {
   }
 
   public getErratasForCard(product: string, cardName: string): any[] {
-    const errataData = this.errata[product]["en-US"]?.find(
+    const errataData = this.errata[product]?.["en-US"]?.find(
       (e) => e.card === cardName
     );
     return errataData?.errata ?? [];
