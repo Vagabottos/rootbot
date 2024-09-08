@@ -87,7 +87,7 @@ export class RulesService extends BaseService {
   }
 
   public slugTitle(index: string, title: string): string {
-    const baseString = `${index}-${slugify(title.toLowerCase())}`
+    const baseString = `${index}-${slugify(title?.toLowerCase())}`
       .split('"')
       .join("");
     if (baseString.match(/^.+(\.)$/)) {
