@@ -56,6 +56,7 @@ export class Bot {
 
     client.on(Discord.Events.InteractionCreate, async (interaction) => {
       if (!interaction.isChatInputCommand()) return;
+      if (interaction.replied) return;
 
       const command = this.commands.get(interaction.commandName);
 

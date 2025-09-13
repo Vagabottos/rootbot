@@ -1,5 +1,5 @@
 import {
-  CommandInteraction,
+  ChatInputCommandInteraction,
   EmbedBuilder,
   SlashCommandBuilder,
 } from "discord.js";
@@ -26,7 +26,7 @@ export class CardCommand implements ICommand {
         .setRequired(true)
     );
 
-  public async execute(interaction: CommandInteraction) {
+  public async execute(interaction: ChatInputCommandInteraction) {
     const cardName = interaction.options.get("cardname").value as string;
     const cardData = this.cardService.getCard(cardName);
     if (!cardData) {
@@ -64,7 +64,7 @@ export class CardCommand implements ICommand {
       .setThumbnail(cardData.image);
 
     const text = this.formatTextForEmojis(cardData.text);
-    if(text) {
+    if (text) {
       embed.setDescription(text);
     }
 
@@ -74,8 +74,8 @@ export class CardCommand implements ICommand {
   }
 
   private formatTextForEmojis(text: string): string {
-    if(!text) return '';
-    
+    if (!text) return "";
+
     text = text.split("`symbol:").join("<emoji>:symbol_").split("`").join("");
 
     const matches = text.match(/<emoji>:([a-zA-Z0-9_])+/g);

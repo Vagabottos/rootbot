@@ -15,5 +15,5 @@ export interface ICommandArgs {
 // commands are created once, and then run multiple times as needed.
 export interface ICommand {
   data: Discord.SlashCommandOptionsOnlyBuilder;
-  execute: (interaction: Discord.CommandInteraction) => void;
+  execute: (interaction: Discord.ChatInputCommandInteraction) => void;
 }

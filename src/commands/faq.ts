@@ -1,5 +1,5 @@
 import {
-  CommandInteraction,
+  ChatInputCommandInteraction,
   EmbedBuilder,
   SlashCommandBuilder,
 } from "discord.js";
@@ -24,7 +24,7 @@ export class FAQCommand implements ICommand {
         .setRequired(true)
     );
 
-  public async execute(interaction: CommandInteraction) {
+  public async execute(interaction: ChatInputCommandInteraction) {
     const cardName = interaction.options.get("cardname").value as string;
     const cardData = this.cardService.getCard(cardName);
     if (!cardData) {

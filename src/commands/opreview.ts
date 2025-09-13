@@ -16,7 +16,7 @@ export class OathVisionPreviewCommand implements ICommand {
         .setRequired(true)
     );
 
-  public async execute(interaction: Discord.CommandInteraction) {
+  public async execute(interaction: Discord.ChatInputCommandInteraction) {
     const seed = interaction.options.get("seed").value as string;
 
     let parsedGame: OathGame = {};

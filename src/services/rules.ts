@@ -97,11 +97,11 @@ export class RulesService extends BaseService {
   }
 
   public formatTitle(rule: IRule): string {
-    return `${rule.index} [${rule.parent}] ${rule.name}`;
+    return `${rule.displayIndex} [${rule.parent}] ${rule.name}`;
   }
 
   public getRuleURL(game: string, rule: IRule): string {
-    return `https://${game}.seiyria.com/#${this.slugTitle(
+    return `https://rules.ledergames.com/?game=${game}#${this.slugTitle(
       rule.index,
       rule.name
     )}`;
@@ -110,30 +110,44 @@ export class RulesService extends BaseService {
   private async loadRules(game: string) {
     const rules = fs.readJsonSync(`./content/rules/${game}.json`);
 
-    const recurse = (rule, curIdx, { parent, color }) => {
+    const recurse = (rule, displayIdx, curIdx, { parent, color }) => {
       const children = rule.children || rule.subchildren;
 
       if (children) {
         children.forEach((child, idx) =>
-          recurse(child, `${curIdx}.${idx + 1}`, { parent, color })
+          recurse(child, `${displayIdx}.${idx + 1}`, `${curIdx}.${idx + 1}`, {
+            parent,
+            color,
+          })
         );
       }
 
       this.ruleSets[game].add(`${parent} ${rule.name}`);
       this.ruleSets[game].add(`${rule.name}`);
       this.ruleSets[game].add(curIdx);
+      this.ruleSets[game].add(displayIdx);
 
       rule.parent = parent;
       rule.color = color;
+      rule.displayIndex = displayIdx;
       rule.index = curIdx;
 
       this.rulesHash[game][`${parent} ${rule.name}`] = rule;
       this.rulesHash[game][`${rule.name}`] = rule;
+      this.rulesHash[game][displayIdx] = rule;
       this.rulesHash[game][curIdx] = rule;
     };
 
     rules.forEach((rule, index) =>
-      recurse(rule, `${index + 1}`, { parent: rule.name, color: rule.color })
+      recurse(
+        rule,
+        `${rule.appendix ? rule.appendix : index + 1}`,
+        `${index + 1}`,
+        {
+          parent: rule.name,
+          color: rule.color,
+        }
+      )
     );
   }
 }

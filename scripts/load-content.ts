@@ -1,3 +1,5 @@
+import { sortBy } from "es-toolkit/compat";
+
 const dl = require("download-github-repo");
 const fs = require("fs-extra");
 
@@ -32,27 +34,25 @@ const start = async () => {
   fs.writeJsonSync("content/data/products.json", productList);
 
   console.log("cloning rules");
-  products.forEach(async (product) => {
-    if (!product.external.rules) return;
 
-    try {
-      const rules = await fetch(`${product.external.rules}/assets/rules.json`);
-      fs.writeJsonSync(`content/rules/${product.id}.json`, await rules.json());
-    } catch {
-      try {
-        const rules = await fetch(
-          `${product.external.rules}/assets/i18n/rules/en-US.json`
-        );
-        fs.writeJsonSync(
-          `content/rules/${product.id}.json`,
-          await rules.json()
-        );
-      } catch {
-        console.error("failed to load rules for", product.id);
-      }
-    }
+  const rules = await fetch("https://rules.ledergames.com/rules.json");
+  const rulesData = await rules.json();
 
-    console.log("got rules for", product.id);
+  Object.keys(rulesData).forEach((productId) => {
+    const rules = rulesData[productId]["en-US"];
+    if (!rules) return;
+
+    const latestVersion = sortBy(
+      Object.keys(rules),
+      (k) => +k.replace("v", "")
+    ).reverse()[0];
+
+    if (!latestVersion) return;
+
+    const latestRulesVersion = rules[latestVersion].rules;
+
+    console.log("got rules for", productId);
+    fs.writeJsonSync(`content/rules/${productId}.json`, latestRulesVersion);
   });
 
   /*
