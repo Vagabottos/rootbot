@@ -9,12 +9,12 @@ const start = async () => {
   fs.ensureDirSync("content/cards");
   fs.ensureDirSync("content/rules");
 
-  const cards = await fetch("https://ledercardcdn.seiyria.com/cards.json");
+  const cards = await fetch("https://ledercards.netlify.app/cards.json");
   fs.writeJsonSync("content/data/cards.json", await cards.json());
 
   console.log("cloned cards data");
 
-  const faq = await fetch("https://ledercardcdn.seiyria.com/faq.json");
+  const faq = await fetch("https://ledercards.netlify.app/faq.json");
   fs.writeJsonSync("content/data/faq.json", await faq.json());
 
   console.log("cloned faq data");
