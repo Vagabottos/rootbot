@@ -44,7 +44,7 @@ const start = async () => {
 
     const latestVersion = sortBy(
       Object.keys(rules),
-      (k) => +k.replace("v", "")
+      (k) => +k.replace("p", "")
     ).reverse()[0];
 
     if (!latestVersion) return;
