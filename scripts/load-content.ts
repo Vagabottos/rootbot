@@ -19,12 +19,12 @@ const start = async () => {
 
   console.log("cloned faq data");
 
-  const errata = await fetch("https://ledercardcdn.seiyria.com/errata.json");
+  const errata = await fetch("https://ledercards.netlify.app/errata.json");
   fs.writeJsonSync("content/data/errata.json", await errata.json());
 
   console.log("cloned errata data");
 
-  const meta = await fetch("https://ledercardcdn.seiyria.com/meta.json");
+  const meta = await fetch("https://ledercards.netlify.app/meta.json");
   const metaData = await meta.json();
   const products = metaData.products;
 
